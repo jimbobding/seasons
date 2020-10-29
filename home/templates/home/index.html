@@ -1,57 +1,71 @@
-{% extends "base.html" %}
-{% load static %}
-
-{% block content %}
-<div class="container">
-    <div class="row">
-        <div class="col">
-            <h1 class="text-bold text-center my-auto">SEASONS</h1>
+{% extends "base.html" %} {% load static %} {% block content %}
+<div class="header-container container-fluid">
+  <div class="row">
+    <div class="col">
+      <div class="hero-image">
+        <div class="title-font px-2">
+          <h1 class="text-center my-auto hero-title">SEASONS</h1>
         </div>
+      </div>
     </div>
+  </div>
 </div>
 
-<div class="container">
-    <div class="row">
-        <div class="col">
-            <div class="card text-center">
-                <div class="card-header">
-                    Featured
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-                <div class="card-footer text-muted">
-                    2 days ago
-                </div>
-            </div> 
+<div class="container py-5">
+  <div class="row">
+    <div class="col">
+      <div class="card text-center">
+        <div class="card-body">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut
+            tempora magnam, porro corporis numquam totam reprehenderit inventore
+            maxime quam suscipit odit corrupti modi, facilis voluptatibus.
+            Distinctio totam porro cupiditate alias?.
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
+      </div>
     </div>
+  </div>
 </div>
 
-<div class="container">
-    <div class="row">
-        <div class="col-sm">
-            <h3 class="text-center">From Farm </h3>   
-        </div>  
-        <div class="col-sm">
-            <h3 class="text-center">To Box</h3>     
-        </div>
-        <div class="col-sm">
-            <h3 class="text-center">To You</h3>     
-        </div>
+<div class="container tag-line-container">
+  <div class="row">
+    <div class="col-sm">
+      <div class="text-center">
+        <div><i class="fa-home fas fa-tractor fa-lg"></i></div>
+        <p class="my-3 tag-line">From Farm</p>
+      </div>
     </div>
+    <div class="col-sm">
+      <div class="text-center">
+        <div><i class="fa-home fas fa-people-carry fa-lg"></i></div>
+        <p class="my-3 tag-line">To Box</p>
+      </div>
+    </div>
+    <div class="col-sm">
+      <div class="text-center">
+        <div><i class="fa-home fas fa-smile fa-lg"></i></div>
+        <p class="my-3 tag-line">To You</p>
+      </div>
+    </div>
+  </div>
 </div>
 
-<div class="container">
-    <div class="row">
-        <div class="col">
-            profile
-        </div>
+<div class="container py-4">
+  <div class="row">
+    <div class="col">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab iste
+        perferendis modi amet molestias accusamus adipisci nesciunt ut officiis,
+        assumenda alias saepe illo quo culpa placeat deleniti. Quas, esse in.
+      </p>
     </div>
+    <div class="col">
+      <div class="box-image"></div>
+    </div>
+  </div>
 </div>
-
-
 
 {% endblock %}
