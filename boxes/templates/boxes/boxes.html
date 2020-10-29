@@ -1,0 +1,22 @@
+{% extends "base.html" %} {% load static %} {% block content %}
+<div class="header-container container-fluid">
+  <div class="row">
+    <div class="col">
+      <div class="hero-image">
+        <div class="title-font px-2">
+          <h1 class="text-center my-auto hero-title">SEASONS</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            {{ boxes }}
+        </div>
+    </div>
+</div>
+
+{% endblock %}
