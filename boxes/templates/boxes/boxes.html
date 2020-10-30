@@ -1,22 +1,74 @@
 {% extends "base.html" %} {% load static %} {% block content %}
 <div class="header-container container-fluid">
-  <div class="row">
-    <div class="col">
-      <div class="hero-image">
-        <div class="title-font px-2">
-          <h1 class="text-center my-auto hero-title">SEASONS</h1>
-        </div>
-      </div>
-    </div>
-  </div>
+	<div class="row">
+		<div class="col">
+			<div class="boxes-image">
+				<div class="boxes-font px-2">
+					<h1 class="text-center my-auto hero-title">Boxes</h1>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 
-<div class="container">
-    <div class="row">
-        <div class="col">
-            {{ boxes }}
-        </div>
-    </div>
+<div class="container py-5">
+	<div class="row">
+		{% for box in boxes %}
+		<div class="col-sm-12 col-lg-6">
+			<div class="card season-card mx-auto mb-3 h-100" style="width: 28rem;">
+				{% if box.image %}
+				<a href="">
+					<img class="card-img h-100 w-100" src="{{ box.image.url }}" alt="{{ product.name }}">
+            </a>
+					{% else %}
+					<a href="">
+						<img class="card-img" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+            </a>
+						{% endif %}
+						<div class="card-body">
+							<h5 class="card-title text-center">{{box.box_name}}</h5>
+							<p class="card-text">{{ box.description }}.</p>
+						</div>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
 </div>
+
+<div class="container py-5">
+	<div class="row">
+		{% for box in boxes %}
+		<div class="col">
+			<div class="card mb-3 h-100" style="max-width: 540px">
+				<div class="row no-gutters">
+					<div class="col-md-4">
+						{% if box.image %}
+						<a href="">
+							<img class="card-img h-100 w-100" src="{{ box.image.url }}" alt="{{ product.name }}">
+            </a>
+							{% else %}
+							<a href="">
+								<img class="card-img" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+            </a>
+								{% endif %}
+					</div>
+					<div class="col-md-8">
+						<div class="card-body season-cards">
+							<h5 class="card-title">{{box.box_name}}</h5>
+							<p class="card-text">
+								{{ box.description }}
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+</div>
+
+
+
+
 
 {% endblock %}

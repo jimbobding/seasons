@@ -7,6 +7,8 @@ html {
   
  }
 
+ /* -------------------------------- Images */
+
 .hero-image {
     background: url('/media/oranges-onblue.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -15,12 +17,30 @@ html {
   
 }
 
+.boxes-image {
+    background: url('/media/strawberry-boxes.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 164px);
+    border: 1px solid blue !important;
+  
+}
+
 .box-image {
-     background: url('/media/veg-ontable.jpg') no-repeat center center fixed;
+    background: url('/media/veg-ontable.jpg') no-repeat center center fixed;
     background-size: cover;
     height: 300px;
     border: 2px solid black !important;
 
+}
+
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: white;
+	z-index: -1;
 }
 
 .fa-home {
@@ -32,6 +52,10 @@ html {
     font-size: 25px;
 }
 
+.season-card {
+    box-shadow: 1px 2px #888888;
+}
+ 
 /* from Bulma */
 .icon {
     align-items: center;
@@ -97,6 +121,15 @@ html {
     color: whitesmoke;
     letter-spacing: 6px;
 }
+
+.boxes-font {
+    position: relative;
+    top: 50%;
+    font-size: 40px; 
+    color: black;
+    letter-spacing: 6px;
+}
+
 
 /* -------------------------------- Media Queries */
 

@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Season, Box
+from .models import Season, Boxes
 
 # Register your models here.
 
@@ -11,7 +11,7 @@ class SeasonAdmin(admin.ModelAdmin):
     )
 
 
-class BoxAdmin(admin.ModelAdmin):
+class BoxesAdmin(admin.ModelAdmin):
     list_display = (
         'season',
         'box_name',
@@ -20,9 +20,10 @@ class BoxAdmin(admin.ModelAdmin):
         'size',
         'fruit',
         'veg',
+        'image_url',
         'image',
     )
 
 
 admin.site.register(Season, SeasonAdmin)
-admin.site.register(Box, BoxAdmin)
+admin.site.register(Boxes, BoxesAdmin)
