@@ -1,32 +1,37 @@
 {% extends "base.html" %} {% load static %} 
 
+
+{% block page_header %}
+<div class="container header-container">
+  <div class="row">
+    <div class="col">
+        <h1 class="text-center" >{{season.name }}</h1>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
 {% block content %}
 <div class="container">
     <div class="row">
         <div class="col">
-     
-            <h1>Hey</h1>hey
-    
+            <h2 class="text-center jumbotron" >{{ season.description }}</h2>
         </div>
     </div>
 </div>
 
 <div class="container">
-    <div class="row">
+    <div class="row text-center">
         <div class="col">
-            <h2>{{ season.description }}</h2>
+        <h3>Veggies</h3>
+            <p class=" jumbotron">{{ season.veg }}</p>
+        </div>
+        <div class="col ">
+           <h3>Fruits</h3>
+           <p class="jumbotron">{{ season.fruit }}</p>
         </div>
     </div>
 </div>
+  <a href="" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Buy a Box</a>
 
-<div class="container">
-    <div class="row">
-        <div class="col">
-            {{ season.veg }}
-        </div>
-        <div class="col">
-            {{ season.fruit }}
-        </div>
-    </div>
-</div>
 {% endblock %}
