@@ -1,0 +1,32 @@
+{% extends "base.html" %} {% load static %} 
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col">
+     
+            <h1>Hey</h1>hey
+    
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h2>{{ season.description }}</h2>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            {{ season.veg }}
+        </div>
+        <div class="col">
+            {{ season.fruit }}
+        </div>
+    </div>
+</div>
+{% endblock %}

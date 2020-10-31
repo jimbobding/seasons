@@ -30,6 +30,7 @@ class BoxesAdmin(admin.ModelAdmin):
         'image',
     )
 
+
 class CategoryAdmin(admin.ModelAdmin):
     list_display = (
         'friendly_name',

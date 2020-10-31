@@ -32,6 +32,11 @@ html {
     border: 2px solid black !important;
 
 }
+.card-wrapper
+{
+    height: auto;
+    width: auto;
+}
 
 .overlay {
 	height: 100%;
@@ -51,8 +56,11 @@ html {
 
 
 .season-card {
-    box-shadow: 1px 2px #888888;
+    box-shadow: 1px 3px grey;
+   
 }
+
+
  
 /* -------------------------------- Copy */
 

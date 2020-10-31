@@ -1,5 +1,6 @@
 from django.db import models
 
+
 # Create your models here.
 class Category(models.Model):
 
@@ -25,7 +26,7 @@ class Season(models.Model):
 
 
 class Boxes(models.Model):
-    category = models.ForeignKey('Season', null=True, blank=True, on_delete=models.SET_NULL)
+    category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
     box_name = models.CharField(max_length=254)
     price = models.DecimalField(max_digits=6, decimal_places=2)
     description = models.TextField(null=True, blank=True)
