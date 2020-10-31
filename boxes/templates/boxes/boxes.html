@@ -1,4 +1,5 @@
 {% extends "base.html" %} {% load static %} {% block content %}
+
 <div class="header-container container-fluid">
 	<div class="row">
 		<div class="col">
@@ -10,7 +11,15 @@
 		</div>
 	</div>
 </div>
-
+<div class="container pt-5">
+    <div class="row">
+        <div class="col col-md-6 offset-md-3">
+            <div class="jumbotron">
+                <p class="boxes-jumbotron">All our Boxes are curated to the sesonal calender. You will be delivered a box for each week of the month in which you subscribe to which will be filled with the latest produce to be picked, plucked and dug out that week. </p>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="container py-5">
 	<div class="row">
 		{% for box in boxes %}
