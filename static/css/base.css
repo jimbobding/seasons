@@ -3,49 +3,23 @@ html {
 }
 
  body {
-     background-color:#fbf7f5;
-  
- }
 
- /* -------------------------------- Images */
+ }
 
 .hero-image {
     background: url('/media/oranges-onblue.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
-    border: 1px solid blue !important;
-  
-}
-
-.boxes-image {
-    background: url('/media/strawberry-boxes.jpg') no-repeat center center fixed;
-    background-size: cover;
-    height: calc(100vh - 164px);
-    border: 1px solid blue !important;
+    border: 1px solid black !important;
   
 }
 
 .box-image {
-    background: url('/media/veg-ontable.jpg') no-repeat center center fixed;
+     background: url('/media/veg-ontable.jpg') no-repeat center center fixed;
     background-size: cover;
     height: 300px;
     border: 2px solid black !important;
 
-}
-.card-wrapper
-{
-    height: auto;
-    width: auto;
-}
-
-.overlay {
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	position: fixed;
-	background: white;
-	z-index: -1;
 }
 
 .fa-home {
@@ -53,23 +27,64 @@ html {
     font-size: 50px !important;
 }
 
-
-
-.season-card {
-    box-shadow: 1px 3px grey;
-   
-}
-
-
- 
-/* -------------------------------- Copy */
-
-.boxes-jumbotron {
-    font-size: 24px;
-}
-
 .tag-line {
     font-size: 25px;
+}
+
+/* from Bulma */
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.logo-font {
+    text-transform: uppercase;
+}
+
+.main-logo-link {
+    width: fit-content;
+}
+
+.shop-now-button {
+    background: black;
+    color: white;
+    min-width: 260px;
+}
+
+.btn-black {
+    background: black;
+    color: white;
+}
+
+.btn-outline-black {
+    background: white;
+    color: black !important; /* use important to override link colors for <a> elements */
+    border: 1px solid black;
+}
+
+.shop-now-button:hover,
+.shop-now-button:active,
+.shop-now-button:focus,
+.btn-black:hover,
+.btn-black:active,
+.btn-black:focus {
+    background: #222;
+    color: white;
+}
+
+.text-black {
+    color: #000 !important;
+}
+
+.border-black {
+    border: 1px solid black !important;
+}
+
+.bg-black {
+    background: #000 !important;
 }
 
 /* -------------------------------- Headings */
@@ -81,15 +96,6 @@ html {
     color: whitesmoke;
     letter-spacing: 6px;
 }
-
-.boxes-font {
-    position: relative;
-    top: 50%;
-    font-size: 40px; 
-    color: black;
-    letter-spacing: 6px;
-}
-
 
 /* -------------------------------- Media Queries */
 
