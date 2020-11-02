@@ -35,8 +35,9 @@ html {
 
 .profile-container {
    background:  radial-gradient(rgba(249, 238, 238, 0.91), rgba(152, 142, 142, 0.04)), url( '/media/girl-eating-watermelon-outside.jpg'); 
-   height: 100vh;
+   height: 80vh;
    background-size: cover;
+   width: auto;
 }
 
  
