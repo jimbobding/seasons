@@ -24,19 +24,55 @@ html {
 	z-index: -1;
 }
 
-
-
-.box-image {
-     background: url('/media/veg-ontable.jpg') no-repeat center center fixed;
+.fresh-produce-img {
+     background: url('/media/box-tangerine.jpeg') no-repeat center center fixed;
     background-size: cover;
     height: 300px;
     border: 2px solid black !important;
 
 }
 
+.boxes-container {
+    background: url('/media/pile-limes.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    border: 1px solid black !important;
+  
+}
+
+.box-image {
+    height: 300px !important;
+    border: 2px solid black;
+    justify-content: center;
+
+}
+
+.boxes-jumbotron {
+    margin-top: 100px;
+    justify-content: center;
+    min-height: 200px;
+    opacity: .85;
+    background-color: orange;
+    color: black;
+}
+
 .fa-home {
     margin-top: 50px;
     font-size: 50px !important;
+}
+
+.navbar-wrapper {
+    position: sticky;
+    top: 0;
+    right: 0;
+    width: 100% !important;
+    left: 0;
+    z-index: 20;
+}
+
+header {
+    width: 100% !important;
+
 }
 
 .tag-line {

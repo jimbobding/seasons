@@ -5,32 +5,67 @@
       <div class="hero-image">
         <div class="title-font px-2">
           <h1 class="text-center my-auto hero-title">SEASONS</h1>
+          <p class="text-center">Farm to Box to You</p>
         </div>
       </div>
     </div>
   </div>
 </div>
-
 <div class="container py-5">
   <div class="row">
     <div class="col">
-      <div class="card text-center">
-        <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <p class="card-text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut
-            tempora magnam, porro corporis numquam totam reprehenderit inventore
-            maxime quam suscipit odit corrupti modi, facilis voluptatibus.
-            Distinctio totam porro cupiditate alias?.
-          </p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+      <h2 class="text-center">Seasonal Produce for You</h2>
+    </div>
+  </div>
+</div>
+
+<div class="container py-5" data-aos="fade-up" data-aos-duration="2000">
+  <div class="row">
+    <div class="col">
+      <p class="text-center" >
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quas eum
+        neque id rem quae assumenda perspiciatis architecto cupiditate, earum
+        quo sunt similique unde placeat voluptatibus? Quos recusandae fugiat
+        necessitatibus!
+      </p>
+    </div>
+
+    <div class="col-sm-12 col-md-6 col-lg-7">
+      <img
+        src="{{ STATIC_URL }}media/box-tangerine.jpeg"
+        class="img-fluid box-image rounded mx-auto d-block"
+        alt="tangerines"
+      />
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid boxes-container">
+  <div class="row">
+    <div class="col">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col">
+            <div class="card text-center boxes-jumbotron">
+              <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut
+                  tempora magnam, porro corporis numquam totam reprehenderit
+                  inventore maxime quam suscipit odit corrupti modi, facilis
+                  voluptatibus. Distinctio totam porro cupiditate alias?.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<div class="container tag-line-container">
+<div class="container tag-line-container" data-aos="zoom-in-right">
   <div class="row">
     <div class="col-sm">
       <div class="text-center">
@@ -53,19 +88,9 @@
   </div>
 </div>
 
-<div class="container py-4">
-  <div class="row">
-    <div class="col">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab iste
-        perferendis modi amet molestias accusamus adipisci nesciunt ut officiis,
-        assumenda alias saepe illo quo culpa placeat deleniti. Quas, esse in.
-      </p>
-    </div>
-    <div class="col">
-      <div class="box-image"></div>
-    </div>
-  </div>
-</div>
 
+{% endblock %} {% block postloadjs %}
+<script>
+  AOS.init();
+</script>
 {% endblock %}
