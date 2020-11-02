@@ -3,7 +3,8 @@ html {
 }
 
  body {
-
+     font-size: 20px;
+     letter-spacing: .5;
  }
 
 .hero-image {
@@ -25,12 +26,20 @@ html {
 }
 
 .fresh-produce-img {
-     background: url('/media/box-tangerine.jpeg') no-repeat center center fixed;
+    background: url('/media/box-tangerine.jpeg') no-repeat center center fixed;
     background-size: cover;
     height: 300px;
     border: 2px solid black !important;
 
 }
+
+.profile-container {
+   background:  radial-gradient(rgba(249, 238, 238, 0.91), rgba(152, 142, 142, 0.04)), url( '/media/girl-eating-watermelon-outside.jpg'); 
+   height: 100vh;
+   background-size: cover;
+}
+
+ 
 
 .boxes-container {
     background: url('/media/pile-limes.jpg') no-repeat center center fixed;
@@ -39,9 +48,12 @@ html {
     border: 1px solid black !important;
   
 }
+ 
+
+
 
 .box-image {
-    height: 300px !important;
+    height: 400px !important;
     border: 2px solid black;
     justify-content: center;
 
@@ -172,7 +184,5 @@ header {
         z-index: 1030;
     }
 
-    .header-container {
-        padding-top: 164px;
-    }
+  
 }

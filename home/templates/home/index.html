@@ -11,60 +11,6 @@
     </div>
   </div>
 </div>
-<div class="container py-5">
-  <div class="row">
-    <div class="col">
-      <h2 class="text-center">Seasonal Produce for You</h2>
-    </div>
-  </div>
-</div>
-
-<div class="container py-5" data-aos="fade-up" data-aos-duration="2000">
-  <div class="row">
-    <div class="col">
-      <p class="text-center" >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quas eum
-        neque id rem quae assumenda perspiciatis architecto cupiditate, earum
-        quo sunt similique unde placeat voluptatibus? Quos recusandae fugiat
-        necessitatibus!
-      </p>
-    </div>
-
-    <div class="col-sm-12 col-md-6 col-lg-7">
-      <img
-        src="{{ STATIC_URL }}media/box-tangerine.jpeg"
-        class="img-fluid box-image rounded mx-auto d-block"
-        alt="tangerines"
-      />
-    </div>
-  </div>
-</div>
-
-<div class="container-fluid boxes-container">
-  <div class="row">
-    <div class="col">
-      <div class="container py-5">
-        <div class="row">
-          <div class="col">
-            <div class="card text-center boxes-jumbotron">
-              <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut
-                  tempora magnam, porro corporis numquam totam reprehenderit
-                  inventore maxime quam suscipit odit corrupti modi, facilis
-                  voluptatibus. Distinctio totam porro cupiditate alias?.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
 <div class="container tag-line-container" data-aos="zoom-in-right">
   <div class="row">
     <div class="col-sm">
@@ -87,10 +33,105 @@
     </div>
   </div>
 </div>
+<div class="container py-5">
+  <div class="row">
+    <div class="col">
+      <h2 class="text-center">What we do</h2>
+      <h3 class="text-center">about us</h3>
+      <hr />
+    </div>
+  </div>
+</div>
 
+<div class="container py-5" data-aos="fade-up" data-aos-duration="2000">
+  <div class="row">
+    <div class="col text-center">
+      <p class="">
+        We are a UK based fresh produce food service. Aiming to bring people the
+        freshest produce in season at affordable prices. We deliver to anywhere
+        in the UK and only deliver fruit and veg that is in season. We pride
+        ourselves on a strictly farm to box to you policy, so the produce you
+        receive will have been hand-picked days before.
+      </p>
+      <a href="#" class="btn btn-primary mx-auto">About Us</a>
+    </div>
 
-{% endblock %} {% block postloadjs %}
-<script>
-  AOS.init();
-</script>
-{% endblock %}
+    <div class="col-sm-12 col-md-6 col-lg-7">
+      <img
+        src="{{ STATIC_URL }}media/veg-box.jpg"
+        class="img-fluid box-image rounded mx-auto d-block"
+        alt="tangerines"
+      />
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid boxes-container">
+  <div class="row">
+    <div class="col">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col">
+            <div class="card text-center boxes-jumbotron">
+              <div class="card-body">
+                <h5 class="card-title">Our Products</h5>
+                <p class="card-text">
+                  We aim to supply you with the amount of fresh produce as you
+                  need and your family require. We have different sizes of the
+                  box depending on the size of your appetite! We try to operate
+                  on a no-waste principle so we can tailor your box to specific
+                  needs if possible. We also stock other healthy lifestyle
+                  products which can be added to your box. Have a look at our
+                  range of products,
+                </p>
+                <a href="#" class="btn btn-primary">Our Products</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  class="container-fluid subscription-container py-5"
+  data-aos="fade-up"
+  data-aos-duration="2000"
+>
+  <div class="row">
+    <div class="col-sm-12 col-md-6 col-lg-7">
+      <img
+        src="{{ STATIC_URL }}media/lemons-basket.jpg"
+        class="img-fluid box-image rounded mx-auto d-block"
+        alt="tangerines"
+      />
+    </div>
+
+    <div class="col text-center">
+      <h3>Subscriptions</h3>
+      <p class="">
+        Just like our fruit our subscriptions run all year long. With charts to
+        check the seasonal fruit and veg, you can decide what seasons work best
+        for you. We only offer it to you if it is in season and if the quality
+        is to the utmost!
+      </p>
+      <a href="#" class="btn btn-primary mx-auto">Subscriptions</a>
+    </div>
+  </div>
+</div>
+<div class="container-fluid profile-container py-5">
+  <div class="row">
+      <div class="col">
+      
+        </div>
+      </div>
+    </div>
+ 
+
+  {% endblock %} {% block postloadjs %}
+  <script>
+    AOS.init();
+  </script>
+  {% endblock %}
+
