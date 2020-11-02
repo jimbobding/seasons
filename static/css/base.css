@@ -3,7 +3,7 @@ html {
 }
 
  body {
-     font-size: 20px;
+     font-size: 18px;
      letter-spacing: .5;
  }
 
@@ -40,7 +40,9 @@ html {
    width: auto;
 }
 
- 
+ .product-card {
+    box-shadow: 1px 2px whitesmoke;
+ }
 
 .boxes-container {
     background: url('/media/pile-limes.jpg') no-repeat center center fixed;
@@ -50,14 +52,15 @@ html {
   
 }
  
-
-
-
 .box-image {
     height: 400px !important;
     border: 2px solid black;
     justify-content: center;
 
+}
+
+.product-img {
+    min-height: 50vh;
 }
 
 .boxes-jumbotron {
