@@ -2,9 +2,7 @@
 
 <div class="container-fluid py-3">
   <div class="row">
-    <div class="col-12 ">
-     
-    </div>
+    <div class="col-12"></div>
   </div>
 </div>
 
@@ -30,13 +28,19 @@
       {% endif %}
     </div>
     <div class="col-12 col-md-6 col-lg-4 px-4 text-center">
-     <h2 class="text-uppercase">{{ product.name }}</h2>
+      <h2 class="text-uppercase">{{ product.name }}</h2>
       <i class="fas fa-apple-alt icon-green"></i>
       <p class="text-center py-2">{{ product.description }}</p>
       <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
+      {% if product.rating %}
+      <small class="text-muted"
+        ><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small
+      >
+      {% else %}
+      <small class="text-muted">No Rating</small>
+      {% endif %}
     </div>
   </div>
 </div>
-
 
 {% endblock %}
