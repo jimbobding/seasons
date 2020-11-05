@@ -1,0 +1,32 @@
+{% extends "base.html" %} {% load static %} {% block content %}
+
+<div class="header-container container-fluid">
+  <div class="row">
+    <div class="col">
+      <div class="hero-image">
+        <div class="title-font px-2">
+          <h1 class="text-center my-auto hero-title">SEASONS</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            {% if cart_items %}
+                <div class="table-resposive rounded"></div>
+            {% else %}
+                <p class="lead mb-5">Your cart is empty</p>
+                <a href="{%  url 'products' %}" class="btn btn-outline-blue round-0 btn-lg"></a>
+                    <span class="icon">
+                        <i class="fas fa-chevron left"></i>
+                    </span>
+                    <span class="text-uppercase">Keep Shopping</span>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+{% endblock %}

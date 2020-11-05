@@ -12,104 +12,99 @@
   </div>
 </div>
 
-<div class="container">
+<div class="container categories-container mt-3">
   <div class="row">
-    <div class="row">
-      <div class="nav">
-        <ul class="nav justify-content-center uppercase">
-          <li
-            class="nav-item border border-dark mr-3 dropdown category-nav-item"
+    <div class="col">
+      <ul class="nav justify-content-center uppercase">
+        <li class="nav-item border border-dark mr-3 dropdown category-nav-item">
+          <a
+            class="nav-link category-main-nav dropdown-toggle"
+            id="categories_dropdown"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="true"
+            href="#"
           >
-            <a
-              class="nav-link category-main-nav dropdown-toggle"
-              id="categories_dropdown"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="true"
-              href="#"
-            >
-              <i class="fas fa-box-open mr-3 icon-blue"></i> Boxes  
-            </a>
-            <ul
-              class="dropdown-menu dropdown-tea-columns"
-              aria-labelledby="categories_dropdown"
-            >
-              <li>
-                <a
-                  href="{% url 'products' %}?category=seasonal_fruit_and_veg_box"
-                  class="dropdown-item"
-                  >Fruit and Veg</a
-                >
-              </li>
-              <li>
-                <a
-                  href="{% url 'products' %}?category=seasonal_fruit_box"
-                  class="dropdown-item"
-                  >Fruit</a
-                >
-              </li>
-              <li>
-                <a
-                  href="{% url 'products' %}?category=seasonal_veg_box"
-                  class="dropdown-item"
-                  >Veg</a
-                >
-              </li>
+            <i class="fas fa-box-open mr-3 icon-blue"></i> Boxes
+          </a>
+          <ul
+            class="dropdown-menu dropdown-tea-columns"
+            aria-labelledby="categories_dropdown"
+          >
+            <li>
+              <a
+                href="{% url 'products' %}?category=seasonal_fruit_and_veg_box"
+                class="dropdown-item"
+                >Fruit and Veg</a
+              >
+            </li>
+            <li>
+              <a
+                href="{% url 'products' %}?category=seasonal_fruit_box"
+                class="dropdown-item"
+                >Fruit</a
+              >
+            </li>
+            <li>
+              <a
+                href="{% url 'products' %}?category=seasonal_veg_box"
+                class="dropdown-item"
+                >Veg</a
+              >
+            </li>
 
-              <div class="dropdown-divider my-0"></div>
-              <li>
-                <a href="{% url 'products' %}" class="dropdown-item"
-                  >All Products</a
-                >
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
+            <div class="dropdown-divider my-0"></div>
+            <li>
+              <a href="{% url 'products' %}" class="dropdown-item"
+                >All Products</a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
     </div>
+  </div>
 
-    <div class="container-fluid py-5">
-      <div class="row">
-        {% for product in products %}
+  <div class="container-fluid py-5">
+    <div class="row">
+      {% for product in products %}
+      <div
+        class="col-lg-4 col-md-6 col-12 justify-content-center justify-content-md-end"
+      >
         <div
-          class="col-lg-4 col-md-6 col-12 justify-content-center justify-content-md-end"
+          class="card mx-auto product-card h-100 border-0"
+          style="width: 18rem"
         >
-          <div
-            class="card mx-auto product-card h-100 border-0"
-            style="width: 18rem"
-          >
-            {% if product.image %}
-            <a href="{% url 'product_detail' product.id %}">
-              <img
-                class="img-fluid product-img"
-                src="{{ product.image.url }}"
-                alt="{{ product.name }}"
-              />
-            </a>
-            {% else %}
-            <a href="{% url 'product_detail' product.id %}">
-              <img
-                class="img-fluid"
-                src="{{ MEDIA_URL }}noimage.png"
-                alt="{{ product.name }}"
-              />
-            </a>
-            {% endif %}
-            <div class="card-body">
-              <div class="card-text text-center">
-                <h3 class="text-center">{{ product.name }}</h3>
-                <hr />
-                <p>£{{ product.price }}</p>
-                <p class="">{{ product.category.friendly_name }}</p>
-              </div>
+          {% if product.image %}
+          <a href="{% url 'product_detail' product.id %}">
+            <img
+              class="img-fluid product-img"
+              src="{{ product.image.url }}"
+              alt="{{ product.name }}"
+            />
+          </a>
+          {% else %}
+          <a href="{% url 'product_detail' product.id %}">
+            <img
+              class="img-fluid"
+              src="{{ MEDIA_URL }}noimage.png"
+              alt="{{ product.name }}"
+            />
+          </a>
+          {% endif %}
+          <div class="card-body">
+            <div class="card-text text-center">
+              <h3 class="text-center">{{ product.name }}</h3>
+              <hr />
+              <p>£{{ product.price }}</p>
+              <p class="">{{ product.category.friendly_name }}</p>
             </div>
           </div>
         </div>
-
-        {% endfor %}
       </div>
-    </div>
 
-    {% endblock %}
+      {% endfor %}
+    </div>
   </div>
 </div>
+{% endblock %}
