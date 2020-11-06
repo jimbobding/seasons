@@ -5,18 +5,18 @@
     <div class="col">
       <div class="hero-image">
         <div class="title-font px-2">
-          <h1 class="text-center my-auto hero-title">SEASONS</h1>
+          <h1 class="text-center my-auto hero-title">Cart</h1>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<div class="container">
+<div class="container my-5">
     <div class="row">
         <div class="col">
             {% if cart_items %}
-                <div class="table-resposive rounded"></div>
+                <div class="table-resposive rounded">{{ cart_items }}</div>
             {% else %}
                 <p class="lead mb-5">Your cart is empty</p>
                 <a href="{%  url 'products' %}" class="btn btn-outline-blue round-0 btn-lg"></a>
