@@ -156,6 +156,12 @@ header {
     background: #000 !important;
 }
 
+.bttn-link,
+.update-link,
+.remove-item {
+    cursor: pointer;
+}
+
 /* -------------------------------- Cards */
 .card-img-top {
     width: 100%;
