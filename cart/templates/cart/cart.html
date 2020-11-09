@@ -28,13 +28,14 @@
             </tr>
           </thead>
 
-          {% for item in bag_items %}
+          {% for item in cart_items %}
           <tr>
             <td>
               <img
-                class="img-fluid rounded"
+                class="img-fluid rounded cart-image"
                 src="{{ item.product.image.url }}"
                 alt=""
+                height="100px" width="100px"
               />
             </td>
             <td class="py-3">
