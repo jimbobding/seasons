@@ -117,11 +117,6 @@ header {
     width: fit-content;
 }
 
-.shop-now-button {
-    background: black;
-    color: white;
-    min-width: 260px;
-}
 
 .btn-black {
     background: black;
@@ -134,13 +129,11 @@ header {
     border: 1px solid black;
 }
 
-.shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus,
+
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #222;
+    background: pink;
     color: white;
 }
 
