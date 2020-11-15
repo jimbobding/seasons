@@ -96,10 +96,10 @@
     </div>
   </div>
   <div class="button-wrapper">
-   <a href="{% url 'subscriptions' %}" class="btn btn-black uppercase px-3">
+    <a href="{% url 'subscriptions' %}" class="btn btn-black uppercase px-3">
       Subsctiptions
     </a>
-    </div>
+  </div>
 </div>
 
 <div class="subscription-container">
@@ -109,7 +109,9 @@
       data-aos="fade-up"
       data-aos-duration="1500"
     >
-      <div class="col-sm-12 col-md-8 col-lg-6 mb-3 mt-3 jumbotron jumbotron-subscriptions">
+      <div
+        class="col-sm-12 col-md-8 col-lg-6 mb-3 mt-3 jumbotron jumbotron-subscriptions"
+      >
         <h2 class="text-center header-section">
           <strong>Subsctiptions</strong>
         </h2>
@@ -133,69 +135,54 @@
   </div>
 </div>
 
-<div class="container">
-  <div class="jumbotron-overlay"></div>
-</div>
-<div class="container py-5">
+<div class="container profile-container my-5">
   <div class="row">
     <div class="col">
-      <div class="card mx-auto" data-aos="fade-right" style="width: 18rem">
-        <img src="..." class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card mx-auto" data-aos="fade-left" style="width: 18rem">
-        <img src="..." class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
+      <div class="header-section">
+        <h2>Register</h2>
+        <h3>Become seasoned</h3>
       </div>
     </div>
   </div>
-</div>
-<div class="container py-5">
-  <div class="row">
-    <div class="col">
-      <div class="card mx-auto" data-aos="fade-up-right" style="width: 18rem">
-        <img src="..." class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card mx-auto" data-aos="fade-up-left" style="width: 18rem">
-        <img src="..." class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </div>
+
+  <div class="col">
+    <img
+      src="{{ STATIC_URL }}media/farm-guy.jpg"
+      class="img-fluid farm-guy-img"
+      alt="A person ON A farm"
+    />
+  </div>
+    <p>
+        Sign up to and create a profile!
+    </p>
+    <div class="button-wrapper">
+        <a href="{% url 'subscriptions' %}" class="btn btn-black uppercase px-3">
+        Register
+        </a>
   </div>
 </div>
+
+
+<div class="footer-container footer-page center-align">
+   <div class="container social-links">
+      <a target="_blank" s href="https://www.facebook.com/">
+      <i class="fab fa-facebook-f"></i
+         ></a>
+      <a target="_blank" href="https://twitter.com/explore">
+      <i class="fab fa-twitter"></i>
+      </a>
+      <a target="_blank" href="https://https://github.com/">
+      <i class="fab fa-github"></i>
+      </a>
+      <a target="_blank" href="https://uk.linkedin.com/">
+      <i class="fab fa-linkedin-in"></i>
+      </a>
+   </div>
+</div>
+<div class="footer-copyright center-align">
+   <div class="container copyright center-align">
+      © 2020 Cocktail Buddy 
+   </div>
 
 {% endblock %} {% block postloadjs %}
 <script>
