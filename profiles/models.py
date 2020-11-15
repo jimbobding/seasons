@@ -23,7 +23,8 @@ class UserProfile(models.Model):
     def __str__(self):
         return self.user.username
 
- # Reciever each time user objects is saved it will create a new user or save info dfor existing one
+
+# Reciever each time user objects is saved it will create a new user or save info dfor existing one
 @receiver(post_save, sender=User)
 def create_or_update_user_profile(sender, instance, created, **kwargs):
     """
@@ -32,5 +33,5 @@ def create_or_update_user_profile(sender, instance, created, **kwargs):
     if created:
         UserProfile.objects.create(user=instance)
     # Existing users: just save the profile
-    # instance.userprofile.save()
+    instance.userprofile.save()
 

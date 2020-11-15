@@ -12,12 +12,35 @@
   </div>
 </div>
 
-<div
-  class="container tag-line-container"
-  data-aos="zoom-out"
-  data-aos-offset="300"
-  data-aos-easing="ease-in-sine"
->
+<div class="container-fluid card about-card">
+  <div class="row">
+    <div class="col">
+      <div class="header-section">
+        <h2>About Us</h2>
+        <h3>What we do</h3>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <div class="about-text">
+        <p class="card-text">
+          We are a UK based fresh produce food service. Aiming to bring people
+          the freshest produce in season at affordable prices. We deliver to
+          anywhere in the UK and only deliver fruit and veg that is in season.
+          We pride ourselves on a strictly farm to box to you policy, so the
+          produce you receive will have been hand-picked days before.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="button-wrapper">
+    <a href="" class="btn btn-black">About Us</a>
+  </div>
+</div>
+
+<div></div>
+<div class="container">
   <div class="row">
     <div class="col-sm">
       <div class="text-center">
@@ -38,159 +61,144 @@
       </div>
     </div>
   </div>
+</div>
 
-  <div class="container py-5">
-    <div class="row">
-      <div class="col">
-        <h2 class="text-center">What we do</h2>
-        <h3 class="text-center">about us</h3>
-        <hr />
+<div class="container-fluid our-products-container">
+  <div class="row">
+    <div class="col">
+      <div class="header-section">
+        <h2>Our Products</h2>
       </div>
+      <hr />
     </div>
   </div>
+  <div class="row">
+    <div class="col-md-7 pt-md-5 text-center">
+      <p class="products-text">
+        We aim to supply you with the amount of fresh produce as you need and
+        your family require. We have different sizes of the box depending on the
+        size of your appetite!
+      </p>
 
-  <div class="container py-5" data-aos="fade-up" data-aos-duration="2000">
-    <div class="row">
-      <div class="col text-center">
-        <p class="">
-          We are a UK based fresh produce food service. Aiming to bring people
-          the freshest produce in season at affordable prices. We deliver to
-          anywhere in the UK and only deliver fruit and veg that is in season.
-          We pride ourselves on a strictly farm to box to you policy, so the
-          produce you receive will have been hand-picked days before.
+      <p class="products-text">
+        We try to operate on a no-waste principle so we can tailor your box to
+        specific needs if possible. We also stock other healthy lifestyle
+        products which can be added to your box. Have a look at our range of
+        products,
+      </p>
+    </div>
+    <div class="col-md-4 rounded">
+      <img
+        src="{{ STATIC_URL }}media/veg-basket.jpg"
+        class="img-fluid veg-basket-img rounded mx-auto d-block mx-auto"
+        alt="veg-box"
+      />
+    </div>
+  </div>
+  <div class="button-wrapper">
+   <a href="{% url 'subscriptions' %}" class="btn btn-black uppercase px-3">
+      Subsctiptions
+    </a>
+    </div>
+</div>
+
+<div class="subscription-container">
+  <div class="container">
+    <div
+      class="row d-flex align-items-center"
+      data-aos="fade-up"
+      data-aos-duration="1500"
+    >
+      <div class="col-sm-12 col-md-8 col-lg-6 mb-3 mt-3 jumbotron jumbotron-subscriptions">
+        <h2 class="text-center header-section">
+          <strong>Subsctiptions</strong>
+        </h2>
+        <hr class="divider-green w-50 mt-4" />
+        <p class="text-center landing-paragraph mb-lg-4 mt-lg-4">
+          Every month different fruits and vegetables come into season.
+          <br />Our subscritions allow to you to be sugned up for frsh produce
+          all year round or just for your favourite seasons. <br />Subscribe to
+          a heathly life.
         </p>
-        <a href="#" class="btn btn-primary mx-auto">About Us</a>
-      </div>
-
-      <div class="col-sm-12 col-md-6 col-lg-7">
-        <img
-          src="{{ STATIC_URL }}media/veg-box.jpg"
-          class="img-fluid box-image rounded mx-auto d-block"
-          alt="tangerines"
-        />
-      </div>
-    </div>
-  </div>
-
-  <div class="container-fluid boxes-container">
-    <div class="row">
-      <div class="col">
-        <div class="container py-5">
-          <div class="row">
-            <div class="col">
-              <div class="card text-center boxes-jumbotron">
-                <div class="card-body">
-                  <h5 class="card-title">Our Products</h5>
-                  <p class="card-text">
-                    We aim to supply you with the amount of fresh produce as you
-                    need and your family require. We have different sizes of the
-                    box depending on the size of your appetite! We try to
-                    operate on a no-waste principle so we can tailor your box to
-                    specific needs if possible. We also stock other healthy
-                    lifestyle products which can be added to your box. Have a
-                    look at our range of products,
-                  </p>
-                  <a href="#" class="btn btn-primary">Our Products</a>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="text-center mt-4">
+          <a
+            href="{% url 'subscriptions' %}"
+            class="btn btn-black uppercase px-3"
+          >
+            Subsctiptions
+          </a>
         </div>
       </div>
     </div>
   </div>
+</div>
 
-  <div
-    class="container-fluid subscription-container py-5"
-    data-aos="fade-up"
-    data-aos-duration="2000"
-  >
-    <div class="row">
-      <div class="col-sm-12 col-md-6 col-lg-7">
-        <img
-          src="{{ STATIC_URL }}media/lemons-basket.jpg"
-          class="img-fluid box-image rounded mx-auto d-block"
-          alt="tangerines"
-        />
-      </div>
-
-      <div class="col text-center">
-        <h3>Subscriptions</h3>
-        <p class="">
-          Just like our fruit our subscriptions run all year long. With charts
-          to check the seasonal fruit and veg, you can decide what seasons work
-          best for you. We only offer it to you if it is in season and if the
-          quality is to the utmost!
-        </p>
-        <a href="#" class="btn btn-primary mx-auto">Subscriptions</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="container py-5">
-    <div class="row">
-      <div class="col">
-        <div class="card mx-auto" data-aos="fade-right" style="width: 18rem">
-          <img src="..." class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
+<div class="container">
+  <div class="jumbotron-overlay"></div>
+</div>
+<div class="container py-5">
+  <div class="row">
+    <div class="col">
+      <div class="card mx-auto" data-aos="fade-right" style="width: 18rem">
+        <img src="..." class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
       </div>
-      <div class="col">
-        <div class="card mx-auto" data-aos="fade-left" style="width: 18rem">
-          <img src="..." class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
+    </div>
+    <div class="col">
+      <div class="card mx-auto" data-aos="fade-left" style="width: 18rem">
+        <img src="..." class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
       </div>
     </div>
   </div>
-  <div class="container py-5">
-    <div class="row">
-      <div class="col">
-        <div class="card mx-auto" data-aos="fade-up-right" style="width: 18rem">
-          <img src="..." class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
+</div>
+<div class="container py-5">
+  <div class="row">
+    <div class="col">
+      <div class="card mx-auto" data-aos="fade-up-right" style="width: 18rem">
+        <img src="..." class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
       </div>
-      <div class="col">
-        <div class="card mx-auto" data-aos="fade-up-left" style="width: 18rem">
-          <img src="..." class="card-img-top" alt="..." />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
+    </div>
+    <div class="col">
+      <div class="card mx-auto" data-aos="fade-up-left" style="width: 18rem">
+        <img src="..." class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
       </div>
     </div>
   </div>
+</div>
 
-  {% endblock %} {% block postloadjs %}
-  <script>
-    AOS.init();
-  </script>
-  {% endblock %}
-
+{% endblock %} {% block postloadjs %}
+<script>
+  AOS.init();
+</script>
+{% endblock %}

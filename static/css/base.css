@@ -3,21 +3,57 @@ html {
 }
 
  body {
-     font-size: 18px;
+     font-size: 20px;
      letter-spacing: .5;
-     font-family:'Nunito', sans-serif
+     font-family: 'Neuton', serif;
+     margin: 0;
+     padding: 0;
  }
 
-.hero-image {
-    background: url('/media/oranges-onblue.jpg') no-repeat center center fixed;
-    background-size: cover;
-    height: calc(100vh - 164px);
-    border: 1px solid black !important;
-  
+header.container-fluid {
+    padding: 0 !important;
 }
+
 
 h1 {
 font-size: 3.9rem;
+}
+
+.jumbotron-subscriptions {
+    margin-top: 0%;
+    color: white;
+    background-color: rgb(253,89,86, .5);
+}
+
+
+.products-text {
+    padding: 5px 10px 5px;
+    margin: 5px 10px 5px;
+    text-align: center;    
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.veg-basket-img {
+    height: 400px;
+    width: 350px;
+    margin-bottom: 30px;
+    margin-right: 10px;
+}
+
+.header-section {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.about-text {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .overlay {
@@ -30,13 +66,30 @@ font-size: 3.9rem;
 	z-index: -1;
 }
 
+.margin-top-lg {
+    margin-top: 30px;
+}
+/* ------------------------------- images */
+
 .fresh-produce-img {
     background: url('/media/box-tangerine.jpeg') no-repeat center center fixed;
     background-size: cover;
     height: 300px;
     border: 2px solid black !important;
-
 }
+
+.hero-image {
+    background: url('/media/oranges-onblue.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 164px);
+    border: 1px solid black !important;
+}
+
+.product-img {
+    min-height: 50vh;
+}
+/* ------------------------------- containers */
+
 
 .profile-container {
    background:  radial-gradient(rgba(249, 238, 238, 0.91), rgba(152, 142, 142, 0.04)), url( '/media/girl-eating-watermelon-outside.jpg'); 
@@ -45,27 +98,28 @@ font-size: 3.9rem;
    width: auto;
 }
 
- .product-card {
-    box-shadow: 1px 2px whitesmoke;
- }
-
 .boxes-container {
     background: url('/media/pile-limes.jpg') no-repeat center center fixed;
     background-size: cover;
     height: 100vh;
-    border: 1px solid black !important;
-  
+    border: 1px solid black !important;  
+}
+
+.about-us-container {
+    background-color: blue;
+    width: 100%;
+    background: url('/media/red-fruit-onwhite.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.our-products-container {
+  background-color: rgb(224, 157, 55);
 }
  
-.box-image {
-    height: 400px !important;
-    border: 2px solid black;
-    justify-content: center;
-
-}
-
-.product-img {
-    min-height: 50vh;
+ .subscription-container {
+    background-color: salmon;
+    background: radial-gradient(rgba(249, 238, 238, 0.91), rgba(152, 142, 142, 0.04)),url('/media/red-fruit-onwhite.jpg') no-repeat center center fixed;
+    background-size: cover;
 }
 
 .boxes-jumbotron {
@@ -77,10 +131,41 @@ font-size: 3.9rem;
     color: black;
 }
 
+/* -------------------------------- Cards */
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+
+}
+ .product-card {
+    box-shadow: 1px 2px whitesmoke;
+ }
+
+.about-card {
+    margin-top: 40px;
+    width: 50%;
+    box-shadow: 1px 1px 1px;
+}
+
+@media (min-width: 360px) {
+  .about-card {
+     width: 100%;
+  }
+}
+
+
 .fa-home {
     margin-top: 50px;
     font-size: 50px !important;
 }
+
+/* -------------------------------- Nav */
+
+#main-nav {
+    width: 100%;
+}
+
 
 .navbar-wrapper {
     position: sticky;
@@ -91,13 +176,22 @@ font-size: 3.9rem;
     z-index: 20;
 }
 
-header {
-    width: 100% !important;
+/* -------------------------------- Headings */
 
+.title-font {
+    position: relative;
+    top: 50%;
+    font-size: 40px; 
+    color: whitesmoke;
+    letter-spacing: 6px;
 }
 
+
+
+
+
 .tag-line {
-    font-size: 25px;
+    font-size: 25px !important;;
 }
 
 /* from Bulma */
@@ -218,23 +312,6 @@ header {
 }
 
 
-/* -------------------------------- Cards */
-.card-img-top {
-    width: 100%;
-    height: 15vw;
-    object-fit: cover;
-
-}
-
-/* -------------------------------- Headings */
-
-.title-font {
-    position: relative;
-    top: 50%;
-    font-size: 40px; 
-    color: whitesmoke;
-    letter-spacing: 6px;
-}
 
 /* -------------------------------- Media Queries */
 
@@ -283,10 +360,10 @@ header {
     font-size: 1rem;
     line-height: 1.5;
     border-radius: 0;
-
+}
 
 /* fixed top navbar only on medium and up */
-@media (min-width: 992px) {
+ @media (min-width: 992px) {
     .fixed-top-desktop-only {
         position: fixed;
         top: 0;
