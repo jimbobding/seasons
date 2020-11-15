@@ -14,6 +14,56 @@
 
 <div class="container seasons-container py-4">
   <div class="row">
+    {% for subscription in subscriptions %}
+    <div class="col">
+      <div class="row">
+        <div class="col">
+        <img
+              class="img-fluid product-img"
+              src="{{ subscription.image.url }}"
+              alt="{{ product.name }}"
+            />
+         
+        </div>
+
+        <div class="col">
+           <p>{{subscription.description}}</p>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+<div class="container seasons-container py-4">
+  <div class="row">
+    <div class="col">
+      <div class="row">
+        <div class="col">
+          <div
+            class="card mx-auto"
+            data-aos="fade-up-left"
+            style="width: 18rem"
+          >
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container seasons-container py-4">
+  <div class="row">
     <div class="col">
       <div class="row">
         <div class="col">
@@ -46,40 +96,6 @@
     <div class="col">
       <div class="row">
         <div class="col">
-            <div
-            class="card mx-auto"
-            data-aos="fade-up-left"
-            style="width: 18rem"
-          >
-            <img src="..." class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col">
-        
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="container seasons-container py-4">
-  <div class="row">
-    <div class="col">
-      <div class="row">
-        <div class="col">
-          <p>stuff</p>
-        </div>
-
-        <div class="col">
           <div
             class="card mx-auto"
             data-aos="fade-up-left"
@@ -96,35 +112,8 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="container seasons-container py-4">
-  <div class="row">
-    <div class="col">
-      <div class="row">
-        <div class="col">
-            <div
-            class="card mx-auto"
-            data-aos="fade-up-left"
-            style="width: 18rem"
-          >
-            <img src="..." class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
 
-        <div class="col">
-        
-        </div>
+        <div class="col"></div>
       </div>
     </div>
   </div>
