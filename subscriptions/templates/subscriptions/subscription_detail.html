@@ -13,44 +13,43 @@
 </div>
 
 <div class="container seasons-container py-4">
-  <div class="row">
-    <div class="col">
+  <div class="row"> 
+   {% for sub in subscriptions %}
+    <div class="col-12">
       <table class="table table-sm table-borderless">
         <thead>
           <tr>
-            <th>Order Number</th>
-            <th>Date</th>
-            <th>Items</th>
-            <th>Order Total</th>
+
           </tr>
         </thead>
         <tbody>
-          {% for sub in subscriptions %}
+        
           <tr>
             <td>
               <a
-                href="{% url 'order_history' order.order_number %}"
-                title="{{ order.order_number }}"
+                href=""
+                title=""
               >
-                {{ .}}
+                {{sub.price}}
               </a>
             </td>
-            <td>{{ order.date }}</td>
+            <td>{{ sub.price_by_box }}</td>
             <td>
               <ul class="list-unstyled">
-                {% for item in order.lineitems.all %}
+               
                 <li class="small">
-                  {{ item.product.name }} x{{ item.quantity }}
+                 
                 </li>
-                {% endfor %}
+         
               </ul>
             </td>
-            <td>${{ order.grand_total }}</td>
+            <td>{{ sub.fruit }}</td>
           </tr>
-          {% endfor %}
+         
         </tbody>
       </table>
     </div>
+     {% endfor %}
   </div>
 </div>
 
