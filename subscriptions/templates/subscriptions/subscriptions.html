@@ -15,22 +15,26 @@
 <div class="container seasons-container py-4">
   <div class="row">
     {% for sub in subscriptions %}
+
+  {{ forloop.counter }} 
+   
     <div class="col-12  ">
       <div class="row">
+        {% if loop.counter % 2 != 0 %} 
         <div class="col">
           <img
-            class="img-fluid product-img"
+            class=" img-fluid subscription-img"
             src="{{ sub.image.url }}"
-            alt="{{ product.name }}"
+            alt="{{ sub.name }}"
           />
         </div>
         <div class="col-12 col-lg-6">
-          <p>{{sub.description}}</p>
+          <p>{{sub.description}}   </p>
         </div>
       </div>
       <div class="button-wrapper">
         <a
-          href="{% url 'subscription_detail' %}"
+          href="{% url 'subscription_detail' sub.id %}"
           class="btn btn-black uppercase px-3"
         >
           {{sub.name}}
@@ -38,6 +42,7 @@
       </div>
       {% endfor %}
     </div>
+    {% endif %}
   </div>
 
   {% endblock %} {% block postloadjs %}

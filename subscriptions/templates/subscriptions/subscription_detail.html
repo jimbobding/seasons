@@ -1,10 +1,15 @@
 {% extends "base.html" %} {% load static %} {% block content %}
-<div class="header-container container-fluid">
+<div class="header-container container-fluid subscrition" >
+  <div style="background-image: url {{ subscriptions.image.url }}; "
+        class="cocktail-recipe-img" 
+      >
+      {{ subscriptions.image.url }}
   <div class="row">
     <div class="col">
-      <div class="hero-image">
         <div class="title-font px-2">
-          <h1 class="text-center my-auto hero-title">SEASONS</h1>
+          <h1 class="text-center my-auto hero-title">
+            {{ subscriptions.name }}
+          </h1>
           <p class="text-center">Farm to Box to You</p>
         </div>
       </div>
@@ -13,43 +18,26 @@
 </div>
 
 <div class="container seasons-container py-4">
-  <div class="row"> 
-   {% for sub in subscriptions %}
-    <div class="col-12">
-      <table class="table table-sm table-borderless">
-        <thead>
-          <tr>
-
-          </tr>
-        </thead>
-        <tbody>
-        
-          <tr>
-            <td>
-              <a
-                href=""
-                title=""
-              >
-                {{sub.price}}
-              </a>
-            </td>
-            <td>{{ sub.price_by_box }}</td>
-            <td>
-              <ul class="list-unstyled">
-               
-                <li class="small">
-                 
-                </li>
-         
-              </ul>
-            </td>
-            <td>{{ sub.fruit }}</td>
-          </tr>
-         
-        </tbody>
-      </table>
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      <p>
+        For our subscription boxes you just the season you want to sign up for
+        and we will book you in for the months of the season you choose.
+        <br />
+        <br />
+        In the {{ subscriptions.name }} you will get al the freshet produce from
+        the months of {{ subscriptions.months }}. you will recieve one box for
+        every week of the month. In the {{ subscriptions.name }} box you can
+        expect vegetables 
+        <br/>
+        <br/>
+        {{ subscriptions.vegetables }} 
+        and fruits 
+        <br/>
+        <br/>
+        {{ subscriptions.fruit }} as and when they come into season.
+      </p>
     </div>
-     {% endfor %}
   </div>
 </div>
 

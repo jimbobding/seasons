@@ -89,12 +89,27 @@ font-size: 3.9rem;
     min-height: 50vh;
 }
 
+.subscription-img {
+    height: 400px;
+    width: auto;
+}
+
   .farm-guy-img {
   border-radius: 50%;
   border: black 1px;
   width: 50%;
   justify-content: center;
 } 
+
+.cocktail-recipe-img {
+  display: block;
+  margin-top: 50px;
+  width: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+ 
+}
 
 /* ------------------------------- containers */
 
