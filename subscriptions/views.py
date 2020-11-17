@@ -1,5 +1,4 @@
-from django.shortcuts import render, get_object_or_404
-from .models import Subscriptions
+from django.shortcuts import render, get_object_or_404, 
 
 
 def subscriptions(request):
@@ -16,10 +15,23 @@ def subscriptions(request):
 def subscription_detail(request, subscriptions_id):
     """ A view to the selected  subscription """
 
+    size = Size.objects.all()
     subscriptions = get_object_or_404(Subscriptions, pk=subscriptions_id)
     context = {
         'subscriptions': subscriptions,
+         'size': size
     }
 
     return render(request, "subscriptions/subscription_detail.html", context)
- 
+
+
+def size(request, subscriptions_id):
+    """ A view to the selected  subscription """
+
+    size = Size.objects.all()
+    context = {
+        'size': size,
+    }
+
+    return render(request, "subscriptions/subscription_detail.html", context)
+

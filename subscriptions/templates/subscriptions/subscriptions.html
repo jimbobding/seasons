@@ -14,22 +14,18 @@
 
 <div class="container seasons-container py-4">
   <div class="row">
-    {% for sub in subscriptions %}
-
-  {{ forloop.counter }} 
-   
-    <div class="col-12  ">
+    {% for sub in subscriptions %} {% if forloop.counter|divisibleby:2 %}
+    <div class="col-12">
       <div class="row">
-        {% if loop.counter % 2 != 0 %} 
-        <div class="col">
+        <div class="col-12 col-lg-6">
           <img
-            class=" img-fluid subscription-img"
+            class="img-fluid subscription-img"
             src="{{ sub.image.url }}"
             alt="{{ sub.name }}"
           />
         </div>
         <div class="col-12 col-lg-6">
-          <p>{{sub.description}}   </p>
+          <p>{{sub.description}}</p>
         </div>
       </div>
       <div class="button-wrapper">
@@ -40,14 +36,35 @@
           {{sub.name}}
         </a>
       </div>
-      {% endfor %}
+      {% else %}
+      <div class="col-12">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <p>{{sub.description}}</p>
+          </div>
+        <div class="col-12 col-lg-6">
+          <img
+            class="img-fluid subscription-img"
+            src="{{ sub.image.url }}"
+            alt="{{ sub.name }}"
+          />
+        </div>
+        <div class="button-wrapper">
+          <a
+            href="{% url 'subscription_detail' sub.id %}"
+            class="btn btn-black uppercase px-3"
+          >
+            {{sub.name}}
+          </a>
+        </div>
+        {% endif %} {% endfor %}
+      </div>
     </div>
-    {% endif %}
-  </div>
 
-  {% endblock %} {% block postloadjs %}
-  <script>
-    AOS.init();
-  </script>
-  {% endblock %}
+    {% endblock %} {% block postloadjs %}
+    <script>
+      AOS.init();
+    </script>
+    {% endblock %}
+  </div>
 </div>

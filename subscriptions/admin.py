@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Subscriptions
+from .models import Subscriptions, Size
 
 
 # Register your models here.
@@ -18,5 +18,13 @@ class SubscriptionsAdmin(admin.ModelAdmin):
 
         )
 
+class SizeAdmin(admin.ModelAdmin):
+    list_display = (
+            'name',
+            'price',
+            'price_per_box'
+        )
 
+
+admin.site.register(Size, SizeAdmin)
 admin.site.register(Subscriptions, SubscriptionsAdmin)
