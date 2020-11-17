@@ -2,7 +2,7 @@
 <div class="header-container container-fluid">
   <div class="row">
     <div class="col">
-      <div class="hero-image">
+      <div class="subscriptions-image ">
         <div class="title-font px-2">
           <h1 class="text-center my-auto hero-title">SEASONS</h1>
           <p class="text-center">Farm to Box to You</p>
@@ -15,56 +15,46 @@
 <div class="container seasons-container py-4">
   <div class="row">
     {% for sub in subscriptions %} {% if forloop.counter|divisibleby:2 %}
-    <div class="col-12">
-      <div class="row">
-        <div class="col-12 col-lg-6">
-          <img
-            class="img-fluid subscription-img"
-            src="{{ sub.image.url }}"
-            alt="{{ sub.name }}"
-          />
-        </div>
-        <div class="col-12 col-lg-6">
-          <p>{{sub.description}}</p>
-        </div>
-      </div>
-      <div class="button-wrapper">
-        <a
-          href="{% url 'subscription_detail' sub.id %}"
-          class="btn btn-black uppercase px-3"
-        >
-          {{sub.name}}
-        </a>
-      </div>
-      {% else %}
-      <div class="col-12">
-        <div class="row">
-          <div class="col-12 col-lg-6">
-            <p>{{sub.description}}</p>
-          </div>
-        <div class="col-12 col-lg-6">
-          <img
-            class="img-fluid subscription-img"
-            src="{{ sub.image.url }}"
-            alt="{{ sub.name }}"
-          />
-        </div>
-        <div class="button-wrapper">
-          <a
-            href="{% url 'subscription_detail' sub.id %}"
-            class="btn btn-black uppercase px-3"
-          >
-            {{sub.name}}
-          </a>
-        </div>
-        {% endif %} {% endfor %}
+
+    <div class="col-12 col-lg-5 col-md-5">
+      <img
+        class="img-fluid w-100 mx-auto d-block mx-auto sub-img"
+        src="{{ sub.image.url }}"
+        alt="{{ sub.name }}"
+      />
+    </div>
+     <div class="col-12 col-lg-7 col-md-7">
+      <div class="card-body">
+         <h3 class="card-title sub-card-title">{{ sub.name }}</h3>
+        <hr>
+        <p class="card-text">{{ sub.description }}</p>
+        <a href="{% url 'subscription_detail' sub.id %}" class="btn btn-primary">{{ sub.name }}</a>
       </div>
     </div>
-
-    {% endblock %} {% block postloadjs %}
-    <script>
-      AOS.init();
-    </script>
-    {% endblock %}
+   
+    {% else %}
+  <hr>
+    <div class="col-12 col-lg-7 col-md-7">
+      <div class="card-body">
+        <h3 class="card-title sub-card-title">{{ sub.name }}</h3>
+        <hr>
+        <p class="card-text">{{ sub.description }}</p>
+       <a href="{% url 'subscription_detail' sub.id %}" class="btn btn-primary">{{ sub.name }}</a>
+      </div>
+    </div>
+    <div class="col-12 col-lg-5 col-md-5">
+      <img
+        class="img-fluid w-100 mx-auto d-block mx-auto sub-img "
+        src="{{ sub.image.url }}"
+        alt="{{ sub.name }}"
+      />
+    </div>
+    {% endif %} {% endfor %}
   </div>
 </div>
+
+{% endblock %} {% block postloadjs %}
+<script>
+  AOS.init();
+</script>
+{% endblock %}

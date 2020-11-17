@@ -21,6 +21,7 @@ class Size(models.Model):
     name = models.CharField(max_length=254)
     price = models.DecimalField(max_digits=6, decimal_places=2)
     price_per_box = models.DecimalField(max_digits=6, decimal_places=2)
+    description = models.TextField(null=True, blank=True)
 
     def __str__(self):
         return self.name

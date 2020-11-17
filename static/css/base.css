@@ -14,6 +14,14 @@ header.container-fluid {
     padding: 0 !important;
 }
 
+.s_price-per-box {
+    font-size: 16px;
+    color: blue;
+}
+
+.subscription-card {
+    height: 400px;;
+}
 
 h1 {
 font-size: 3.9rem;
@@ -24,7 +32,6 @@ font-size: 3.9rem;
     color: white;
     background-color: rgb(253,89,86, .5);
 }
-
 
 .products-text {
     padding: 5px 10px 5px;
@@ -89,10 +96,21 @@ font-size: 3.9rem;
     min-height: 50vh;
 }
 
-.subscription-img {
-    height: 400px;
-    width: auto;
+.subscriptions-image {
+    background: url('/media/berries-on-tree.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 164px);
+    border: 1px solid black !important;
 }
+
+
+
+  .sub-img {
+   width:100%;
+   height:400px;
+   object-fit:cover;
+   object-position:50% 50%;
+  }
 
   .farm-guy-img {
   border-radius: 50%;
@@ -108,7 +126,6 @@ font-size: 3.9rem;
   background-repeat: no-repeat;
   background-size: cover;
   height: 400px;
- 
 }
 
 /* ------------------------------- containers */
@@ -153,6 +170,10 @@ font-size: 3.9rem;
 }
 
 /* -------------------------------- Cards */
+.card-font {
+    font-size: 18px;
+}
+
 .card-img-top {
     width: 100%;
     height: 15vw;
@@ -208,12 +229,15 @@ font-size: 3.9rem;
 }
 
 
-
-
-
 .tag-line {
     font-size: 25px !important;;
 }
+
+.sub-card-title {
+    text-align: center;
+    text-shadow: whitesmoke;
+}
+       
 
 /* from Bulma */
 .icon {

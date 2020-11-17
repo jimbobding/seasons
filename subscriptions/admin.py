@@ -22,7 +22,8 @@ class SizeAdmin(admin.ModelAdmin):
     list_display = (
             'name',
             'price',
-            'price_per_box'
+            'price_per_box',
+          
         )
 
 
