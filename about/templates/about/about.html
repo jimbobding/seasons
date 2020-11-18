@@ -1,0 +1,142 @@
+{% extends "base.html" %} {% load static %} {% block content %}
+<div class="header-container container-fluid">
+  <div class="row">
+    <div class="col">
+      <div class="hero-image">
+        <div class="title-font px-2">
+          <h1 class="text-center my-auto hero-title">SEASONS</h1>
+          <p class="text-center">Farm to Box to You</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div></div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <div class="text-center">
+        <div><i class="fa-home fas fa-tractor fa-lg"></i></div>
+        <p class="my-3 tag-line">From Farm</p>
+      </div>
+    </div>
+    <div class="col-sm">
+      <div class="text-center">
+        <div><i class="fa-home fas fa-people-carry fa-lg"></i></div>
+        <p class="my-3 tag-line">To Box</p>
+      </div>
+    </div>
+    <div class="col-sm">
+      <div class="text-center">
+        <div><i class="fa-home fas fa-smile fa-lg"></i></div>
+        <p class="my-3 tag-line">To You</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid our-products-container">
+  <div class="row">
+    <div class="col">
+      <div class="header-section">
+        <h2>Our Products</h2>
+      </div>
+      <hr />
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-7 pt-md-5 text-center">
+      <p class="products-text">
+        We aim to supply you with the amount of fresh produce as you need and
+        your family require. We have different sizes of the box depending on the
+        size of your appetite!
+      </p>
+
+      <p class="products-text">
+        We try to operate on a no-waste principle so we can tailor your box to
+        specific needs if possible. We also stock other healthy lifestyle
+        products which can be added to your box. Have a look at our range of
+        products,
+      </p>
+    </div>
+    <div class="col-md-4 rounded">
+      <img
+        src="{{ STATIC_URL }}media/veg-basket.jpg"
+        class="img-fluid veg-basket-img rounded mx-auto d-block mx-auto"
+        alt="veg-box"
+      />
+    </div>
+  </div>
+  <div class="button-wrapper">
+    <a href="{% url 'subscriptions' %}" class="btn btn-black uppercase px-3">
+      Subsctiptions
+    </a>
+  </div>
+</div>
+
+<div class="subscription-container">
+  <div class="container">
+    <div
+      class="row d-flex align-items-center"
+      data-aos="fade-up"
+      data-aos-duration="1500"
+    >
+      <div
+        class="col-sm-12 col-md-8 col-lg-6 mb-3 mt-3 jumbotron jumbotron-subscriptions"
+      >
+        <h2 class="text-center header-section">
+          <strong>Subsctiptions</strong>
+        </h2>
+        <hr class="divider-green w-50 mt-4" />
+        <p class="text-center landing-paragraph mb-lg-4 mt-lg-4">
+          Every month different fruits and vegetables come into season.
+          <br />Our subscritions allow to you to be sugned up for frsh produce
+          all year round or just for your favourite seasons. <br />Subscribe to
+          a heathly life.
+        </p>
+        <div class="text-center mt-4">
+          <a
+            href="{% url 'subscriptions' %}"
+            class="btn btn-black uppercase px-3"
+          >
+            Subsctiptions
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container profile-container my-5">
+  <div class="row">
+    <div class="col">
+      <div class="header-section">
+        <h2>Register</h2>
+        <h3>Become seasoned</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <img
+      src="{{ STATIC_URL }}media/farm-guy.jpg"
+      class="img-fluid farm-guy-img"
+      alt="A person ON A farm"
+    />
+  </div>
+  <p>Sign up to and create a profile!</p>
+  <div class="button-wrapper">
+    <a href="{% url 'subscriptions' %}" class="btn btn-black uppercase px-3">
+      Register
+    </a>
+  </div>
+</div>
+
+{% endblock %} {% block postloadjs %}
+<script>
+  AOS.init();
+</script>
+{% endblock %}
