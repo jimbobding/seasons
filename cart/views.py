@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect, reverse, HttpResponse, get_object
 from django.contrib import messages
 
 from products.models import Product
+from subscriptions.models import Size
 
 
 def view_cart(request):
@@ -13,6 +14,7 @@ def view_cart(request):
 def add_to_cart(request, item_id):
     """adds a quantity of product to the cart"""
 
+    size = get_object_or_404(Size, pk=item_id)
     product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')

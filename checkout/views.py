@@ -6,6 +6,7 @@ from django.conf import settings
 from .forms import OrderForm
 from .models import Order, OrderLineItem
 from products.models import Product
+from subscriptions.models import  Size
 from profiles.forms import UserProfileForm
 from profiles.models import UserProfile
 from cart.contexts import cart_contents
@@ -59,6 +60,7 @@ def checkout(request):
             for item_id, item_data in cart.items():
                 try:
                     product = Product.objects.get(id=item_id)
+                    size = Size.objects.get(id=item_id)
                     if isinstance(item_data, int):
                         order_line_item = OrderLineItem(
                             order=order,
@@ -70,7 +72,15 @@ def checkout(request):
                      
                 except Product.DoesNotExist:
                     messages.error(request, (
-                        "One of the products in your cartwasn't found in our database. "
+                        "One of the products in your cart wasn't found in our database. "
+                        "Please call us for assistance!")
+                        )
+                    order.delete()
+                    return redirect(reverse('view_cart'))
+
+                except Size.DoesNotExist:
+                    messages.error(request, (
+                        "One of the products in your cart wasn't found in our database. "
                         "Please call us for assistance!")
                         )
                     order.delete()

@@ -2,9 +2,9 @@
 <div class="header-container container-fluid subscrition">
   <div
     style="background-image: url {{ subscriptions.image.url }}; "
-    class="cocktail-recipe-img"
+    class="sub-detail-hero"
   >
-    {{ subscriptions.image.url }}
+
     <div class="row">
       <div class="col">
         <div class="title-font px-2">
@@ -18,9 +18,10 @@
   </div>
 </div>
 
-<div class="container seasons-container py-4">
+<div class="container-fluid seasons-container py-4">
   <div class="row">
     <div class="col-md-8 offset-md-2">
+  
       <p>
         For our subscription boxes you just the season you want to sign up for
         and we will book you in for the months of the season you choose.
@@ -29,24 +30,37 @@
         In the {{ subscriptions.name }} you will get al the freshet produce from
         the months of {{ subscriptions.months }}. you will recieve one box for
         every week of the month. In the {{ subscriptions.name }} box you can
-        expect vegetables
+        expect 
+
+        <br/></p>
+
+        <h3 class="text-center" >Vegetables:</h3>
+        <hr>
+
+<p>
+        {{ subscriptions.vegetables }}
         <br />
         <br />
-        {{ subscriptions.vegetables }} and fruits
-        <br />
-        <br />
-        {{ subscriptions.fruit }} as and when they come into season.
+         <h3 class="text-center">Fruit:</h3>
+         <hr>
+     
+        {{ subscriptions.fruit }}
+        <br>
+         as and when they come into season.
+     
+   
       </p>
+
     </div>
   </div>
 </div>
 
-<div class="container my-5">
+<div class="container-fluid  d-flex justify-content-center sub-deatiils-container ">
   <div class="row">
     {% for s in size %}
-    <div class="col ">
+    <div class="col d-flex justify-content-center">
       <div class="card subscription-card card-font " style="width: 18rem">
-        <div class="card-body ">
+        <div class="card-body">
           <h3 class="card-title text-center">{{ subscriptions.name }}</h3>
           <hr>
           <h4 class="text-center text-center">{{ s.name }}</h4>
@@ -57,13 +71,18 @@
           <p> Subscription price ${{ s.price }} </p>
 
           <p class="s_price-per-box"> Price per box: ${{ s.price_per_box }}</p>
-          <a href="#" class="btn btn-primary">Add to cart</a>
+              <div class="col-12">  
+              <input
+                type="submit"
+                class="btn btn-black rounded-0 text-uppercase mt-5"
+                value="Add to cart"
+              />
+            </div>
           </div>
         </div>
       </div>
        <hr>
     </div>
-   
     {% endfor %}
   </div>
 </div>
