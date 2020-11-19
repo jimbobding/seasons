@@ -2,7 +2,7 @@
 <div class="header-container container-fluid">
   <div class="row">
     <div class="col">
-      <div class="hero-image">
+      <div class="about-hero-image">
         <div class="title-font px-2">
           <h1 class="text-center my-auto hero-title">SEASONS</h1>
           <p class="text-center">Farm to Box to You</p>
@@ -12,72 +12,40 @@
   </div>
 </div>
 
-
-
 <div></div>
-<div class="container">
+<div class="container icons-container my-5">
   <div class="row">
     <div class="col-sm">
       <div class="text-center">
         <div><i class="fa-home fas fa-tractor fa-lg"></i></div>
         <p class="my-3 tag-line">From Farm</p>
+        <p>All of our produce is fresh and souced form ethical farmers</p>
       </div>
     </div>
     <div class="col-sm">
       <div class="text-center">
         <div><i class="fa-home fas fa-people-carry fa-lg"></i></div>
         <p class="my-3 tag-line">To Box</p>
+        <p>
+          Are boxes are curated by us to ensure you recieve the freshest
+          seasonal produce
+        </p>
       </div>
     </div>
     <div class="col-sm">
       <div class="text-center">
         <div><i class="fa-home fas fa-smile fa-lg"></i></div>
         <p class="my-3 tag-line">To You</p>
+        <p>
+          You can order a sfrequently as needed or subscribe to seasonla bpx
+          drops
+        </p>
       </div>
     </div>
   </div>
 </div>
 
-<div class="container-fluid our-products-container">
-  <div class="row">
-    <div class="col">
-      <div class="header-section">
-        <h2>Our Products</h2>
-      </div>
-      <hr />
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-7 pt-md-5 text-center">
-      <p class="products-text">
-        We aim to supply you with the amount of fresh produce as you need and
-        your family require. We have different sizes of the box depending on the
-        size of your appetite!
-      </p>
-
-      <p class="products-text">
-        We try to operate on a no-waste principle so we can tailor your box to
-        specific needs if possible. We also stock other healthy lifestyle
-        products which can be added to your box. Have a look at our range of
-        products,
-      </p>
-    </div>
-    <div class="col-md-4 rounded">
-      <img
-        src="{{ STATIC_URL }}media/veg-basket.jpg"
-        class="img-fluid veg-basket-img rounded mx-auto d-block mx-auto"
-        alt="veg-box"
-      />
-    </div>
-  </div>
-  <div class="button-wrapper">
-    <a href="{% url 'subscriptions' %}" class="btn btn-black uppercase px-3">
-      Subsctiptions
-    </a>
-  </div>
-</div>
-
-<div class="subscription-container">
+<div class="about-farm-container">
   <div class="container">
     <div
       class="row d-flex align-items-center"
@@ -85,17 +53,24 @@
       data-aos-duration="1500"
     >
       <div
-        class="col-sm-12 col-md-8 col-lg-6 mb-3 mt-3 jumbotron jumbotron-subscriptions"
+        class="col-sm-12 col-md-8 col-lg-6 mb-3 mt-3 jumbotron about-farm-jumbotron"
       >
         <h2 class="text-center header-section">
-          <strong>Subsctiptions</strong>
+          <strong>Farming</strong>
         </h2>
-        <hr class="divider-green w-50 mt-4" />
-        <p class="text-center landing-paragraph mb-lg-4 mt-lg-4">
-          Every month different fruits and vegetables come into season.
-          <br />Our subscritions allow to you to be sugned up for frsh produce
-          all year round or just for your favourite seasons. <br />Subscribe to
-          a heathly life.
+        <hr class="w-50 mt-4" />
+        <p class="text-center mb-lg-4 mt-lg-4">
+          The concept of sustainable agriculture embraces a wide range of
+          techniques, including organic, free-range, low-input, holistic, and
+          biodynamic. The common thread among these methods is an embrace of
+          farming practices that mimic natural ecological processes. Farmers
+          minimize tilling and water use, encourage healthy soil by planting
+          fields with different crops year after year and integrating croplands
+          with livestock grazing, and avoid pesticide use by nurturing the
+          presence of organisms that control crop-destroying pests. Beyond
+          growing food, the philosophy of sustainability also espouses broader
+          principles that support the just treatment of farm workers and food
+          pricing that provides the farmer with a livable income
         </p>
         <div class="text-center mt-4">
           <a
@@ -110,28 +85,83 @@
   </div>
 </div>
 
-<div class="container profile-container my-5">
+<div class="container-fluid our-products-container">
   <div class="row">
     <div class="col">
       <div class="header-section">
-        <h2>Register</h2>
-        <h3>Become seasoned</h3>
+        <h2>Farming</h2>
       </div>
+      <hr />
     </div>
   </div>
+  <div class="row">
+    <div class="col-md-7 rounded">
+      <img
+        src="{{ STATIC_URL }}media/veg-basket.jpg"
+        class="img-fluid veg-basket-img rounded mx-auto d-block mx-auto"
+        alt="veg-box"
+      />
+    </div>
+    <div class="col-md-5 pt-md-5 text-center">
+      <p class="products-text">
+        We aim to supply you with the amount of fresh produce as you need and
+        your family require. We have different sizes of the box depending on the
+        size of your appetite!
+      </p>
 
-  <div class="col">
-    <img
-      src="{{ STATIC_URL }}media/farm-guy.jpg"
-      class="img-fluid farm-guy-img"
-      alt="A person ON A farm"
-    />
+      <p class="products-text">
+        The concept of sustainable agriculture embraces a wide range of
+        techniques, including organic, free-range, low-input, holistic, and
+        biodynamic. The common thread among these methods is an embrace of
+        farming practices that mimic natural ecological processes. Farmers
+        minimize tilling and water use, encourage healthy soil by planting
+        fields with different crops year after year and integrating croplands
+        with livestock grazing, and avoid pesticide use by nurturing the
+        presence of organisms that control crop-destroying pests. Beyond growing
+        food, the philosophy of sustainability also espouses broader principles
+        that support the just treatment of farm workers and food pricing that
+        provides the farmer with a livable income
+      </p>
+    </div>
   </div>
-  <p>Sign up to and create a profile!</p>
   <div class="button-wrapper">
     <a href="{% url 'subscriptions' %}" class="btn btn-black uppercase px-3">
-      Register
+      Subsctiptions
     </a>
+  </div>
+</div>
+
+<div class="you-container">
+  <div class="container">
+    <div
+      class="row d-flex align-items-center"
+      data-aos="fade-up"
+      data-aos-duration="1500"
+    >
+      <div
+        class="col-sm-12 col-md-8 col-lg-6 mb-3 mt-3 jumbotron jumbotron-you"
+      >
+        <h2 class="text-center header-section">
+          <strong>You</strong>
+        </h2>
+        <hr class="w-50 mt-4" />
+        <p class="text-center mb-lg-4 mt-lg-4">
+          All of our boxes are tailored to you. You choose your subscription for
+          the seasons you want to recieve your fresh produce. Seasons brings
+          only the fruit and veg that is seasonal so you will be recieving the
+          produce fresh from the farm. Our team works hard to customize your box
+          so it you get the most in season fruit in veg in the country. 
+        </p>
+        <div class="text-center mt-4">
+          <a
+            href="{% url 'subscriptions' %}"
+            class="btn btn-black uppercase px-3"
+          >
+            Subsctiptions
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
