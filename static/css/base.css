@@ -31,6 +31,7 @@ h1 {
   padding: 5px 10px 5px;
   margin: 5px 10px 5px;
   text-align: center;
+  line-height: 3rem;
 }
 
 .button-wrapper {
@@ -174,8 +175,10 @@ h1 {
   );
 }
 
-.veg {
-  background-color: rgb(224, 157, 55) !important;
+.stroke {
+ 
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 
 .subscription-container {
@@ -205,6 +208,16 @@ h1 {
       rgba(152, 142, 142, 0.04)
     ),
     url("/media/guy-with-cap.jpeg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.login {
+  background-color: salmon;
+  background: radial-gradient(
+      rgba(249, 238, 238, 0.91),
+      rgba(152, 142, 142, 0.04)
+    ),
+    url("/media/cherry-tomatoes.jpg") no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -346,7 +359,7 @@ h1 {
 }
 
 .border-black {
-  border: 1px solid black !important;
+  border: 1px solid green !important;
 }
 
 .bg-black {
@@ -438,7 +451,7 @@ h1 {
 }
 
 .allauth-form-inner-content input {
-  border-color: blue;
+  border-color: black;
   border-radius: 0.5;
 }
 
@@ -489,6 +502,7 @@ h1 {
   border: 2px hsla(0, 100%, 50%, 0.3) solid;
   display: block;
   position: bottom;
+  padding-top: 10px !important; 
 }
 
 .social-links a i {
@@ -503,4 +517,19 @@ h1 {
 .social-links a i:hover {
   color: #3498db;
   transition: 500ms;
+}
+
+.footer {
+    padding-top: 10px !important; 
+}
+
+.sign-in-card {
+    box-shadow: 1px 2px 3px beige;
+    color: black;
+    padding: 20px 20px 20px;
+    background-color: rgb(253, 89, 86, 0.5);
+}
+
+.logo-font {
+    text-align: center;
 }

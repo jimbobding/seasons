@@ -8,14 +8,24 @@
     <div class="row">
       <div class="col">
         <div class="title-font px-2">
-          <h1 class="text-center my-auto hero-title">
+          <h1 class="text-center my-auto hero-title stroke">
             {{ subscriptions.name }}
           </h1>
-          <p class="text-center">{{ subscriptions.months }}</p>
+          <p class="text-center stroke">{{ subscriptions.months }}</p>
         </div>
       </div>
     </div>
   </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h2 class="text-center">Subscriptions</h2>
+            <hr>
+        </div>
+        <hr>
+    </div>
 </div>
 
 <div class="container-fluid seasons-container py-4">
@@ -36,14 +46,15 @@
 
         <h3 class="text-center" >Vegetables:</h3>
         <hr>
-
     <p>
         {{ subscriptions.vegetables }}
         <br />
         <br />
          <h3 class="text-center">Fruit:</h3>
-         <hr>
+         <hr> 
+         <p>
         {{ subscriptions.fruit }}
+        </p>
         <br>
          as and when they come into season.
       </p>
