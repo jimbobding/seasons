@@ -31,36 +31,32 @@
         the months of {{ subscriptions.months }}. you will recieve one box for
         every week of the month. In the {{ subscriptions.name }} box you can
         expect 
-</p>
+    </p>
         <br/>
 
         <h3 class="text-center" >Vegetables:</h3>
         <hr>
 
-<p>
+    <p>
         {{ subscriptions.vegetables }}
         <br />
         <br />
          <h3 class="text-center">Fruit:</h3>
          <hr>
-     
         {{ subscriptions.fruit }}
         <br>
          as and when they come into season.
-     
-   
       </p>
-
     </div>
   </div>
 </div>
 
-<div class="container-fluid  d-flex justify-content-center sub-deatiils-container ">
-  <div class="row">
+<div class="container-fluid  sub-deatiils-container ">
+  <div class="row no-gutters" >
     {% for s in size %}
-    <div class="col d-flex justify-content-center">
-      <div class="card subscription-card card-font " style="width: 18rem">
-        <div class="card-body">
+    <div class="col-12 col-lg-4 col-md-4 flex-item">
+      <div class="card mx-auto ml-3 boxshadow-card card-font my-3" style="width: 18rem">
+        <div class="card-body ">
           <h3 class="card-title text-center">{{ subscriptions.name }}</h3>
           <hr>
           <h4 class="text-center text-center">{{ s.name }}</h4>
