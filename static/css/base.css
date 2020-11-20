@@ -14,6 +14,11 @@ header.container-fluid {
   padding: 0 !important;
 }
 
+.container-fluid.col {
+    padding: 0;
+}
+
+
 .s_price-per-box {
   font-size: 16px;
   color: blue;
@@ -96,8 +101,6 @@ h1 {
   min-width: 100vw;
 }
 
-
-
 .subscriptions-image {
   background: url("/media/berries-on-tree.jpg") no-repeat center center fixed;
   background-size: cover;
@@ -111,9 +114,8 @@ h1 {
   background-size: cover;
   height: calc(100vh - 164px);
   border: 1px solid black !important;    
-  min-width: 100vw;
+  
 }
-
 .sub-img {
   width: 100%;
   height: 400px;
@@ -307,6 +309,14 @@ h1 {
 .fa-home {
   margin-top: 50px;
   font-size: 50px !important;
+}
+
+.icons-card {
+    height: 300px;
+    overflow: hidden;
+    margin: 10px;
+    padding: 10px 10px;
+    box-shadow: 0 0 5px 2px gray;
 }
 
 /* -------------------------------- Nav */
