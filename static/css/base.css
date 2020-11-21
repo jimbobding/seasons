@@ -271,7 +271,9 @@ h1 {
 .jumbotron-you {
   margin-top: 0%;
   color: black;
-  background-color: 819dbf;
+  background-color: rgba(192,204,216, .75);
+  line-height: 3rem;
+
 }
 
 /* -------------------------------- Cards */
