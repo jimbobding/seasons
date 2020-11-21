@@ -61,6 +61,35 @@ for the months in winter.
 
 
 
+# Design
+- Bootstrap, front-end framework is chosen for this project for its modern interface, ease of use and ability to be easily customized. It is used for creating features such as navbar, cards, forms, modals, as well as for the layout.
+- JQuery is used for initializing some Bootstrap components, as well as for custom functions, DOM manipulation.
+
+
+## Technologies used
+
+- [git-hub](https://github.com/) To Store my code
+- [git](https://git-scm.com/) For version control
+- [git-pod](https://www.gitpod.io/) Used as my IDE to work on my code
+- [pip](https://pip.pypa.io/en/stable/installing/) For installing tools used in the project
+- [HTML5](https://en.wikipedia.org/wiki/HTML5) Used to build my project
+- [Cascading-Style-Sheets](https://www.w3.org/Style/CSS/Overview.en.html) Used to style my project
+- [Am-I-Responsive](http://ami.responsivedesign.is/) I used this to check the responsiveness on devices and used the images as part of the read me file
+- [Google-Fonts](https://fonts.google.com/) Used for the two types of text used throughout the project 
+- [Font-awesome 5](https://fontawesome.com/) Used for icons used on the project 
+- [Jquery](https://jquery.com/download/) Jquery used to simplify some of the code
+- [Bootstrap4](https://getbootstrap.com/) Used for the  framework of my project and also for the navigation bar, the cards (spirit selection, cocktail cards)
+- [Python-3.8.2] (https://www.python.org/) Back end programming language dI used for this project.
+
+- [Django](https://www.djangoproject.com/) - Python framework for building the project.
+- [Jinja](https://jinja.palletsprojects.com/en/2.11.x/) - templating language for Python, to display back-end data in HTML.
+- [Heroku](https://dashboard.heroku.com/app) - to host the project.
+
+
+Databases
+- [SQlite3](https://www.sqlite.org/index.html) - a development database.
+- [PostgreSQL](https://www.postgresql.org/) - a production database.
+
 
 
 
