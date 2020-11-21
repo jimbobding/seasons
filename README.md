@@ -1,4 +1,21 @@
 
+# Season
+
+<bold>Seasons</bold> is the path into your healthy lifestyle. A site that cares for the well being of the user and the planet. It is no secret a healthy diet leads to a healthy and enjoyable lifestyle. Seasonal eating is not just good for us and the planet but it is also a delicious way of approaching a better life. When produce is in the season it at its natural and its ripest. All of our produce is sourced within the UK and is picked, packed and shipped when it is ripe. None of our produce is frozen to be eaten later all the food delivered to the consumer 
+is picked and packed within the week you order it.
+
+You can order a box for the month you decide to order or you can subscribe to the season which you choose. I f you sign up to the winter months you will receive all the freshest fruit and vegetables
+for the months in winter.
+
+
+## Target Audience
+
+- People who want to lead a healthier lifestyle but do not have time to shop for fresh produce.
+- People who do not have the time to go shopping for fresh produce.
+- People who don't know what to buy when they go shopping for fresh produce.
+- People who don't know what is in season within the UK.
+- People who want fresh produce and not frozen produce.
+- People who want to eat fruit and vegetables but don't want it to be flown in from other countries.
 
 
 # User Experience (UX)
@@ -39,6 +56,28 @@
 ### Site Owner Goals Goals
 1. As a site owner I want to be able to edit, delete and add products and or change the subscriptions.
 2. As a site owner I want to receive emails from the users when they fill out the contact form so that I can reply to them satisfying users queries.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Testing User Stories from User Experience (UX) Section
 
