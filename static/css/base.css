@@ -32,6 +32,15 @@ h1 {
   font-size: 3.9rem;
 }
 
+h2 {
+  font-size: 2.9rem;
+}
+
+.logo {
+    font-size: 400px;
+    padding-left: 20px;
+}
+
 .products-text {
   padding: 5px 10px 5px;
   margin: 5px 10px 5px;

@@ -14,7 +14,6 @@ def view_cart(request):
 def add_to_cart(request, item_id):
     """adds a quantity of product to the cart"""
 
-    size = get_object_or_404(Size, pk=item_id)
     product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
@@ -22,7 +21,7 @@ def add_to_cart(request, item_id):
 
     if item_id in list(cart.keys()):
         cart[item_id] += quantity
-        messages.success(request, f'Added {product.name} to your cart')
+        messages.success(request, f'Added {product.name}  to your cart')
 
     else:
         cart[item_id] = quantity
@@ -30,6 +29,31 @@ def add_to_cart(request, item_id):
 
     request.session['cart'] = cart
     return redirect(redirect_url)
+
+
+"""" def add_size_to_cart(request, item_id):
+   adds a quantity of product to the cart
+
+    size = get_object_or_404(Size, pk=item_id)
+    quantity = int(request.POST.get('quantity'))
+    redirect_url = request.POST.get('redirect_url')
+    cart = request.session.get('cart', {})
+
+    if cart['size']:
+
+        if item_id in list(cart['size'].keys()):
+            cart['size'][item_id] += quantity
+            messages.success(request, f'Added  {size.name} to your cart')
+
+        else:
+            cart['size'][item_id] = quantity
+            messages.success(request, f'Added {size.name} to your cart')
+
+    else:
+        cart['size'] = {item_id: quantity}
+
+    request.session['cart'] = cart
+    return redirect(redirect_url) """
 
 
 def adjust_cart(request, item_id):
@@ -51,6 +75,7 @@ def adjust_cart(request, item_id):
 def remove_from_cart(request, item_id):
     """Removes item form cart"""
 
+    size = get_object_or_404(Size, pk=item_id)
     product = get_object_or_404(Product, pk=item_id)
 
     try:

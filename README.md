@@ -68,9 +68,19 @@ for the months in winter.
 
 ## Technologies used
 
-- [git-hub](https://github.com/) To Store my code
-- [git](https://git-scm.com/) For version control
-- [git-pod](https://www.gitpod.io/) Used as my IDE to work on my code
+### Languages
+
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [JavaScript](https://www.javascript.com/)
+- [Python](https://www.python.org/) - Python is a general-purpose coding language. th elanguage I used to construct this site.
+- [Jinja](https://jinja.palletsprojects.com/en/2.11.x/) - templating language for Python, to display back-end data in HTML.
+
+Tools
+
+### Libraries and Frameworks
+- [Django](https://www.djangoproject.com/) - Python framework for building the project.
+
 - [pip](https://pip.pypa.io/en/stable/installing/) For installing tools used in the project
 - [HTML5](https://en.wikipedia.org/wiki/HTML5) Used to build my project
 - [Cascading-Style-Sheets](https://www.w3.org/Style/CSS/Overview.en.html) Used to style my project
@@ -80,15 +90,48 @@ for the months in winter.
 - [Jquery](https://jquery.com/download/) Jquery used to simplify some of the code
 - [Bootstrap4](https://getbootstrap.com/) Used for the  framework of my project and also for the navigation bar, the cards (spirit selection, cocktail cards)
 - [Python-3.8.2] (https://www.python.org/) Back end programming language dI used for this project.
+- [Gunicorn](https://gunicorn.org/) - a Python WSGI HTTP Server to enable deployment to Heroku.
+- [Stripe](https://stripe.com/) - to handle financial transactions.
+- [Django-Crispy-Forms](https://django-crispy-forms.readthedocs.io/en/latest/) - to style Django forms.
+- [Coverage]() - to see the percentage of the automated testsing.
 
-- [Django](https://www.djangoproject.com/) - Python framework for building the project.
+# Tools
+
 - [Jinja](https://jinja.palletsprojects.com/en/2.11.x/) - templating language for Python, to display back-end data in HTML.
 - [Heroku](https://dashboard.heroku.com/app) - to host the project.
-
+- [git-hub](https://github.com/) To Store my code.
+- [git](https://git-scm.com/) For version control.
+- [git-pod](https://www.gitpod.io/) Used as my IDE to work on my code.
+- [PIP](https://pip.pypa.io/en/stable/installing/) - for installation of necessary tools.
+- [Balsamiq](https://balsamiq.com/) - to create wireframes.
 
 Databases
 - [SQlite3](https://www.sqlite.org/index.html) - a development database.
 - [PostgreSQL](https://www.postgresql.org/) - a production database.
+
+
+## Deployment
+
+### Heroku deployment
+
+1. Login to my Heroku account.
+2. Click on New at the right top corner and click on Create new app.
+3. Choose App name and a region (Europe was the closest to me). Then click on Create app.
+4. Go to the terminal window and create requirements.txt by running command pip3 freeze --local > requirements.txt
+5. Then create Procfile by running command echo web: python app.py > Procfile Remember P is capital
+6. Add these files to the staging area by running command git add requirements.txt & git add Procfile.
+7. Then commit these file respectively by running command git commit -m "Added requirements.txt & git commit -m "Added Procfile.
+8. Then push these files to GitHub by running command git push
+9. Go back to Heroku to your App and click on deploy tab.
+10. Then go to Deployment Method and click on Github Connect to Github.
+11. Then make sure your Github Profile is displayed and add you repository name and click on Search.
+12. Once it finds your repository then click on Connect.
+13. Go to Settings at the top. Then click on Reveal Config Vars.
+14. In Config Vars add IP with value 0.0.0.0 then add PORT as 5000 then add SECRET_KEY then add MONGO_URI and then add MONGO_DBNAME which is the name of the database.
+15. Go back to Deploy tab and click on Enable Automatic Deploys.
+16. Click on Deploy Branch
+17. It will take a minute and display a message that Your app was successfully deployed.
+18. Click on View to launch your deployed app.
 
 
 
