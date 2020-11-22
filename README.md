@@ -58,9 +58,6 @@ for the months in winter.
 2. As a site owner I want to receive emails from the users when they fill out the contact form so that I can reply to them satisfying users queries.
 
 
-
-
-
 # Design
 - [Bootstrap](https://getbootstrap.com/), front-end framework is chosen for this project for its modern interface, ease of use and ability to be easily customized. It is used for creating features such as navbar, cards, forms, modals, as well as for the layout.
 - [JQuery](https://jquery.com/) is used for initializing some Bootstrap components, as well as for custom functions, DOM manipulation.
@@ -68,8 +65,28 @@ for the months in winter.
 
 ## Colour Scheme
 
-<p>As a n ecomerce stor I wante d the focus to be on the products and images, so when choosing the colour scheme I wanted it to be be clam and not overpowering. I wanted the colours
-to fit in the aesthetic of the site,a sthe site is based around seasonality I wanted the colours to match th</p>
+<p>As an e-commerce store I wanted the focus to be on the products and images, so when choosing the colour scheme I wanted it to be clam and not overpowering. I wanted the colours
+to fit in the aesthetic of the site, as the site is based around seasonality I wanted the colours to match th</p>
+
+
+#### Landing (home) page
+ - <img src="/" alt="landing_page" target="_blank" rel="noopener" width="850">
+The landing page serves to attract new users to the business, to give a clear understanding of what the company does and to attract users to use the website's functionality (subscribe/buy boxes). 
+- **Hero image** section contains a full-screen image, main heading with a subheading and 2 buttons "Book tea ceremony" and "Buy tea or teaware" that redirect a user to the services and products pages, correspondingly. The purpose of this section is to attract new users, to make the first impression and to call to action.
+- **Introduction about** section contains a summary of the company and its purpose. It also contains a CTA to which takes the user to the bout page which holds more information.
+- **Boxes**  section contains a heading and image of a box of vegetables along with some information about the food boxes we supply and  CTA to the shop where users can buy the products. This is to give users an outline of what the company sells.
+- **Subscriptions** section has a brief about how the company supplies boxes containing produce dependent on seasonality and how users can sign up for particular seasons. This section has an image of red fruit on a white background and a CTA to the subscriptions page.
+- **Register** section contains a heading informing the user to register to the site above a circular picture of a happy customer in a farm environment using an I-pad the image was used to display te merge of technology and farming to make the connection of ordering fresh produce over the internet. This section also contains a CTA to the register page.
+
+#### About page
+ - <img src="/" alt="landing_page" target="_blank" rel="noopener" width="850">
+The about page is used to tell the customer about how the company works through its tag line "from farm to box to you"
+- **Hero image** The hero image of the about page is along shot of a farm and mountains.  
+- **Icons** A selection of 3 icons to about the tagline "from farm to box to you" wit a farm, box and person icon each havng a sentannce under each icon.
+- **Farm** section tells the user about wthe farming aspect about the company, wher ewe source our produce, with a picture of people farming. 
+- **Box** section tells the user about the pricecess of how the company curtes the boxes we sends them to the user. This section has an image of somepn preparing produce.
+- **You** section contains a summary of how the companies boxes are tailored to the user. This section contains a picture of a man on a farm staring at the camera.
+
 
 ## Technologies used
 
@@ -145,23 +162,16 @@ Databases
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 # Testing User Stories from User Experience (UX) Section
 
 ### First Time Visitor Goals
 1. As a First Time Visitor, I want to easily navigate the app using the navbar.
     1. The navbar stands apart from the hero image upon opening the site, all the links are clear and the nav-bar remains at the head of the site when you scroll down the pages.
     2. The nav-bar remains present as you click on the links to separate pages. 
+    3. All links have been clicked and hall broken URLs have been fixed.
+    - Bugs
+
+
 2. As a First Time Visitor, I want to be able to easily find and look through the different products the shop has to offer without the obligation of registering an account.
     1. The user can navigate to the shop along with the navbar and there is also a link to it in the index page via a CTA.
     2. The user can you look through and purchase products without being signed in.
@@ -201,9 +211,26 @@ Databases
 4. As a Frequent User, I want to be able to easily and safely exit the app.
     1. The user can easily enter the account tab and log out of the site. This will end their session.
 5. As a Frequent User, I want to be able to view the app easily on different devices.
-    1. The site has been built using bootstrap 4[https://getbootstrap.com/] which is a responsive framework. "Bootstrap is a potent front-end framework used to create modern websites and web apps. It's open-source and free to use, yet features numerous HTML and CSS templates for UI interface elements such as buttons and forms".
+    1. The site has been built using [bootstrap 4](https://getbootstrap.com/ )which is a responsive framework. "Bootstrap is a potent front-end framework used to create modern websites and web apps. It's open-source and free to use, yet features numerous HTML and CSS templates for UI interface elements such as buttons and forms".
 
 
 ### Site Owner Goals Goals
 1. As a site owner I want to be able to edit, delete and add products and or change the subscriptions.
 2. As a site owner I want to receive emails from the users when they fill out the contact form so that I can reply to them satisfying users queries.
+
+
+## Landing page
+## User story being tested:
+As a user, I want to read a summary info about the business, its ideas and benifits, so that I can quickly decide if it satisfies my needs.
+Test:
+click all the buttons accross the page
+scroll down the page to check the animation on scroll (AOS)
+check all the image-carousels and reviews-carousel by clicking on chevrons
+verify that the expected text, icons and images are displayed
+Results:
+all the buttons redirect to the corresponding pages (About, Services, Products, Events and Contact)
+the hover effect on buttons works as expected (expanding, changing background colour)
+animation on scroll works as expected on all sections and across all devices
+image and review carousels display correctly when chevrons are clicked
+all the text sections, icons and all the images display correctly, changing the position, size when viewed on different screens
+Verdict: Test passed. All the functionality works as expected, no bugs were found during the testing.

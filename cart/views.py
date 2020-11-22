@@ -31,8 +31,8 @@ def add_to_cart(request, item_id):
     return redirect(redirect_url)
 
 
-"""" def add_size_to_cart(request, item_id):
-   adds a quantity of product to the cart
+def add_size_to_cart(request, item_id):
+    """adds a quantity of product to the cart"""
 
     size = get_object_or_404(Size, pk=item_id)
     quantity = int(request.POST.get('quantity'))
@@ -53,7 +53,7 @@ def add_to_cart(request, item_id):
         cart['size'] = {item_id: quantity}
 
     request.session['cart'] = cart
-    return redirect(redirect_url) """
+    return redirect(redirect_url) 
 
 
 def adjust_cart(request, item_id):
@@ -75,7 +75,6 @@ def adjust_cart(request, item_id):
 def remove_from_cart(request, item_id):
     """Removes item form cart"""
 
-    size = get_object_or_404(Size, pk=item_id)
     product = get_object_or_404(Product, pk=item_id)
 
     try:
