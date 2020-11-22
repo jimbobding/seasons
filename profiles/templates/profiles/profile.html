@@ -8,7 +8,7 @@
 {% block page_header %}
     <div class="container header-container">
         <div class="row">
-            <div class="col">
+            <div class="col-12 px-0">
                 <h1 class="uppercase main-heading"></h1>
             </div>
         </div>
@@ -43,6 +43,6 @@
 {% endblock %}
 
 {% block postloadjs %}
-    {{ block.super }
+    {{ block.super }}
     <script type="text/javascript" src="{% static 'profiles/js/countryfield.js' %}"></script>
 {% endblock %}

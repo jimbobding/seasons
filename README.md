@@ -62,9 +62,14 @@ for the months in winter.
 
 
 # Design
-- Bootstrap, front-end framework is chosen for this project for its modern interface, ease of use and ability to be easily customized. It is used for creating features such as navbar, cards, forms, modals, as well as for the layout.
-- JQuery is used for initializing some Bootstrap components, as well as for custom functions, DOM manipulation.
+- [Bootstrap](https://getbootstrap.com/), front-end framework is chosen for this project for its modern interface, ease of use and ability to be easily customized. It is used for creating features such as navbar, cards, forms, modals, as well as for the layout.
+- [JQuery](https://jquery.com/) is used for initializing some Bootstrap components, as well as for custom functions, DOM manipulation.
 
+
+## Colour Scheme
+
+<p>As a n ecomerce stor I wante d the focus to be on the products and images, so when choosing the colour scheme I wanted it to be be clam and not overpowering. I wanted the colours
+to fit in the aesthetic of the site,a sthe site is based around seasonality I wanted the colours to match th</p>
 
 ## Technologies used
 
