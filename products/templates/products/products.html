@@ -16,7 +16,9 @@
   <div class="row">
     <div class="col">
       <ul class="nav justify-content-center uppercase">
-        <li class="nav-item border border-dark mr-3 dropdown category-nav-item list-style-none">
+        <li
+          class="nav-item border border-dark mr-3 dropdown category-nav-item list-style-none"
+        >
           <a
             class="nav-link category-main-nav dropdown-toggle"
             id="categories_dropdown"
@@ -52,7 +54,7 @@
                 >Veg</a
               >
             </li>
-              <li>
+            <li>
               <a
                 href="{% url 'products' %}?category=Subscriptions"
                 class="dropdown-item"
@@ -76,7 +78,7 @@
     <div class="row">
       {% for product in products %}
       <div
-        class="col-lg-4 col-md-6  col-12 justify-content-center justify-content-md-end"
+        class="col-lg-4 col-md-6 col-12 justify-content-center justify-content-md-end"
       >
         <div
           class="card mx-auto product-card h-100 border-0"
@@ -105,8 +107,18 @@
               <hr />
               <p>£{{ product.price }}</p>
               <p class="text-center">Price per box</p>
-                <p>£{{ product.price_per_box }}</p>
+              <p>£{{ product.price_per_box }}</p>
               <p class="">{{ product.category.friendly_name }}</p>
+              {% if request.user.is_superuser %}
+              <small class="ml-3">
+                <a href="{% url 'edit_product' product.id %}">Edit</a> |
+                <a
+                  class="text-danger"
+                  href="{% url 'delete_product' product.id %}"
+                  >Delete</a
+                >
+              </small>
+              {% endif %}
             </div>
           </div>
         </div>
@@ -117,5 +129,3 @@
   </div>
 </div>
 {% endblock %}
-
-

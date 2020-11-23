@@ -210,9 +210,21 @@
 
 add products
 
-- image was not displaying in the cart for newly added products.
 
-- Mistke in the spelling for the no-image jpeg.
+
+- image was not displaying in the cart for newly added products.
+- 404 when adding product 'No Product matches the given query.'
+- Adding a product without aan image gives a 404 but does add the image
+
+
+- Mistake in the spelling for the no-image jpeg.
+- Same in toasts, cart and product detail.
+
+
+Editing products
+
+- edit a product using incorect information to submitting a price with over 6 digits
+- Edit a product using the correct information.
 
 
 

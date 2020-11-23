@@ -18,10 +18,10 @@
         />
       </a>
       {% else %}
-      <a href="{{ product.image.url }}" target="_blank">
+      <a href="">
         <img
           class="img-fluid"
-          src="{{ MEDIA_URL }}noimage.png"
+          src="{{ MEDIA_URL }}no-image.jpeg"
           alt="{{ product.name }}"
         />
       </a>
@@ -38,6 +38,13 @@
       >
       {% else %}
       <small class="text-muted">No Rating</small>
+      {% endif %} {% if request.user.is_superuser %}
+      <small class="ml-3">
+        <a href="{% url 'edit_product' product.id %}">Edit</a> |
+        <a class="text-danger" href="{% url 'delete_product' product.id %}"
+          >Delete</a
+        >
+      </small>
       {% endif %}
       <form
         class="form"
@@ -46,7 +53,7 @@
       >
         {% csrf_token %}
         <div class="form-row">
-          <div class="col-12 ">
+          <div class="col-12">
             <p class="mt-3"><strong>Quantity:</strong></p>
             <div class="form-group w-50 mx-auto d-block">
               <div class="input-group">
@@ -112,9 +119,5 @@
     </div>
   </div>
 </div>
-{% endblock %}
-
-{% block postloadjs %}
-{{ block.super }}
-{% include 'products/includes/quantity_input_script.html' %} 
-{% endblock %}
+{% endblock %} {% block postloadjs %} {{ block.super }} {% include
+'products/includes/quantity_input_script.html' %} {% endblock %}
