@@ -52,6 +52,13 @@
                 >Veg</a
               >
             </li>
+              <li>
+              <a
+                href="{% url 'products' %}?category=Subscriptions"
+                class="dropdown-item"
+                >Subscriptions</a
+              >
+            </li>
 
             <div class="dropdown-divider my-0"></div>
             <li>
@@ -97,6 +104,8 @@
               <h3 class="text-center">{{ product.name }}</h3>
               <hr />
               <p>£{{ product.price }}</p>
+              <p class="text-center">Price per box</p>
+                <p>£{{ product.price_per_box }}</p>
               <p class="">{{ product.category.friendly_name }}</p>
             </div>
           </div>

@@ -151,7 +151,7 @@ Databases
 11. Then make sure your Github Profile is displayed and add you repository name and click on Search.
 12. Once it finds your repository then click on Connect.
 13. Go to Settings at the top. Then click on Reveal Config Vars.
-14. In Config Vars add IP with value 0.0.0.0 then add PORT as 5000 then add SECRET_KEY then add MONGO_URI and then add MONGO_DBNAME which is the name of the database.
+14. In Config Vars add IP with value 0.0.0.0 then add PORT as 5000 then add SECRET_KEY.
 15. Go back to Deploy tab and click on Enable Automatic Deploys.
 16. Click on Deploy Branch
 17. It will take a minute and display a message that Your app was successfully deployed.

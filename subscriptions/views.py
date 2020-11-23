@@ -1,12 +1,10 @@
-from django.shortcuts import render, get_object_or_404, redirect, reverse
+from django.shortcuts import render, get_object_or_404
 from .models import Subscriptions, Size
-from django.contrib import messages
-from django.db.models import Q
 
 
 def subscriptions(request):
     """ A view to the subscriptions page  """
-   
+
     subscriptions = Subscriptions.objects.all()
     context = {
         'subscriptions': subscriptions,
@@ -22,9 +20,8 @@ def subscription_detail(request, subscriptions_id):
     subscriptions = get_object_or_404(Subscriptions, pk=subscriptions_id)
     context = {
         'subscriptions': subscriptions,
-         'size': size
+        'size': size,
     }
-
     return render(request, "subscriptions/subscription_detail.html", context)
 
 

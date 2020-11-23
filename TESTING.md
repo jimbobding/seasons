@@ -112,22 +112,22 @@
 1. As a Returning Visitor, I want to be able to register an account with the site.
 
 #### Test
-- The user has two options to sign in and register an account. Above the main navnar there is an account section wicch allows the user to look in and in te about section there is a cta which takes the user to the register page.
+- The user has two options to sign in and register an account. Above the main navbar, there is an account section which allows the user to log in and in the about section, there is a CTA which takes the user to the register page.
 - Try and register with a bad email address.
-- Try different combination of user names.
+- Try a different combination of user names.
 - Try different combinations of passwords.
-- Try creating an account using an inuse eamail address.
-- Try creating an account using an inuse username address.
+- Try creating an account using an in-use email address.
+- Try creating an account using an in use username address.
 
 #### Results 
 - Both the register link in the account section and the CTA in the about section worked and takes the user to the register page.
 - If a user tries to checkout without using the @ symbol or a .com/org a message will display indicating the error.
-- If the user name is shorter than 4 letters a message will display tellling the user and will not proceed with the form.
+- If the user name is shorter than 4 letters a message will display telling the user and will not proceed with the form.
 - If a password is not 8 letters or more it will display a message stating 'This password is too short. It must contain at least 8 characters'.
-- If a password is too similar to the username a message will display stating 'password is to similar to username.'
-- If a password is to common a message will dis[lay password is to common.
+- If a password is too similar to the username a message will display stating 'password is too similar to username.'
+- If a password is to common a message will display password is too common.
 - A verification email is sent so that a user must use a correct email address to sign up to the site.
-- If a users emails are not the same each time they are typed in an error message wil state 'You must type the same email each time'.
+- If a user's emails are not the same each time they are typed in an error message will state 'You must type the same email each time'.
 - If a user tries to use an email already registered an error message will state 'A user is already registered with this e-mail address.'
 
 - **User Story**
@@ -138,18 +138,18 @@
 - Register an account.
 - Place an order filling in the delivery information and click the save delivery information button.
 - Place another order to see if delivery information is saved.
-- change delivey information in second order.
+- change delivery information in the second order.
 - Go to make a third order and see if the information has changed.
-- Go to profile tab and check information is saved there.
-- Try and change information in profile tab.
+- Go to the profile tab and check information is saved there.
+- Try and change the information in the profile tab.
 
 #### Results
 - Made an account with a test email.
-- Placed order and saved details on return for a second order my delivery details details were saved.
-- Placed a thrid order and the changes I had mde during my previous order had been saved.
-- Went to the profile tab and changed the details, recieved a message confirming the toast and details were changed.
-- Went to place a fourth order, details that were changed in the profile settings had been saved t th order form.
-- Logged out of the sie and back in again using the same test profile and the detauil shad been saved.
+- Placed order and saved details on return for a second-order my delivery details were saved.
+- Placed a third-order and the changes I had made during my previous order had been saved.
+- Went to the profile tab and changed the details, received a message confirming the toast and details were changed.
+- Went to place a fourth-order, details that were changed in the profile settings had been saved t the order form.
+- Logged out of the sie and back in again using the same test profile and the details had been saved.
 
 - **User Story**
 3. As a Returning Visitor, I want to be able to look through the subscriptions and learn if it is better value to subscribe.
@@ -157,40 +157,43 @@
 5. As a Returning Visitor, I want to be able to place subscriptions into my cart.
 
 #### Test
-- Go to subscriptions page and view the prices of the subscriptions.
-- Look through the information on the subscription page to see if it dispalys what the usr would need.
-- Place the subscriptions object itno the cart.
-- Place multiple subscription into the cart.
+- Go to the subscriptions page and view the prices of the subscriptions.
+- Look through the information on the subscription page to see if it displays what the user would need.
+- Place the subscriptions object into the cart.
+- Place multiple subscriptions into the cart.
 
 #### Results
 - Navigating to the subscriptions can be done by using the navbar or through a CTA on the about section.
-- The subscription page has images and text realting to each season of the year. Each season has a CTA which takes the user to the season detail page.
-- The subscription detail page has a hero image which dispalys the name of the season and the months that fall in to that season underneath, the months of the year are aso dispayed in the blurnb of the page along with the fruits and vegetables in season for that season.
-- The subscription detail card displays the price of the subscription fr the seson as well as th ebek down of the price per week it will cost.
+- The subscription page has images and text relating to each season of the year. Each season has a CTA which takes the user to the season detail page.
+- The subscription detail page has a hero image which displays the name of the season and the months that fall into that season underneath, the months of the year are also displayed in the blurb of the page along with the fruits and vegetables in season for that season.
+- The subscription detail card displays the price of the subscription fr the season as well as the break down of the price per week it will cost.
 
 
 #### Bugs 
 - User is unable to place subscription into the cart.
 
 #### Fixes
-- Am urrently resolving this issue
+- Am currently resolving this issue
+
+- **User Story**
+3. As a Frequent User, I want to be able to view the past orders I have made on the site.
+
+#### Test
+- Sign in on a registered account and place an order.
+- on the same account sign out 
+
 
 
 
 [Back to README](https://github.com/jimbobding/seasons/blob/master/README.md)
 
-    1. Once a user has registered with the site, they have the option to save their details when they originally input them whilst placing an order.
-3. As a Returning Visitor, I want to be able to look through the subscriptions and learn if it is better value to subscribe.
-    1. In the subscriptions detail page the subscriptions card display the price of the subscriptions whilst also displaying the price per box value they are receiving.
-4. As a Returning Visitor, I want to be able to look through the subscriptions and learn what produce is in season in particular times of the year.
-    1. All of the seasonal produce is displayed in the subscription detail page. All produce related to a certain season is in within that season's page which can be accessed by a CTA.
-    2. The months of that season are also provided within the subscription detail page.
+
 
 
 
 
     1. The profile page has a change information CTA at the bottom of the page, that allows the user to edit each line of their delivery information.
-3. As a Frequent User, I want to be able to view the past orders I have made on the site.
+
     1. Within the profile page the user can view all past orders as long as they are registered with the site. 
 4. As a Frequent User, I want to be able to easily and safely exit the app.
     1. The user can easily enter the account tab and log out of the site. This will end their session.

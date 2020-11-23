@@ -14,16 +14,15 @@ class SubscriptionsAdmin(admin.ModelAdmin):
             'months',
             'fruit',
             'vegetables',
-
-
         )
+
 
 class SizeAdmin(admin.ModelAdmin):
     list_display = (
             'name',
             'price',
             'price_per_box',
-          
+
         )
 
 
