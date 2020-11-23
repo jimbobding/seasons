@@ -208,7 +208,11 @@
 
 
 
+add products
 
+- image was not displaying in the cart for newly added products.
+
+- Mistke in the spelling for the no-image jpeg.
 
 
 
