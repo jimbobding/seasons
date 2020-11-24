@@ -188,10 +188,6 @@
 [Back to README](https://github.com/jimbobding/seasons/blob/master/README.md)
 
 
-
-
-
-
     1. The profile page has a change information CTA at the bottom of the page, that allows the user to edit each line of their delivery information.
 
     1. Within the profile page the user can view all past orders as long as they are registered with the site. 
@@ -202,14 +198,22 @@
 
 
 ### Site Owner Goals Goals
-1. As a site owner I want to be able to edit, delete and add products and or change the subscriptions.
+
 2. As a site owner I want to receive emails from the users when they fill out the contact form so that I can reply to them satisfying users queries.
 
 
 
 
 add products
+- **User Story**
+1. As a site owner I want to be able to edit, delete and add products and or change the subscriptions.
 
+#### Test
+- Add a product withou image.
+- Add a product with out an image.
+- Edit a product in each individual field.
+- Edit a product with incorrect information.
+- create a product and add it to the cart 
 
 
 - image was not displaying in the cart for newly added products.
@@ -219,13 +223,17 @@ add products
 
 - Mistake in the spelling for the no-image jpeg.
 - Same in toasts, cart and product detail.
+- Had a target blank href to a products image in the no-image jpeg part.
 
 
 Editing products
 
 - edit a product using incorect information to submitting a price with over 6 digits
 - Edit a product using the correct information.
+- Change the product rating to a higher rating than 5
 
+- If using more than 6 digits when editing a product an error message will show 'Failed to update product. Please ensure the form is valid.' as well as an error toast.
+- When eding a product with the correct information a success toast will show ' Successfully updated product!' an dth eproduct will be updated.
 
 
 
