@@ -1,0 +1,1 @@
+web: gunicoron seasons.wsgi:application
