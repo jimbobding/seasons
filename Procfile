@@ -1,1 +1,1 @@
-web: gunicoron seasons.wsgi:application
+web: gunicorn seasons.wsgi:application

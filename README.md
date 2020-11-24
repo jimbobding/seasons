@@ -176,6 +176,7 @@ DATABASES = {
 - Crete Procfile, place web: gunicoron seasons.wsgi:application in Procfile.
 - Disable static files heroku config:set DISABLE_COLLECTSTATIC=1 --app` <name of app>`.
 - Add host name of heroku app to allowed hosts in settings.py, as well as `local host` to allow gitpod to work 
+-  git add ., git commit -m 'message' and git push your changes before setting git remote using - heroku git:remote -a seasons-farm-box-you
 
 
  | KEY            | VALUE         |
