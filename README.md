@@ -171,14 +171,6 @@ DATABASES = {
     }
 - Migrate using python3 manage.py migrate
 - Create super user
-
-- pip3 install gunicorn
-- Crete Procfile, place web: gunicoron seasons.wsgi:application in Procfile.
-- Disable static files heroku config:set DISABLE_COLLECTSTATIC=1 --app` <name of app>`.
-- Add host name of heroku app to allowed hosts in settings.py, as well as `local host` to allow gitpod to work 
--  git add ., git commit -m 'message' and git push your changes before setting git remote using - heroku git:remote -a seasons-farm-box-you
-
-
  | KEY            | VALUE         |
 |----------------|---------------|
 | AWS_ACCESS_KEY_ID | `<your aws access key>`  |
@@ -191,6 +183,15 @@ DATABASES = {
 | STRIPE_SECRET_KEY| `<your stripe secret key>`  |
 | STRIPE_WH_SECRET| `<your stripe wh key>`  |
 | USE_AWS | `True`  |
+- pip3 install gunicorn
+- Crete Procfile, place web: gunicoron seasons.wsgi:application in Procfile.
+- Disable static files heroku config:set DISABLE_COLLECTSTATIC=1 --app` <name of app>`.
+- Add host name of heroku app to allowed hosts in settings.py, as well as `local host` to allow gitpod to work 
+-  git add ., git commit -m 'message' and git push your changes before setting git remote using - heroku git:remote -a seasons-farm-box-you
+- Use git push heroku master.
+- Click deploy on the heroku page and click connect to github and then search for your repository to connect am dclick enable automatic deploys.
+
+
 
 
 
