@@ -12,7 +12,8 @@ from .forms import ProductForm
 def all_products(request):
     """ A view to see all products """
 
-    products = Product.objects.all()
+    products = Product.objects.all().order_by('sku')
+
     # empty query and categories when tha page is loaded
     query = None
     categories = None
@@ -44,7 +45,7 @@ def all_products(request):
 def product_detail(request, product_id):
     """ A view to see  individual item details """
 
-    product = get_object_or_404(Product, pk=product_id)
+    product = get_object_or_404(Product, pk=product_id).ordr_by('sku')
 
     context = {
                 'product': product,

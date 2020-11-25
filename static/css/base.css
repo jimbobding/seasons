@@ -162,6 +162,13 @@ h2 {
   border: 1px solid black !important;
 }
 
+.order-history-container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px 2px gray;
+    z-index: 15;
+}
+
 .our-products-container {
   background-color: rgb(224, 157, 55);
 }
