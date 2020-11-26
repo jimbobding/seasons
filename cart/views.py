@@ -31,18 +31,6 @@ def add_to_cart(request, item_id):
     return redirect(redirect_url)
 
 
-def add_size_to_cart(request, item_id):
-    size = get_object_or_404(Size, pk=item_id)
-    redirect_url = request.POST.get("redirect_url")
-    cart = request.session.get("cart", {})
-    cart["size"] = item_id
-    messages.success(request, "Added...")
-
-    request.session["cart"] = cart
-    print(cart)
-    return redirect(redirect_url)
-
-
 def adjust_cart(request, item_id):
     """adjusts the quantity of specified product to the specified amount"""
 
@@ -57,7 +45,6 @@ def adjust_cart(request, item_id):
         cart.pop(item_id)
     request.session['cart'] = cart
     return redirect(reverse('view_cart'))
-
 
 def remove_from_cart(request, item_id):
     """Removes item form cart"""
@@ -75,3 +62,7 @@ def remove_from_cart(request, item_id):
     except Exception as e:
         messages.error(request, f'Error removing item: {e}')
         return HttpResponse(status=500)
+
+
+
+
