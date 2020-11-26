@@ -1,3 +1,6 @@
+
+
+
 html {
   height: 100%;
 }
@@ -236,7 +239,7 @@ h2 {
     ),
     url("/media/guy-with-cap.jpeg") no-repeat center center fixed;
   background-size: cover;
-  min-height: 80%;
+  min-height: 80vh;
 }
 
 .categories-container, ul {
