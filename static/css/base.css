@@ -1,7 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 
-
-
-@import url('https://fonts.googleapis.com/css2?family=Marko+One&family=Open+Sans&family=Sawarabi+Mincho&display=swap');
 
 html {
   height: 100%;
@@ -10,9 +8,10 @@ html {
 body {
   font-size: 20px;
   letter-spacing: 0.5;
-  font-family: 'Marko+One', serif;
+  font-family: 'Raleway', serif;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 header.container-fluid {
@@ -242,6 +241,7 @@ h2 {
     url("/media/guy-with-cap.jpeg") no-repeat center center fixed;
   background-size: cover;
   min-height: 80vh;
+  display: block;   
 }
 
 .categories-container, ul {
@@ -621,9 +621,6 @@ h2 {
   transition: 500ms;
 }
 
-.footer {
-    padding-top: 10px !important; 
-}
 
 .sign-in-card {
     box-shadow: 1px 2px 3px beige;

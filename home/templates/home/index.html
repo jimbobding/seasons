@@ -36,7 +36,7 @@
     </div>
   </div>
   <div class="button-wrapper">
-    <a href="" class="btn btn-black">About Us</a>
+    <a href="{% url 'about' %}" class="btn btn-black">About Us</a>
   </div>
 </div>
 
@@ -65,7 +65,7 @@
         products,
       </p>
     </div>
-    <div class="col-md-4 rounded">
+    <div class="col-md-4 rounded py-5">
       <img
         src="{{ MEDIA_URL }}veg-basket.jpg" 
         class="img-fluid veg-basket-img rounded mx-auto d-block mx-auto"
@@ -126,7 +126,7 @@
 
   <div class="col">
     <img
-      src="{{ STATIC_URL }}media/farm-guy.jpg"
+      src="{{ MEDIA_URL }}farm-guy.jpg"
       class="img-fluid farm-guy-img"
       alt="A person ON A farm"
     />
