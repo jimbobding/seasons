@@ -185,28 +185,37 @@ This gave an almost desired result, I will further investigate this issue in my 
 
 #### Test
 - Sign in on a registered account and place an order.
-- on the same account sign out and sign back in again and check the profile page.
+- on the same account sign out and sign back in again.
+- Navigate to the profie page and click on the order history tab.
 
-
+#### Result 
+- On the order hostory page the past order was displayed.
+- Reapeted the process with same profile and also with different test profile and got the same result.
 
 - **User Story**
 4. As a Frequent User, I want to be able to easily and safely exit the app.
 
 #### Test
-- sign in with an account, sign out of account cose down web page and re-open
+- sign in with an account, sign out of account close down web page and re-open.
 
 
-
-    1. The user can easily enter the account tab and log out of the site. This will end their session.
+- **User Story**
 5. As a Frequent User, I want to be able to view the app easily on different devices.
-    1. The site has been built using [bootstrap 4](https://getbootstrap.com/ )which is a responsive framework. "Bootstrap is a potent front-end framework used to create modern websites and web apps. It's open-source and free to use, yet features numerous HTML and CSS templates for UI interface elements such as buttons and forms".
+
+#### Test
+- Go through each section of the website using the development tools to check the responsiveness on teh devices it has to offer.
+- Check the responsiveness on my personal devices on different web broewsers.
+- send t live websites to several friends so they can reveiw the website on various devices.
+
+
+#### Result 
+
+- The site has been built using [bootstrap 4](https://getbootstrap.com/ )which is a responsive framework. "Bootstrap is a potent front-end framework used to create modern websites and web apps. It's open-source and free to use, yet features numerous HTML and CSS templates for UI interface elements such as buttons and forms".
+
+
 
 
 ### Site Owner Goals Goals
-
-2. As a site owner I want to receive emails from the users when they fill out the contact form so that I can reply to them satisfying users queries.
-
-
 
 
 add products

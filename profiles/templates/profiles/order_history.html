@@ -1,10 +1,19 @@
 {% extends "base.html" %} {% load static %} {% block content %}
-<div class="container order-history-container card text-center h-50 w-75 py-5">
-  <div class="row">
-    <div class="col-12 col-lg-6">
-      <p class="text-muted">Order History</p>
-      <div class="order-history table-responsive">
-        <table class="table table-sm table-borderless">
+<div class="container mt-5 w-75 card pt-3 order-history-container">
+    <div class="row mb-5">
+        <div class="col-12  pb-4">
+      <h3 class="text-center">{{user.username}}<i class="px-3 fas fa-shipping-fast"></i>Order History</h3>
+      <hr>
+        <div class="button-x pl-5 px-1 px-sm-3 mb-4 text-center">
+              <a
+                href="{% url 'profile' %}"
+                class="animated-word px-1 px-sm-3 mt-2"
+              >
+                Profile</a
+              >
+            </div>
+      <div class="order-history table-responsive ">
+        <table class="table table-sm table-borderless text-center">
           <thead>
             <tr>
               <th>Order Number</th>
