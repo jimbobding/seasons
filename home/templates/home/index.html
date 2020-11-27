@@ -6,12 +6,16 @@
         <div class="title-font px-2">
           <h1 class="text-center my-auto hero-title">SEASONS</h1>
           <p class="text-center">Farm to Box to You</p>
+          <div class="hero-btn text-center">
+            <a href="{% url 'products' %}" class="hero-animated-word"
+              >Products</a
+            >
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-
 
 <div class="container-fluid card about-card">
   <div class="row">
@@ -40,7 +44,6 @@
   </div>
 </div>
 
-
 <div class="container-fluid our-products-container">
   <div class="row">
     <div class="col">
@@ -67,7 +70,7 @@
     </div>
     <div class="col-md-4 rounded py-5">
       <img
-        src="{{ MEDIA_URL }}veg-basket.jpg" 
+        src="{{ MEDIA_URL }}veg-basket.jpg"
         class="img-fluid veg-basket-img rounded mx-auto d-block mx-auto"
         alt="veg-box"
       />
@@ -118,7 +121,7 @@
     <div class="col">
       <div class="header-section">
         <h2>Register</h2>
-        <hr>
+        <hr />
         <h3>Become seasoned</h3>
       </div>
     </div>
@@ -133,16 +136,14 @@
   </div>
   <p>Sign up to and create a profile!</p>
   <div class="button-wrapper">
-    <a href="{% url 'account_signup' %}" class="btn btn-black uppercase px-3">
-      Register
-    </a>
+    <div class="button-x">
+      <a href="{% url 'account_signup' %}" class="animated-word">Register</a>
+    </div>
   </div>
+
+  {% endblock %} {% block postloadjs %}
+  <script>
+    AOS.init();
+  </script>
+  {% endblock %}
 </div>
-
-
-
-{% endblock %} {% block postloadjs %}
-<script>
-  AOS.init();
-</script>
-{% endblock %}

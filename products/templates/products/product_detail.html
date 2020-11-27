@@ -32,7 +32,7 @@
       <i class="fas fa-apple-alt icon-green"></i>
       <img src="{{ MEDIA_URL }}Vegan-icon.png" alt="">
       <p class="text-center py-2">{{ product.description }}</p>
-      <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
+      <p class="lead mb-0 text-left font-weight-bold">£{{ product.price }}</p>
       {% if product.rating %}
       <small class="text-muted"
         ><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small

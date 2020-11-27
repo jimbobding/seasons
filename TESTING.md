@@ -69,6 +69,7 @@
 - Place every single item in the cart and browse other pages of the site.
 - Try and 100000 of the same item in the cart.
 - Try and place -1 items in the cart.
+- Using the increment and decrement buttons to adjust the number of items in the cart.
 
 #### Results
 - Without being logged a user can place an item into their cart and then navigate to all other pages of the site with the item still their cart.
@@ -81,9 +82,11 @@
 
 #### Bugs/Improvements
 - The number of each item the user has in their account is not displayed. The total cost of each item is and its total value.
+- Unable to adjust the number of items using decrement/increment buttons, when pressed the number is not incremented but just added straight to cart.
+
 
 #### Fixes
--
+- The post load javascript script for the increment and decrement items was not being loaded as the script had been cut in half from auto-formatting, I manually reformated the script and it now works.
 
 - **User Story**
 7. As a First Time Visitor, I want to be able to safely securely purchase my items from the checkout.
@@ -173,25 +176,27 @@
 - User is unable to place subscription into the cart.
 
 #### Fixes
-- Am currently resolving this issue
+- It seems that I was unable to register items in the  subscription model,  separately to the product items. The product Id's were not getting separated and only being read as product ID's, I tried to enter the subscriptions as sub Items so they would have a string relating to the subscription('size') model but this did not work. After spending a few days on this problem and being in constant contact with the course tutors and speaking to my mentor I was still unable to ascertain the problem as they thought the code I had written should have worked.
+s time was a factor and I was unable to fix the problem I decided to take a different approach, I folded the subscription('size') model into the products model and then used the category key to separate the subscription('size') items (within the product model) from the original product models.
+This gave an almost desired result, I will further investigate this issue in my own time to resolve it for future purposes.
 
 - **User Story**
 3. As a Frequent User, I want to be able to view the past orders I have made on the site.
 
 #### Test
 - Sign in on a registered account and place an order.
-- on the same account sign out 
+- on the same account sign out and sign back in again and check the profile page.
 
 
 
-
-[Back to README](https://github.com/jimbobding/seasons/blob/master/README.md)
-
-
-    1. The profile page has a change information CTA at the bottom of the page, that allows the user to edit each line of their delivery information.
-
-    1. Within the profile page the user can view all past orders as long as they are registered with the site. 
+- **User Story**
 4. As a Frequent User, I want to be able to easily and safely exit the app.
+
+#### Test
+- sign in with an account, sign out of account cose down web page and re-open
+
+
+
     1. The user can easily enter the account tab and log out of the site. This will end their session.
 5. As a Frequent User, I want to be able to view the app easily on different devices.
     1. The site has been built using [bootstrap 4](https://getbootstrap.com/ )which is a responsive framework. "Bootstrap is a potent front-end framework used to create modern websites and web apps. It's open-source and free to use, yet features numerous HTML and CSS templates for UI interface elements such as buttons and forms".
@@ -209,31 +214,51 @@ add products
 1. As a site owner I want to be able to edit, delete and add products and or change the subscriptions.
 
 #### Test
-- Add a product withou image.
-- Add a product with out an image.
+- Add a product without an image.
+- Add a product without an image.
 - Edit a product in each individual field.
 - Edit a product with incorrect information.
 - create a product and add it to the cart 
 
-
+#### Results
 - image was not displaying in the cart for newly added products.
 - 404 when adding product 'No Product matches the given query.'
-- Adding a product without aan image gives a 404 but does add the image
+- Adding a product without an image gives a 404 but does add the image
 
-
+#### Bugs 
 - Mistake in the spelling for the no-image jpeg.
 - Same in toasts, cart and product detail.
-- Had a target blank href to a products image in the no-image jpeg part.
+- Had a target blank href to a product's image in the no-image jpeg part.
 
 
 Editing products
 
-- edit a product using incorect information to submitting a price with over 6 digits
+#### Test
+- edit a product using incorrect information to submitting a price with over 6 digits
 - Edit a product using the correct information.
 - Change the product rating to a higher rating than 5
 
-- If using more than 6 digits when editing a product an error message will show 'Failed to update product. Please ensure the form is valid.' as well as an error toast.
-- When eding a product with the correct information a success toast will show ' Successfully updated product!' an dth eproduct will be updated.
+- If using more than 6 digits when editing a product an error message will show 'Failed to update the product. Please ensure the form is valid.' as well as an error toast.
+- When editing a product with the correct information a success toast will show ' Successfully updated product!' and the product will be updated.
 
 
 
+### Going live
+ Problems encountered after making the site live.
+
+ - All items in all models were not visible.
+ - Some images on the index and about pages were not showing as well as the site logo.
+ - Images for my model - items were no showing up.
+ 
+
+ #### Fix 
+- I used a manual "dump" of the local (SQLite) data. the steps I took were 
+1. Commented out my DATABASE_URL in my env.py file to disable Postgres temporarily, to connect back to SQLite.
+2. Then I ran the command - python3 manage.py dumpdata --exclude auth.permission --exclude contenttypes > db.json in my terminal to create a db.json file.
+3. Then I un-Commented out my DATABASE_URL in my env.py file and restarted my workspace to connect back up with Postgres.
+4. Then I ran the command python3 manage.py loaddata db.json that loaded all the files from db.json file and I could now view them on my live site.
+
+- The images on the index and about pages, src = {{ STATIC_URL }} so they were not pointing tho the media folder in amazon s3 bucket, I changed the this to = {{ STATIC_URL }}. This fixed the problem and the images displayed.
+- Within the s3 bucket I had accidentally stored some of the images in a folder so it was searching for media > files but the images were media > media > files. I corrected this by removing the file and copying the images directly int the bucket.
+
+[Back to README](https://github.com/jimbobding/seasons/blob/master/README.md)

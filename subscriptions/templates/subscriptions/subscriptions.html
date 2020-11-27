@@ -2,7 +2,7 @@
 <div class="header-container container-fluid">
   <div class="row">
     <div class="col-12 px-0">
-      <div class="subscriptions-image ">
+      <div class="subscriptions-image">
         <div class="title-font px-2">
           <h1 class="text-center my-auto hero-title">SEASONS</h1>
           <p class="text-center">Farm to Box to You</p>
@@ -23,28 +23,36 @@
         alt="{{ sub.name }}"
       />
     </div>
-     <div class="col-12 col-lg-7 col-md-7">
-      <div class="card-body">
-         <h3 class="card-title sub-card-title">{{ sub.name }}</h3>
-        <hr>
-        <p class="card-text">{{ sub.description }}</p>
-        <a href="{% url 'subscription_detail' sub.id %}" class="btn ">{{ sub.name }}</a>
-      </div>
-    </div>
-   
-    {% else %}
-  <hr>
     <div class="col-12 col-lg-7 col-md-7">
       <div class="card-body">
         <h3 class="card-title sub-card-title">{{ sub.name }}</h3>
-        <hr>
+        <hr />
         <p class="card-text">{{ sub.description }}</p>
-       <a href="{% url 'subscription_detail' sub.id %}" class="btn btn-primary">{{ sub.name }}</a>
+        <div class="button-x">
+          <a href="{% url 'subscription_detail' sub.id %}" class="animated-word"
+            >{{ sub.name }}</a
+          >
+        </div>
+      </div>
+    </div>
+
+    {% else %}
+    <hr />
+    <div class="col-12 col-lg-7 col-md-7">
+      <div class="card-body">
+        <h3 class="card-title sub-card-title">{{ sub.name }}</h3>
+        <hr />
+        <p class="card-text">{{ sub.description }}</p>
+         <div class="button-x">
+          <a href="{% url 'subscription_detail' sub.id %}" class="animated-word"
+            >{{ sub.name }}</a
+          >
+        </div>
       </div>
     </div>
     <div class="col-12 col-lg-5 col-md-5">
       <img
-        class="img-fluid w-100 mx-auto d-block mx-auto sub-img "
+        class="img-fluid w-100 mx-auto d-block mx-auto sub-img"
         src="{{ sub.image.url }}"
         alt="{{ sub.name }}"
       />
