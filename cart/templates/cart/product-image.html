@@ -1,0 +1,15 @@
+   {% if item.product.image %}
+              <img
+                class="img-fluid rounded cart-image"
+                src="{{ item.product.image.url }}"
+                alt=""
+                height="100px"
+                width="100px"
+              />
+              {% else %}
+              <img
+                class="img-fluid rounded"
+                src="{{ MEDIA_URL }}no-image.jpeg"
+                alt="{{ item.product.name }}"
+              />
+              {% endif %}
