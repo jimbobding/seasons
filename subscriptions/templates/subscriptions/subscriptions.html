@@ -29,9 +29,8 @@
         <hr />
         <p class="card-text">{{ sub.description }}</p>
         <div class="col-12 col-lg-12 subscription-button">
-          <a href="{% url 'subscription_detail' sub.id %}" class="subscription-animated-word"
-            >{{ sub.name }}</a
-          >
+               <button href="{% url 'subscription_detail' sub.id %}" type="button" class="btn btn-outline-dark btn-lg btn-block">{{ sub.name }}</button>
+  
         </div>
       </div>
     </div>
@@ -43,11 +42,8 @@
         <h3 class="card-title sub-card-title">{{ sub.name }}</h3>
         <hr />
         <p class="card-text">{{ sub.description }}</p>
-         <div class="subscription-button">
-          <a href="{% url 'subscription_detail' sub.id %}" class="subscription-animated-word"
-            >{{ sub.name }}</a
-          >
-        </div>
+        <button href="{% url 'subscription_detail' sub.id %}" type="button" class="btn btn-outline-dark btn-lg btn-block">{{ sub.name }}</button>
+    
       </div>
     </div>
     <div class="col-12 col-lg-5 col-md-5">

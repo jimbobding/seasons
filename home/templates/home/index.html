@@ -41,7 +41,7 @@
   </div>
   <div class="button-wrapper pb-4">
     <div class="button-x">
-      <a hhref="{% url 'about' %}" class="animated-word">About</a>
+      <button href="{% url 'about' %}"" type="button" class="btn btn-outline-primary">Products</button>
     </div>
   </div>
 
@@ -68,11 +68,7 @@
           products which can be added to your box. Have a look at our range of
           products,
         </p>
-        <div class="button-wrapper pb-4">
-          <div class="button-x">
-            <a hhref="{% url 'products' %}" class="animated-word">Products</a>
-          </div>
-        </div>
+          <button href="{% url 'products' %}" type="button" class="btn btn-outline-primary">Products</button>
       </div>
       <div class="col-md-4 rounded py-5">
         <img
@@ -92,7 +88,7 @@
         data-aos-duration="1500"
       >
         <div
-          class="col-sm-12 col-md-8 col-lg-6 mb-3 mt-3 jumbotron jumbotron-subscriptions"
+          class="col-sm-12 col-md-8 col-lg-6 mb-3 mt-3 jumbotron jumbotron-subscriptions text-center"
         >
           <h2 class="text-center header-section">
             <strong>Subsctiptions</strong>
@@ -104,14 +100,9 @@
             all year round or just for your favourite seasons. <br />Subscribe
             to a heathly life.
           </p>
-          <div class="button-wrapper">
-            <div class="button-x">
-              <a hhref="{% url 'subscriptions' %}" class="animated-word">
-                Subsctiptions</a
-              >
-            </div>
-          </div>
+          <button href="{% url 'subscriptions' %}" type="button" class="btn btn-outline-primary text-center">Subscriptions</button>
         </div>
+        
       </div>
     </div>
   </div>
@@ -136,18 +127,10 @@
     </div>
     {% if session.user %}
     <p>Sign up to and create a profile!</p>
-    <div class="button-wrapper">
-      <div class="button-x">
-        <a href="{% url 'account_signup' %}" class="animated-word">Register</a>
-      </div>
-    </div>
+    <button href="{% url 'account_login' %}" type="button" class="btn btn-outline-primary">Login</button>
     {% else %}
     <p>Sign in!</p>
-    <div class="button-wrapper">
-      <div class="button-x">
-        <a href="{% url 'account_signup' %}" class="animated-word">Sign in</a>
-      </div>
-    </div>
+    <button href="{% url 'account_signup' %}" type="button" class="btn btn-outline-primary">Sign up</button>
     {% endif %} {% endblock %} {% block postloadjs %}
     <script>
       AOS.init();

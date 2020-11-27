@@ -5,7 +5,7 @@ from products.models import Product
 
 def subscriptions(request):
     """ A view to the subscriptions page  """
-
+   
     subscriptions = Subscriptions.objects.all()
     context = {
         'subscriptions': subscriptions,
@@ -17,11 +17,13 @@ def subscriptions(request):
 def subscription_detail(request, subscriptions_id):
     """ A view to the selected  subscription """
 
+    subscription = Product.objects.filter(is_a_subscription=True)
     size = Size.objects.all()
     subscriptions = get_object_or_404(Subscriptions, pk=subscriptions_id)
     context = {
         'subscriptions': subscriptions,
         'size': size,
+        'subscription': subscription
     }
     return render(request, "subscriptions/subscription_detail.html", context)
 
@@ -37,13 +39,12 @@ def size(request, subscriptions_id):
     return render(request, "subscriptions/subscription_detail.html", context)
 
 
-def product_detail(request, product_id):
-    """ A view to the selected  subscription """
-
-    product = get_object_or_404(Product, pk=product_id)
+def subscription(request):
+    """ A view to display all of the subscriptions"""
+    subscription = Product.objects.filter(is_a_subscription=True)
     context = {
-        'product': product,
+        'subscription': subscription,
     }
 
-    return render(request, "prodcuts/product_detail.html", context)
+    return render(request, 'products/products.html', context)
 

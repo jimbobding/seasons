@@ -55,13 +55,13 @@
   </div>
 </div>
 
-<div class="container-fluid  sub-deatiils-container ">
+<div class="container-fluid  sub-deatails-container ">
   <div class="row no-gutters" >
     {% for s in size %}
     <div class="col-12 col-lg-4 col-md-4 flex-item">
       <div class="card mx-auto ml-3 boxshadow-card card-font my-3" style="width: 18rem">
         <div class="card-body ">
-          <h3 class="card-title text-center">{{ subscriptions.name }}</h3>
+          <h3 class="card-title text-center">{{ s.name }}</h3>
           <hr>
           <h4 class="text-center text-center">{{ s.name }}</h4>
           <p class="card-text text-center">
@@ -69,10 +69,10 @@
           </p>
           <div class="col-12 text-center">
           <p> Subscription price ${{ s.price }} </p>
-             <a href="{% url'products'  %}" class="btn btn-primary">Products</a>
+             <a href="{% url 'products'  %}" class="btn btn-primary">Products</a>
           <p class="s_price-per-box"> Price per box: ${{ s.price_per_box }}</p>
-              <div class="col-12">    
-            </div>
+                 
+         
           </div>
         </div>
       </div>
@@ -81,6 +81,17 @@
     {% endfor %}
   </div>
   <a href="{% url 'subscriptions' %}" class="btn btn-primary"></a>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            {% for sub in subscription %}
+             <h3 class="text-center">{{ sub.name }}</h3>
+              <a href="{% url 'products' sub.is_a_subscription %}" class="btn btn-primary"></a>
+             {% endfor %}
+        </div>
+    </div>
 </div>
 
 {% endblock %} {% block postloadjs %}
