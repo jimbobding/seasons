@@ -3,7 +3,7 @@
   <div class="row">
     <div class="col-12 col-md-6 px-0">
       <div class="hero-image">
-        <div class="title-font px-2">
+        <div class="title-font px-2 mx-auto">
           <h1 class="text-center my-auto hero-title">SEASONS</h1>
           <p class="text-center">Farm to Box to You</p>
           <div class="hero-btn text-center">
@@ -68,6 +68,11 @@
           products which can be added to your box. Have a look at our range of
           products,
         </p>
+        <div class="button-wrapper pb-4">
+          <div class="button-x">
+            <a hhref="{% url 'products' %}" class="animated-word">Products</a>
+          </div>
+        </div>
       </div>
       <div class="col-md-4 rounded py-5">
         <img
@@ -76,13 +81,7 @@
           alt="veg-box"
         />
       </div>
-      
     </div>
-    <div class="button-wrapper pb-4">
-        <div class="button-x">
-          <a hhref="{% url 'products' %}" class="animated-word">Products</a>
-        </div>
-      </div>
   </div>
 
   <div class="subscription-container">
@@ -105,15 +104,15 @@
             all year round or just for your favourite seasons. <br />Subscribe
             to a heathly life.
           </p>
+          <div class="button-wrapper">
+            <div class="button-x">
+              <a hhref="{% url 'subscriptions' %}" class="animated-word">
+                Subsctiptions</a
+              >
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="button-wrapper">
-    <div class="button-x">
-      <a hhref="{% url 'subscriptions' %}" class="animated-word">
-        Subsctiptions</a
-      >
     </div>
   </div>
 

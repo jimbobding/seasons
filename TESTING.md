@@ -247,10 +247,9 @@ Editing products
 - Edit a product using the correct information.
 - Change the product rating to a higher rating than 5
 
+#### Results
 - If using more than 6 digits when editing a product an error message will show 'Failed to update the product. Please ensure the form is valid.' as well as an error toast.
 - When editing a product with the correct information a success toast will show ' Successfully updated product!' and the product will be updated.
-
-
 
 ### Going live
  Problems encountered after making the site live.
@@ -260,7 +259,7 @@ Editing products
  - Images for my model - items were no showing up.
  
 
- #### Fix 
+#### Fix 
 - I used a manual "dump" of the local (SQLite) data. the steps I took were 
 1. Commented out my DATABASE_URL in my env.py file to disable Postgres temporarily, to connect back to SQLite.
 2. Then I ran the command - python3 manage.py dumpdata --exclude auth.permission --exclude contenttypes > db.json in my terminal to create a db.json file.
