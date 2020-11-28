@@ -11,37 +11,41 @@ for the months in winter.
 
 ## Table of Contents
 1. [**UX**](#ux)
-    - [**Project Goals**](#project-goals)
-    - [**User Stories**](#user-stories)
-    - [**Design**](#design)
-    - [**Wireframes**](#wireframes)
+- [**Target Audiences**](#target-audience)
+- [**User Stories**](#user-stories)
+- 2. [Design](#design)
+- [Fonts](#fonts)
+- [Colours](#colours)
+- [Logo](#logo)
+- [Wireframe](#wireframe)
+
 
 2. [**Features**](#features)
-    - [**Existing Features**](#existing-features)
-    - [**Features Left to Implement**](#features-left-to-implement)
+- [**Existing Features**](#existing-features)
+- [**Features Left to Implement**](#features-left-to-implement)
 3. [**Information Architecture**](#information-architecture)
-    - [**Database Choice**](#database-choice)
-    - [**Data Modelling**](#data-modelling)
+- [**Database Choice**](#database-choice)
+- [**Data Modelling**](#data-modelling)
 
 4. [**Technologies Used**](#technologies-used)
-    - [**Languages**](#languages)
-    - [**Libraries and Frameworks**](#libraries-and-frameworks)
-    - [**Tools**](#tools)
-    - [**Databases**](#databases)
+- [**Languages**](#languages)
+- [**Libraries and Frameworks**](#libraries-and-frameworks)
+- [**Tools**](#tools)
+- [**Databases**](#databases)
 
 5. [**Testing**](#testing)
 6. [**Deployment**](#deployment)
-    - [**Local Deployment**](#local-deployment)
-    - [**Heroku Deployment**](#heroku-deployment)
+- [**Local Deployment**](#local-deployment)
+- [**Heroku Deployment**](#heroku-deployment)
 
 7. [**Credits**](#credits)
-    - [**Code**](#code)
-    - [**Content and Media**](#content-and-media)
-    - [**Acknowledgements**](#acknowledgements)
+- [**Code**](#code)
+- [**Content and Media**](#content-and-media)
+- [**Acknowledgements**](#acknowledgements)
 8. [**Disclaimer**](#disclaimer)
 
 
-
+## User Experience (UX)
 ## Target Audience
 
 - People who want to lead a healthier lifestyle but do not have time to shop for fresh produce.
@@ -52,13 +56,7 @@ for the months in winter.
 - People who want to eat fruit and vegetables but don't want it to be flown in from other countries.
 
 
-# User Experience (UX)
-
-## User stories
-
-
-
-### Testing User Stories from User Experience (UX) 
+## User Stories  
 ### First Time Visitor Goals
 1. As a First Time Visitor, I want to easily navigate the app using the navbar.
 2. As a First Time Visitor, I want to be able to easily find and look through the different products the shop has to offer without the obligation of registering an account.
@@ -94,39 +92,47 @@ for the months in winter.
 
 [TESTING](https://github.com/jimbobding/seasons/blob/master/TESTING.md)
 
-# Design 
-- [Bootstrap](https://getbootstrap.com/), front-end framework is chosen for this project for its modern interface, ease of use and ability to be easily customized. It is used for creating features such as navbar, cards, forms, modals, as well as for the layout.
-- [JQuery](https://jquery.com/) is used for initializing some Bootstrap components, as well as for custom functions, DOM manipulation.
 
 
-## Colour Scheme
+## Design
+### Colour Scheme
 
-![Inspiration Color Palette](wireframes/colour-chart-inspiration.png)
+[Inspiration Color Palette](https://github.com/jimbobding/seasons/blob/master/media/wireframes/colour-chart-inspiration.png)
 
 <p>As an e-commerce store I wanted the focus to be on the products and images, so when choosing the colour scheme I wanted it to be clam and not overpowering. I wanted the colours
 to fit in the aesthetic of the site, as the site is based around seasonality I wanted the colours to match this. The original inspiration for the colour scheme was warm tropical bright colours that make people feel almost as if they are on holiday, a way to bring out happiness
 whilst searching through online sites. I wanted to utilize the fantastic colour that fresh fruit and vegetables can give off, ranging from bright tropical colours to low key earthy tones that do well to complement their surrounding elements.
 </p>
 
+
+### Fonts 
+#### MainFont
+- [Raleway](https://fonts.google.com/raleway/Open+Sans) I used this as my main font as it clean and stylish. As a font I find it is easy to read.
+
 #### Main Colours Used 
- 
- ##### Black 
- I tried many colours for the nave bar and footer, but I ended up always going back to black. I found it not only had a stylish clean look to it but it complimented all of the hero images I was using for pages of the site. I used this for my search bar as well to keep it uniformed.
-
- ##### Mustard
- Mustard worked very well at giving an Autumnal feel to the site, it is also not an invasive colour so it allows the pictures and elements around it to catch the eye.
-
+##### Black 
+I tried many colours for the nave bar and footer, but I ended up always going back to black. I found it not only had a stylish clean look to it but it complimented all of the hero images I was using for pages of the site. I used this for my search bar as well to keep it uniformed.
+##### Mustard
+Mustard worked very well at giving an Autumnal feel to the site, it is also not an invasive colour so it allows the pictures and elements around it to catch the eye.
 ##### Green 
 The darker grass green colour was used for its calming effect and connotations to farming and fresh produce.
-
 ##### Salmon
 I fell upon the salmon colour by chance, I was looking for a red colour to use but fond them to invasive> when I tested a salmon colour it worked well at not being overpowering but still adding a lively spark to the site.
-
 ##### Grey/Denim Blue
 The grey denim blue was used initially to complement the green. It also has a rustic washed farm look and again gives a nice presence without taking centre stage.
 
+### Logo
+
+The logo was used in the nav-bar as a route back to the home page. The logo itself is a love heart made out of frut and vegetables with the sites tag line beside it.
+[Canva](https://www.canva.com/) to design the logo.
+
+### wireframes
+- [Bootstrap](https://getbootstrap.com/), front-end framework is chosen for this project for its modern interface, ease of use and ability to be easily customized. It is used for creating features such as navbar, cards, forms, modals, as well as for the layout.
+- [JQuery](https://jquery.com/) is used for initializing some Bootstrap components, as well as for custom functions, DOM manipulation.
+
+### Features
 #### Landing (home) page
- - <img src="/" alt="landing_page" target="_blank" rel="noopener" width="850">
+- <img src="/" alt="landing_page" target="_blank" rel="noopener" width="850">
 The landing page serves to attract new users to the business, to give a clear understanding of what the company does and to attract users to use the website's functionality (subscribe/buy boxes). 
 - **Hero image** section contains a full-screen image, main heading with a subheading and 2 buttons "Book tea ceremony" and "Buy tea or teaware" that redirect a user to the services and products pages, correspondingly. The purpose of this section is to attract new users, to make the first impression and to call to action.
 - **Introduction about** section contains a summary of the company and its purpose. It also contains a CTA to which takes the user to the bout page which holds more information.
@@ -135,7 +141,7 @@ The landing page serves to attract new users to the business, to give a clear un
 - **Register** section contains a heading informing the user to register to the site above a circular picture of a happy customer in a farm environment using an I-pad the image was used to display the merge of technology and farming to make the connection of ordering fresh produce over the internet. This section also contains a CTA to the register page.
 
 #### About page
- - <img src="/" alt="landing_page" target="_blank" rel="noopener" width="850">
+- <img src="/" alt="landing_page" target="_blank" rel="noopener" width="850">
 The about page is used to tell the customer about how the company works through its tag line "from farm to box to you"
 - **Hero image** The hero image of the about page is a long shot of a farm and mountains.  
 - **Icons** A selection of 3 icons to about the tagline "from farm to box to you" wit a farm, box and person icon each having a sentence under each icon.
@@ -183,12 +189,11 @@ Tools
 - [PIP](https://pip.pypa.io/en/stable/installing/) - for installation of necessary tools.
 - [Balsamiq](https://balsamiq.com/) - to create wireframes.
 
-Databases
+# Databases
 - [SQlite3](https://www.sqlite.org/index.html) - a development database.
 - [PostgreSQL](https://www.postgresql.org/) - a production database.
 
 
-## Deployment
 
 ### Heroku deployment
 
@@ -200,10 +205,10 @@ Databases
 6. Add these files to the staging area by running command `git add requirements.txt & git add Procfile`.
 7. Then commit these file respectively by running command `git commit -m "Added requirements.txt &  Added Procfile."`
 8. Then push these files to GitHub by running command `git push`
-   Go to resources tab in Heroku, then in the  search bar look for Heorku Postgres(you can type `postgres`), select Hobby Dev — Free and click Provision button to add it to your project.     
+Go to resources tab in Heroku, then in the  search bar look for Heorku Postgres(you can type `postgres`), select Hobby Dev — Free and click Provision button to add it to your project.     
 6. In Heroku Settings click on Reveal Config Vars - set config vars as follows.   
 
- | KEY            | VALUE         |
+| KEY            | VALUE         |
 |----------------|---------------|
 | AWS_ACCESS_KEY_ID | `<your aws access key>`  |
 | AWS_SECRET_ACCESS_KEY | `<your aws secret access key>`  |
@@ -220,8 +225,8 @@ Databases
 You can temporary comment out the current database settings code and just paste the following in the settings.py:  
 
 - DATABASES = {
-    'default':dj_database_url.parse('< your postgres >')
-    }
+'default':dj_database_url.parse('< your postgres >')
+}
 
 Migrate the database models to the Postgres database using the following commands in the terminal:    
 `python3 manage.py makemigrations`     
@@ -237,12 +242,12 @@ Migrate the database models to the Postgres database using the following command
 - Then make sure your Github Profile is displayed and add your repository name and click on Search.
 - Once it finds your repository click on Connect.
 - No when you push to github yor code will also push to Heroku.
- If you do not want to use automatic deploy you can do it manaully from  the terminal by following the commands ont websit [Heroku](https://dashboard.heroku.com/apps/seasons-farm-box-you/deploy/heroku-git)
+If you do not want to use automatic deploy you can do it manaully from  the terminal by following the commands ont websit [Heroku](https://dashboard.heroku.com/apps/seasons-farm-box-you/deploy/heroku-git)
 
 15. After the app has deployed successfully you can view by clicking open app on te heroku platform.
 16. You will also need to verify your email address, so you need to login with your superuser credentials and verify your email address in the admin panel. Now you will be able to view the app running.   
 
-   
+
 ##### Hosting media files with AWS
 The **static files** and **media files** (that will be uploaded by superuser - product/subscription images) are hosted in the [AWS S3 Bucket](https://aws.amazon.com/). To host them, you need to create an account in AWS and create your S3 basket with *public access*. More about setting it up you can read in [Amazon S3 documentation](https://docs.aws.amazon.com/AmazonS3/latest/gsg/CreatingABucket.html) and [this tutorial](https://django-storages.readthedocs.io/en/latest/backends/amazon-S3.html).
 ##### Senging email via Gmail
@@ -250,7 +255,7 @@ In order to send real emails from the application, you need to connect it to you
 
 
 <div align="right">
-    <b><a href="#table-of-contents">↥ Back To Top</a></b>
+<b><a href="#table-of-contents">↥ Back To Top</a></b>
 </div>
 
 
@@ -266,32 +271,32 @@ For deployment(production), a PostgreSQL database is provided by Heroku as an ad
 ##### UserProfile
 | **Name** | **Database Key** | **Field Type** | **Validation** |
 --- | --- | --- | --- 
- User | user | OneToOneField 'User' |  on_delete=models.CASCADE
- Full Name | profile_full_name | CharField | max_length=70, null=True, blank=True
- Phone number | profile_phone_number | CharField | max_length=20, null=True, blank=True
- Address Line1 | profile_address_line1 | CharField | max_length=60, null=True, blank=True
- Address Line2 | profile_address_line2 | CharField | max_length=60, null=True, blank=True
- Town/City | profile_town_or_city | CharField | max_length=50, null=True, blank=True
- County | profile_county | CharField | max_length=50, null=True, blank=True
- Postcode | profile_postcode | CharField | max_length=20, null=True, blank=True
- Country | profile_country | CountryField | blank_label='Country', null=True, blank=True
+User | user | OneToOneField 'User' |  on_delete=models.CASCADE
+Full Name | profile_full_name | CharField | max_length=70, null=True, blank=True
+Phone number | profile_phone_number | CharField | max_length=20, null=True, blank=True
+Address Line1 | profile_address_line1 | CharField | max_length=60, null=True, blank=True
+Address Line2 | profile_address_line2 | CharField | max_length=60, null=True, blank=True
+Town/City | profile_town_or_city | CharField | max_length=50, null=True, blank=True
+County | profile_county | CharField | max_length=50, null=True, blank=True
+Postcode | profile_postcode | CharField | max_length=20, null=True, blank=True
+Country | profile_country | CountryField | blank_label='Country', null=True, blank=True
 
 
 #### Products App
 ##### Product
 | **Name** | **Database Key** | **Field Type** | **Validation** |
 --- | --- | --- | --- 
- Category | category | ForeignKey 'Category' | null=True, blank=True, on_delete=models.SET_NULL
- Sku| sku | CharField | max_length=254 null=True, blank=True
- Name | Name| CharField | max_length=254
- Description | description | TextField  
- Price per box | price per box | DecimalField | max_digits=6, decimal_places=2, null=True
- Price | price | DecimalField |max_digits=6, decimal_places=2, null=True 
- Rating | rating | DecimalField | max_digits=2, decimal_places=1, null=True, blank=True, validators=[MinValueValidator(0), MaxValueValidator(5)]
- Image | image| ImageField | null=True, blank=True
- Image Url | image_url | URLField | max_length=1024, null=True, blank=True
- Is a subscription|is_a_subscription| BooleanField, default=False
- season  |season  models.CharField(max_length=254, null=True, blank=True)
+Category | category | ForeignKey 'Category' | null=True, blank=True, on_delete=models.SET_NULL
+Sku| sku | CharField | max_length=254 null=True, blank=True
+Name | Name| CharField | max_length=254
+Description | description | TextField  
+Price per box | price per box | DecimalField | max_digits=6, decimal_places=2, null=True
+Price | price | DecimalField |max_digits=6, decimal_places=2, null=True 
+Rating | rating | DecimalField | max_digits=2, decimal_places=1, null=True, blank=True, validators=[MinValueValidator(0), MaxValueValidator(5)]
+Image | image| ImageField | null=True, blank=True
+Image Url | image_url | URLField | max_length=1024, null=True, blank=True
+Is a subscription|is_a_subscription| BooleanField, default=False
+season  |season  models.CharField(max_length=254, null=True, blank=True)
 
 
 #### Checkout App
