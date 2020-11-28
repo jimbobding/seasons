@@ -39,12 +39,5 @@ def size(request, subscriptions_id):
     return render(request, "subscriptions/subscription_detail.html", context)
 
 
-def subscription(request):
-    """ A view to display all of the subscriptions"""
-    subscription = Product.objects.filter(is_a_subscription=True)
-    context = {
-        'subscription': subscription,
-    }
 
-    return render(request, 'products/products.html', context)
 

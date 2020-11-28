@@ -269,4 +269,26 @@ Editing products
 - The images on the index and about pages, src = {{ STATIC_URL }} so they were not pointing tho the media folder in amazon s3 bucket, I changed the this to = {{ STATIC_URL }}. This fixed the problem and the images displayed.
 - Within the s3 bucket I had accidentally stored some of the images in a folder so it was searching for media > files but the images were media > media > files. I corrected this by removing the file and copying the images directly int the bucket.
 
+
+#### Functionality Testing
+
+### Navbar
+- Click on all of the nave bar links.
+- Click onall of the links of the hamberger menu.
+
+### Results
+
+
+### Search engine
+- Search for items taht are n the database.
+- Search for items that are not in the database.
+- Search for key words that are in the items.
+- Search for words that are nothing to do with anything in the database.
+
+### Results
+
+#### 
+
+
+
 [Back to README](https://github.com/jimbobding/seasons/blob/master/README.md)

@@ -1,1 +1,1 @@
-Boutique Ado Confirmation for Order Number {{ order.order_number }}
+Seasons Confirmation for Order Number {{ order.order_number }}
