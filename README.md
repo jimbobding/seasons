@@ -191,6 +191,11 @@ DATABASES = {
 - Use git push heroku master.
 - Click deploy on the heroku page and click connect to github and then search for your repository to connect am dclick enable automatic deploys.
 
+## Information Architecture
+### Database choice
+During the development phase I worked with **sqlite3** database which is installed with Django.   
+For deployment(production), a **PostgreSQL** database is provided by Heroku as an add-on.
+- The **User model** used in this project is provided by Django as a part of defaults `django.contrib.auth.models`. 
 
 
 ### Data Modelling
@@ -209,11 +214,82 @@ DATABASES = {
  Country | profile_country | CountryField | blank_label='Country', null=True, blank=True
 
 
-# Testing User Stories from User Experience (UX) Section
+#### Products App
+##### Product
+| **Name** | **Database Key** | **Field Type** | **Validation** |
+--- | --- | --- | --- 
+ Category | category | ForeignKey 'Category' | null=True, blank=True, on_delete=models.SET_NULL
+ Sku| sku | CharField | max_length=254 null=True, blank=True
+ Name | Name| CharField | max_length=254
+ Description | description | TextField  
+ Price per box | price per box | DecimalField | max_digits=6, decimal_places=2, null=True
+ Price | price | DecimalField |max_digits=6, decimal_places=2, null=True 
+ Rating | rating | DecimalField | max_digits=2, decimal_places=1, null=True, blank=True, validators=[MinValueValidator(0), MaxValueValidator(5)]
+ Image | image| ImageField | null=True, blank=True
+ Image Url | image_url | URLField | max_length=1024, null=True, blank=True
+ Is a subscription|is_a_subscription| BooleanField, default=False
+ season  |season  models.CharField(max_length=254, null=True, blank=True)
 
 
+#### Checkout App
+##### Order
+| **Name** | **Database Key** | **Field Type** | **Validation** |
+--- | --- | --- | --- 
+Order Number | order_number | CharField | max_length=32, null=False, editable=False
+Profile | profile | ForeignKey 'UserProfile' | on_delete=models.SET_NULL, null=True, blank=True, related_name='orders'
+Full Name | full_name | CharField | max_length=50, null=False, blank=False
+Email | email | EmailField | max_length=254, null=False, blank=False
+Phone number | phone_number | CharField | max_length=20, null=False, blank=False
+Town/City | town_or_city | CharField | max_length=50, null=False, blank=False
+Street address1 | street_address1 | CharField | max_length=40, null=False, blank=False
+Street address2 | street_address2 | CharField | max_length=80, null=False, blank=False
+County | county | CharField | max_length=80, null=True, blank=True
+Postcode | postcode | CharField | max_length=20, null=True, blank=True
+Country | country | CountryField | blank_label='Country*', null=False, blank=False
+Purchase Date | purchase_date | DateTimeField | auto_now_add=True
+Delivery Cost | delivery_cost | DecimalField | max_digits=6, decimal_places=2, null=False, default=0
+Order Total | order_total | DecimalField | max_digits=10, decimal_places=2, null=False, default=0
+Grand Total | grand_total | DecimalField | max_digits=10, decimal_places=2, null=False, default=0
+Original Cart | original_cart | TextField | null=False, blank=False, default=''
+Stripe Pid | stripe_pid | CharField | max_length=254, null=False, blank=False, default=''
 
 
+##### Order Line Item Details 
+| **Name** | **Database Key** | **Field Type** | **Validation** |
+--- | --- | --- | --- 
+Order | order | ForeignKey 'Order' | null=False, blank=False, on_delete=models.CASCADE, related_name='lineitems'
+Product | product | ForeignKey 'Product' | null=False, blank=False, on_delete=models.PROTECT
+Quantity | quantity | IntegerField | null=False, blank=False, default=0
+Line Item Total | lineitem_total | DecimalField | max_digits=6, decimal_places=2, null=False, blank=False, editable=False
+
+
+##### Category
+| **Name** | **Database Key** | **Field Type** | **Validation** |
+--- | --- | --- | --- 
+Name | name | CharField | max_length=254
+Friendly Name | friendly_name | CharField | max_length=254, null=True, blank=True
+
+
+#### Subscriptions App
+##### Subscriptions
+| **Name** | **Database Key** | **Field Type** | **Validation** |
+Season | season | CharField | max_length=254, null=True, blank=True
+Name | Name| CharField | max_length=254
+Description | description | TextField  
+Price | price | DecimalField | max_digits=6, decimal_places=2, null=True 
+Price per box | price per box | DecimalField | max_digits=6, decimal_places=2, null=True
+Months | months | TextField
+Fruit | fruit | TextField
+Vegetables | vegetables | TextField
+Image | image| ImageField | null=True, blank=True
+Image Url | image_url | URLField | max_length=1024, null=True, blank=True
+
+##### Sizes
+| **Name** | **Database Key** | **Field Type** | **Validation** |
+Name | Name| CharField | max_length=254
+Price | price | DecimalField | max_digits=6, decimal_places=2, null=True 
+Price per box | price per box | DecimalField | max_digits=6, decimal_places=2, null=True
+Description | description | TextField  
 
 
 
