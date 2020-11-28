@@ -1,7 +1,7 @@
 
 # Season
 
-<bold>Seasons</bold> is the path into your healthy lifestyle. A site that cares for the well being of the user and the planet. It is no secret a healthy diet leads to a healthy and enjoyable lifestyle. Seasonal eating is not just good for us and the planet but it is also a delicious way of approaching a better life. When produce is in the season it at its natural and its ripest. All of our produce is sourced within the UK and is picked, packed and shipped when it is ripe. None of our produce is frozen to be eaten later all the food delivered to the consumer 
+<bold>Seasons</bold> is the path into your healthy lifestyle. A site that cares for the well being of the user and the planet. It is no secret a healthy diet leads to a healthy and enjoyable lifestyle. Seasonal eating is not just good for us and the planet but it is also a delicious way of approaching a better life. When produce is in the season it at its natural and its ripest. All of our produce is sourced within the UK and is picked, packed and shipped when it is ripe. None of our produce is frozen to be eaten later all  food delivered to the consumer 
 is picked and packed within the week you order it.
 
 You can order a box for the month you decide to order or you can subscribe to the season which you choose. I f you sign up to the winter months you will receive all the freshest fruit and vegetables
@@ -60,16 +60,38 @@ for the months in winter.
 
 [TESTING](https://github.com/jimbobding/seasons/blob/master/TESTING.md)
 
-# Design
+# Design 
 - [Bootstrap](https://getbootstrap.com/), front-end framework is chosen for this project for its modern interface, ease of use and ability to be easily customized. It is used for creating features such as navbar, cards, forms, modals, as well as for the layout.
 - [JQuery](https://jquery.com/) is used for initializing some Bootstrap components, as well as for custom functions, DOM manipulation.
 
 
 ## Colour Scheme
 
-<p>As an e-commerce store I wanted the focus to be on the products and images, so when choosing the colour scheme I wanted it to be clam and not overpowering. I wanted the colours
-to fit in the aesthetic of the site, as the site is based around seasonality I wanted the colours to match th</p>
 
+
+![Inspiration Color Palette](wireframes/colour-chart-inspiration.png)
+
+<p>As an e-commerce store I wanted the focus to be on the products and images, so when choosing the colour scheme I wanted it to be clam and not overpowering. I wanted the colours
+to fit in the aesthetic of the site, as the site is based around seasonality I wanted the colours to match this. The original inspiration for the colour scheme was warm tropical bright colours that make people feel almost as if they are on holiday, a way to bring out happiness
+whilst searching through online sites. I wanted to utilize the fantastic colour that fresh fruit and vegetables can give off, ranging from bright tropical colours to low key earthy tones that do well to complement their surrounding elements.
+</p>
+
+#### Main Colours Used 
+ 
+ ##### Black 
+ I tried many colours for the nave bar and footer, but I ended up always going back to black. I found it not only had a stylish clean look to it but it complimented all of the hero images I was using for pages of the site. I used this for my search bar as well to keep it uniformed.
+
+ ##### Mustard
+ Mustard worked very well at giving an Autumnal feel to the site, it is also not an invasive colour so it allows the pictures and elements around it to catch the eye.
+
+##### Green 
+The darker grass green colour was used for its calming effect and connotations to farming and fresh produce.
+
+##### Salmon
+I fell upon the salmon colour by chance, I was looking for a red colour to use but fond them to invasive> when I tested a salmon colour it worked well at not being overpowering but still adding a lively spark to the site.
+
+##### Grey/Denim Blue
+The grey denim blue was used initially to complement the green. It also has a rustic washed farm look and again gives a nice presence without taking centre stage.
 
 #### Landing (home) page
  - <img src="/" alt="landing_page" target="_blank" rel="noopener" width="850">
@@ -78,15 +100,15 @@ The landing page serves to attract new users to the business, to give a clear un
 - **Introduction about** section contains a summary of the company and its purpose. It also contains a CTA to which takes the user to the bout page which holds more information.
 - **Boxes**  section contains a heading and image of a box of vegetables along with some information about the food boxes we supply and  CTA to the shop where users can buy the products. This is to give users an outline of what the company sells.
 - **Subscriptions** section has a brief about how the company supplies boxes containing produce dependent on seasonality and how users can sign up for particular seasons. This section has an image of red fruit on a white background and a CTA to the subscriptions page.
-- **Register** section contains a heading informing the user to register to the site above a circular picture of a happy customer in a farm environment using an I-pad the image was used to display te merge of technology and farming to make the connection of ordering fresh produce over the internet. This section also contains a CTA to the register page.
+- **Register** section contains a heading informing the user to register to the site above a circular picture of a happy customer in a farm environment using an I-pad the image was used to display the merge of technology and farming to make the connection of ordering fresh produce over the internet. This section also contains a CTA to the register page.
 
 #### About page
  - <img src="/" alt="landing_page" target="_blank" rel="noopener" width="850">
 The about page is used to tell the customer about how the company works through its tag line "from farm to box to you"
-- **Hero image** The hero image of the about page is along shot of a farm and mountains.  
-- **Icons** A selection of 3 icons to about the tagline "from farm to box to you" wit a farm, box and person icon each havng a sentannce under each icon.
-- **Farm** section tells the user about wthe farming aspect about the company, wher ewe source our produce, with a picture of people farming. 
-- **Box** section tells the user about the pricecess of how the company curtes the boxes we sends them to the user. This section has an image of somepn preparing produce.
+- **Hero image** The hero image of the about page is a long shot of a farm and mountains.  
+- **Icons** A selection of 3 icons to about the tagline "from farm to box to you" wit a farm, box and person icon each having a sentence under each icon.
+- **Farm** section tells the user about the farming aspect about the company, where we source our produce, with a picture of people farming. 
+- **Box** section tells the user about the process of how the company curates the boxes before we send them to the user. This section has an image of someone preparing produce.
 - **You** section contains a summary of how the companies boxes are tailored to the user. This section contains a picture of a man on a farm staring at the camera.
 
 
@@ -117,7 +139,7 @@ Tools
 - [Gunicorn](https://gunicorn.org/) - a Python WSGI HTTP Server to enable deployment to Heroku.
 - [Stripe](https://stripe.com/) - to handle financial transactions.
 - [Django-Crispy-Forms](https://django-crispy-forms.readthedocs.io/en/latest/) - to style Django forms.
-- [Coverage]() - to see the percentage of the automated testsing.
+- [Coverage]() - to see the percentage of automated testing.
 
 # Tools
 
@@ -149,7 +171,7 @@ Databases
 
 9. Go back to Heroku to your App and click on deploy tab.
 10. Then go to Deployment Method and click on Github Connect to Github.
-11. Then make sure your Github Profile is displayed and add you repository name and click on Search.
+11. Then make sure your Github Profile is displayed and add your repository name and click on Search.
 12. Once it finds your repository then click on Connect.
 13. Go to Settings at the top. Then click on Reveal Config Vars.
 14. In Config Vars add IP with value 0.0.0.0 then add PORT as 5000 then add SECRET_KEY.
@@ -273,6 +295,7 @@ Friendly Name | friendly_name | CharField | max_length=254, null=True, blank=Tru
 #### Subscriptions App
 ##### Subscriptions
 | **Name** | **Database Key** | **Field Type** | **Validation** |
+--- | --- | --- | --- 
 Season | season | CharField | max_length=254, null=True, blank=True
 Name | Name| CharField | max_length=254
 Description | description | TextField  
@@ -285,6 +308,7 @@ Image | image| ImageField | null=True, blank=True
 Image Url | image_url | URLField | max_length=1024, null=True, blank=True
 
 ##### Sizes
+--- | --- | --- | --- 
 | **Name** | **Database Key** | **Field Type** | **Validation** |
 Name | Name| CharField | max_length=254
 Price | price | DecimalField | max_digits=6, decimal_places=2, null=True 
