@@ -29,7 +29,8 @@
         <hr />
         <p class="card-text">{{ sub.description }}</p>
         <div class="col-12 col-lg-12 subscription-button">
-               <button href="{% url 'subscription_detail' sub.id %}" type="button" class="btn btn-outline-dark btn-lg btn-block">{{ sub.name }}</button>
+               <!-- <button href="{% url 'subscription_detail' sub.id %}" type="button" class="btn btn-outline-dark btn-lg btn-block">{{ sub.name }}</button> -->
+               <a href="{% url 'subscription_detail' sub.id %}" class="btn ">{{ sub.name }}</a>
   
         </div>
       </div>

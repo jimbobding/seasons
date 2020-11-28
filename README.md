@@ -193,7 +193,20 @@ DATABASES = {
 
 
 
-
+### Data Modelling
+#### Profile App
+##### UserProfile
+| **Name** | **Database Key** | **Field Type** | **Validation** |
+--- | --- | --- | --- 
+ User | user | OneToOneField 'User' |  on_delete=models.CASCADE
+ Full Name | profile_full_name | CharField | max_length=70, null=True, blank=True
+ Phone number | profile_phone_number | CharField | max_length=20, null=True, blank=True
+ Address Line1 | profile_address_line1 | CharField | max_length=60, null=True, blank=True
+ Address Line2 | profile_address_line2 | CharField | max_length=60, null=True, blank=True
+ Town/City | profile_town_or_city | CharField | max_length=50, null=True, blank=True
+ County | profile_county | CharField | max_length=50, null=True, blank=True
+ Postcode | profile_postcode | CharField | max_length=20, null=True, blank=True
+ Country | profile_country | CountryField | blank_label='Country', null=True, blank=True
 
 
 # Testing User Stories from User Experience (UX) Section

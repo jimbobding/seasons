@@ -49,12 +49,13 @@
         {{ subscriptions.fruit }}
         </p>
         <br>
+        <h1>{{ subscriptions.season }}</h1>
          as and when they come into season.
       </p>
     </div>
   </div>
 </div>
-
+                
 <div class="container-fluid  sub-deatails-container ">
   <div class="row no-gutters" >
     {% for s in size %}
@@ -86,8 +87,10 @@
 <div class="container">
     <div class="row">
         <div class="col">
-            {% for sub in subscription %}
-             <h3 class="text-center">{{ sub.name }}</h3>
+        <h1>Hey</h1>
+            {% for sea in sub_season %}
+             <h3 class="text-center">{{ sea.season }}</h3>
+             
               <a href="{% url 'products'  %}" class="btn btn-primary"></a>
              {% endfor %}
         </div>
