@@ -95,6 +95,7 @@ for the months in winter.
 ## Design
 ### Colour Scheme
 
+
 ![Inspiration Color Palette](media/wireframes/colour-chart-inspiration.png)
 
 <p>As an e-commerce store I wanted the focus to be on the products and images, so when choosing the colour scheme I wanted it to be clam and not overpowering. I wanted the colours
@@ -111,11 +112,14 @@ whilst searching through online sites. I wanted to utilize the fantastic colour 
 ##### Black 
 I tried many colours for the nave bar and footer, but I ended up always going back to black. I found it not only had a stylish clean look to it but it complimented all of the hero images I was using for pages of the site. I used this for my search bar as well to keep it uniformed.
 ##### Mustard
+
+`rgb(253, 89, 86, 0.5);`
 Mustard worked very well at giving an Autumnal feel to the site, it is also not an invasive colour so it allows the pictures and elements around it to catch the eye.
 ##### Green 
 The darker grass green colour was used for its calming effect and connotations to farming and fresh produce.
 ##### Salmon
-`rgb(253, 89, 86, 0.5);`
+
+- ![rgb(253, 89, 86, 0.5)](https://via.placeholder.com/15/f03c15/000000?text=+) `gb(253, 89, 86, 0.5`
 I fell upon the salmon colour by chance, I was looking for a red colour to use but fond them to invasive> when I tested a salmon colour it worked well at not being overpowering but still adding a lively spark to the site.
 ##### Grey/Denim Blue
 The grey denim blue was used initially to complement the green. It also has a rustic washed farm look and again gives a nice presence without taking centre stage.
@@ -141,13 +145,12 @@ to actual coding as certain things did not look at good as I hoped, but overall 
 
 #### Navbar
 The navbar is fixed at the top of the page all the time, this allows a user to easily navigate throughout the website.
-The logo is located in the top left corner on a desktop and in the center on the smaller devices. 
-The logo redirets users to the index/home page when clicked on. On smaller resolutions (tablet, mobile) 
-the navbar is collapsed into a burger icon. Menu links appear when the burger icon is clicked and collapse back, when clicked again.    
- 
-Navbar also contains a search box, where a user can search for product. It is collapsed into a search icon on the mobile and tablet, and slides down when the icon is clicked.     
-Also, navbar contains a cart icon along with a grand total displayed if there are items in the cart added. 
+The logo is located in the top left corner on a desktop and in the centre on the smaller devices. 
+The logo redirects users to the index/home page when clicked on. On smaller resolutions (tablet, mobile) 
+the navbar is collapsed into a burger icon. Menu links appear when the burger icon is clicked and collapses back when clicked again.    
 
+Navbar also contains a search box, where a user can search for a product.  
+Also, navbar contains a cart icon along with a grand total displayed if there are items in the cart added. The navbar contains a profile instruction which when clicked drops down into, Either log in or register if the user is not signed in or it shows log out and order history if the user is logged in. If the user is logged in as admin it allows the user to use the product admin and takes the user to the add a product page.
 
 
 #### Landing (home) page
@@ -175,7 +178,7 @@ The Product page is used to display all the products that the site has to offer 
 - **Query filter** Above the displayed products there is a drop-down query filter that will separate the products into 4 categories. Fruit boxes, Veg boxes, fruit and veg boxes and subscriptions.
 - **Product cards** The product cards are displayed in rows of three on large screens rows of two on medium screens and single items on small devices.
 An image will take up roughly half of the card on the top half whilst the bottom half will contain the name of the product, the price of the product, the price per box of the product as well as edit and delete buttons that can only be used by the site admin.
-- **Product detail** The image on the product cards are a href that will take the user to the product detail page, which will display the same information on the face of the card as well as ass description of the product. On the product detail, page the user is able to add the product to their cart if the add to cart button is clicked
+- **Product detail** The image on the product cards are a href that will take the user to the product detail page, which will display the same information on the face of the card as well as ass description of the product. On the product detail, page the user can add the product to their cart if the add to cart button is clicked
 the product will be added in increments of one allowing the user to easily add products to the cart. They are also able to use the increment buttons to increase and decrease the amount of the product the would like to add each time.
 There is also edit delete buttons that are only available for admin.
 
@@ -196,7 +199,21 @@ The profile page can only be used if the user is logged in.
 - **User info**  There is a card on the profile page displaying the user's username and email address. The card also has two buttons that allow the user to buttons one that allows the user to change their password the other allows them to manage their email addresses.
 
 
-#### Products Page
+#### Cart Page
+--**Items Display** Displays the purchases in the cart at that moment, with the price and subtotal. It also has the decrementer so you can increase or decrease the number of items in your cart.
+--**Buttons**  Has two buttons, one for a secure checkout and one to keep shopping which is linked back to the product page.
+
+##### Checkout Page
+--**Items Display** Displays the purchases in the cart along with a summary of how many items the user has in the cart and the total price including delivery cost.
+--**Checkout form** Has a form for the user to fill in to gather name address email etc. As shown in my model's section of  [**Data Modelling**](#data-modelling). The user can add these details or if they are an existing user they will be preloaded and the user can edit them for this delivery but will have to go into the user profile to permanently change the details. The form also has a payment section where the user would enter there payment details including - Card number expiry date and CCV number.
+the amount that will ve charged to the account will be displayed next to the box where the card number os input so the user is sure on how much they are spending.
+--**Buttons**  Has two buttons, one for a secure checkout and one which will take the user back to the cart in case they want to make any last-minute adjustments.
+
+##### Checkout Success
+--**Order Information**-- Once the user has input all their information into the checkout form and proceeded with the payment they will be taken to the check out success page (if payment is verified)> here they will see a pa card with their delivery information including the details and the items purchased as well as an order number.
+--**Success Toast** The user will also receive an email with the order information on, and this will be made known to them by a toast that will pop in up I the corner when they have completed the order. As well as in a line of text that will be displayed above te order information.
+
+
 
 
 ## Technologies used
