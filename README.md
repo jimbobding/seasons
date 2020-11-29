@@ -92,12 +92,10 @@ for the months in winter.
 
 [TESTING](https://github.com/jimbobding/seasons/blob/master/TESTING.md)
 
-
-
 ## Design
 ### Colour Scheme
 
-[Inspiration Color Palette](media/wireframes/colour-chart-inspiration.png)
+![Inspiration Color Palette](media/wireframes/colour-chart-inspiration.png)
 
 <p>As an e-commerce store I wanted the focus to be on the products and images, so when choosing the colour scheme I wanted it to be clam and not overpowering. I wanted the colours
 to fit in the aesthetic of the site, as the site is based around seasonality I wanted the colours to match this. The original inspiration for the colour scheme was warm tropical bright colours that make people feel almost as if they are on holiday, a way to bring out happiness
@@ -117,6 +115,7 @@ Mustard worked very well at giving an Autumnal feel to the site, it is also not 
 ##### Green 
 The darker grass green colour was used for its calming effect and connotations to farming and fresh produce.
 ##### Salmon
+`rgb(253, 89, 86, 0.5);`
 I fell upon the salmon colour by chance, I was looking for a red colour to use but fond them to invasive> when I tested a salmon colour it worked well at not being overpowering but still adding a lively spark to the site.
 ##### Grey/Denim Blue
 The grey denim blue was used initially to complement the green. It also has a rustic washed farm look and again gives a nice presence without taking centre stage.
@@ -140,12 +139,14 @@ to actual coding as certain things did not look at good as I hoped, but overall 
 ## Features
 ### Existing features
 
-#### Profile page
-- <img src="/" alt="landing_page" target="_blank" rel="noopener" width="850">
-The profile page can only be used if the user is logged in.
-- **Delivery Information** The user's default delivery information is displayed here as well as an option to edit the information, by typing the new information into the text fields and clicking the update information button.
-- **Order History** On the profile page there is a link to the order history page which takes the user to a page containing all their past orders. It contains a table with a list of the order number, date, the products purchased and the total amount it cost. There is also a CTA taking the user back to the profile page.
-- **User info**  There is a card on the profile page displaying the user's username and email address. The card also has two buttons that allow the user to buttons one that allows the user to change their password the other allows them to manage their email addresses.
+#### Navbar
+The navbar is fixed at the top of the page all the time, this allows a user to easily navigate throughout the website.
+The logo is located in the top left corner on a desktop and in the center on the smaller devices. 
+The logo redirets users to the index/home page when clicked on. On smaller resolutions (tablet, mobile) 
+the navbar is collapsed into a burger icon. Menu links appear when the burger icon is clicked and collapse back, when clicked again.    
+ 
+Navbar also contains a search box, where a user can search for product. It is collapsed into a search icon on the mobile and tablet, and slides down when the icon is clicked.     
+Also, navbar contains a cart icon along with a grand total displayed if there are items in the cart added. 
 
 
 
