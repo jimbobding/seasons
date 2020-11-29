@@ -3,7 +3,7 @@
   <div class="row">
     <div class="col-12 px-0">
       <div class="subscriptions-image">
-        <div class="title-font shadow  px-2 mx-auto">
+        <div class="title-font shadow px-2 mx-auto">
           <h1 class="text-center my-auto hero-title">SEASONS</h1>
           <p class="text-center">Farm to Box to You</p>
         </div>
@@ -29,9 +29,12 @@
         <hr />
         <p class="card-text">{{ sub.description }}</p>
         <div class="col-12 col-lg-12 subscription-button">
-               <!-- <button href="{% url 'subscription_detail' sub.id %}" type="button" class="btn btn-outline-dark btn-lg btn-block">{{ sub.name }}</button> -->
-               <a href="{% url 'subscription_detail' sub.id %}" class="btn ">{{ sub.name }}</a>
-  
+          <a
+            href="{% url 'subscription_detail' sub.id %}"
+            type="button"
+            class="btn btn-outline-dark btn-1 btn-lg btn-block text-center"
+            >{{ sub.name }}</a
+          >
         </div>
       </div>
     </div>
@@ -43,8 +46,12 @@
         <h3 class="card-title sub-card-title">{{ sub.name }}</h3>
         <hr />
         <p class="card-text">{{ sub.description }}</p>
-        <button href="{% url 'subscription_detail' sub.id %}" type="button" class="btn btn-outline-dark btn-lg btn-block">{{ sub.name }}</button>
-    
+        <a
+          href="{% url 'subscription_detail' sub.id %}"
+          type="button"
+          class="btn btn-outline-dark btn-1 btn-lg btn-block text-center"
+          >{{ sub.name }}</a
+        >
       </div>
     </div>
     <div class="col-12 col-lg-5 col-md-5">

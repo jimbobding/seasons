@@ -97,7 +97,7 @@ for the months in winter.
 ## Design
 ### Colour Scheme
 
-[Inspiration Color Palette](https://github.com/jimbobding/seasons/blob/master/media/wireframes/colour-chart-inspiration.png)
+[Inspiration Color Palette](media/wireframes/colour-chart-inspiration.png)
 
 <p>As an e-commerce store I wanted the focus to be on the products and images, so when choosing the colour scheme I wanted it to be clam and not overpowering. I wanted the colours
 to fit in the aesthetic of the site, as the site is based around seasonality I wanted the colours to match this. The original inspiration for the colour scheme was warm tropical bright colours that make people feel almost as if they are on holiday, a way to bring out happiness
@@ -107,7 +107,7 @@ whilst searching through online sites. I wanted to utilize the fantastic colour 
 
 ### Fonts 
 #### MainFont
-- [Raleway](https://fonts.google.com/raleway/Open+Sans) I used this as my main font as it clean and stylish. As a font I find it is easy to read.
+- [Raleway](https://fonts.google.com/specimen/Raleway) I used this as my main font as it clean and stylish. As a font I find it is easy to read.
 
 #### Main Colours Used 
 ##### Black 
@@ -127,10 +127,28 @@ The logo was used in the nav-bar as a route back to the home page. The logo itse
 [Canva](https://www.canva.com/) to design the logo.
 
 ### wireframes
+#### Frameworks
 - [Bootstrap](https://getbootstrap.com/), front-end framework is chosen for this project for its modern interface, ease of use and ability to be easily customized. It is used for creating features such as navbar, cards, forms, modals, as well as for the layout.
 - [JQuery](https://jquery.com/) is used for initializing some Bootstrap components, as well as for custom functions, DOM manipulation.
+#### Wireframes
+For my wireframes I first used pen and paper to jot down my original thoughts and then once I had a clearer picture in my head of
+how I wanted the app to look I used [Balsamiq](https://balsamiq.com/) to mock it up. The design did change from the pen and pad to Balsamiq
+to actual coding as certain things did not look at good as I hoped, but overall it stayed pretty much the same.
 
-### Features
+ [wireframes](https://github.com/jimbobding/seasons/blob/master/media/wireframes/wireframe)
+
+## Features
+### Existing features
+
+#### Profile page
+- <img src="/" alt="landing_page" target="_blank" rel="noopener" width="850">
+The profile page can only be used if the user is logged in.
+- **Delivery Information** The user's default delivery information is displayed here as well as an option to edit the information, by typing the new information into the text fields and clicking the update information button.
+- **Order History** On the profile page there is a link to the order history page which takes the user to a page containing all their past orders. It contains a table with a list of the order number, date, the products purchased and the total amount it cost. There is also a CTA taking the user back to the profile page.
+- **User info**  There is a card on the profile page displaying the user's username and email address. The card also has two buttons that allow the user to buttons one that allows the user to change their password the other allows them to manage their email addresses.
+
+
+
 #### Landing (home) page
 - <img src="/" alt="landing_page" target="_blank" rel="noopener" width="850">
 The landing page serves to attract new users to the business, to give a clear understanding of what the company does and to attract users to use the website's functionality (subscribe/buy boxes). 
@@ -148,6 +166,36 @@ The about page is used to tell the customer about how the company works through 
 - **Farm** section tells the user about the farming aspect about the company, where we source our produce, with a picture of people farming. 
 - **Box** section tells the user about the process of how the company curates the boxes before we send them to the user. This section has an image of someone preparing produce.
 - **You** section contains a summary of how the companies boxes are tailored to the user. This section contains a picture of a man on a farm staring at the camera.
+
+#### Products
+- <img src="/" alt="landing_page" target="_blank" rel="noopener" width="850">
+The Product page is used to display all the products that the site has to offer and allows the user to add the product to their shopping cart.
+- **Hero image** The hero image of the products page is a colourful array of fresh fruit and vegetables.
+- **Query filter** Above the displayed products there is a drop-down query filter that will separate the products into 4 categories. Fruit boxes, Veg boxes, fruit and veg boxes and subscriptions.
+- **Product cards** The product cards are displayed in rows of three on large screens rows of two on medium screens and single items on small devices.
+An image will take up roughly half of the card on the top half whilst the bottom half will contain the name of the product, the price of the product, the price per box of the product as well as edit and delete buttons that can only be used by the site admin.
+- **Product detail** The image on the product cards are a href that will take the user to the product detail page, which will display the same information on the face of the card as well as ass description of the product. On the product detail, page the user is able to add the product to their cart if the add to cart button is clicked
+the product will be added in increments of one allowing the user to easily add products to the cart. They are also able to use the increment buttons to increase and decrease the amount of the product the would like to add each time.
+There is also edit delete buttons that are only available for admin.
+
+#### Subscriptions page
+- <img src="/" alt="landing_page" target="_blank" rel="noopener" width="850">
+The subscription page is used to show the seasonal subscriptions the site offers
+- **Hero image** The hero image of the subscription page is of berries on a tree.
+- **Seasons** The body of the subscription page is taken up four sections each representing one of the four seasons of the year. Each section has a picture that represents the season and a description of the seasons in terms of the produce it has to offer and a CTA with the name of the season it which takes the user to the season detail page.
+- **Season detail** The image from the season section is used a the hero image for the season detail page. So if a user clicks spring they will be taken to the spring page with the spring picture as the hero image, the name of the season and the months that fall into that season will be displayed over the top of the image. In the body of the subscription page, 
+there are details of how the subscription works. Which is fresh produce from the season will be picked as it is ripe and fresh and sent in weekly boxes to the user the boxes will different every week as it will be fresh produce that is in season that particular month. Within the body, all the fruits and vegetable that come into season throughout the three months
+will be displayed. At the bottom of the page, there will be three cards showing the prices for the different subscription sizes.
+
+#### Profile page
+- <img src="/" alt="landing_page" target="_blank" rel="noopener" width="850">
+The profile page can only be used if the user is logged in.
+- **Delivery Information** The user's default delivery information is displayed here as well as an option to edit the information, by typing the new information into the text fields and clicking the update information button.
+- **Order History** On the profile page there is a link to the order history page which takes the user to a page containing all their past orders. It contains a table with a list of the order number, date, the products purchased and the total amount it cost. There is also a CTA taking the user back to the profile page.
+- **User info**  There is a card on the profile page displaying the user's username and email address. The card also has two buttons that allow the user to buttons one that allows the user to change their password the other allows them to manage their email addresses.
+
+
+#### Products Page
 
 
 ## Technologies used
@@ -354,8 +402,9 @@ Image | image| ImageField | null=True, blank=True
 Image Url | image_url | URLField | max_length=1024, null=True, blank=True
 
 ##### Sizes
---- | --- | --- | --- 
+
 | **Name** | **Database Key** | **Field Type** | **Validation** |
+--- | --- | --- | --- 
 Name | Name| CharField | max_length=254
 Price | price | DecimalField | max_digits=6, decimal_places=2, null=True 
 Price per box | price per box | DecimalField | max_digits=6, decimal_places=2, null=True
