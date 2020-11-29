@@ -17,21 +17,21 @@ def subscriptions(request):
 
 def subscription_detail(request, subscriptions_id):
     """ A view to the selected  subscription """
-    product = Product.objects.filter(season='season')
-    size = Size.objects.all()
-    subscriptions = get_object_or_404(Subscriptions, pk=subscriptions_id)
-    sub_season = Subscriptions.objects.filter(season='season')
-
+    product = Product.objects.filter(is_a_subscription='True')
+    product_s = product.filter(season='spring')
+    subscription = get_object_or_404(Subscriptions, pk=subscriptions_id)
+    #subscription_s = subscription.objects.all()
+    #sub_season = subscriptions.filter(season='season')
 
     context = {
-        'subscriptions': subscriptions,
-        'size': size,
+        'subscription': subscription,
         'product': product,
-        'sub_season': sub_season,
+        #'sub_season': sub_season,
     }
     
+    #print(subscription_s)
     print(product)
-    print(sub_season)
+    print(subscription)
     return render(request, "subscriptions/subscription_detail.html", context)
 
 
@@ -46,17 +46,16 @@ def size(request, subscriptions_id):
     return render(request, "subscriptions/subscription_detail.html", context)
 
 
-def season_product_match(request, season_id):
+#def season_product_match(request, season_id):
 
-    prod_subscription = Product.objects.filter(is_a_subscription=True)
-    season = prod_subscription.filter('season')
-    sub_season = Subscriptions.objects.filter('season')
+ #   prod_subscription = Product.objects.filter(is_a_subscription=True)
+#    season = prod_subscription.filter('season')
+# sub_season = Subscriptions.objects.filter('season')
 
-    context = {
-        'season': season,
-        'sub_season': sub_season,
-    }
+#     context = {
+#      ' season': season,
+#       'sub_season': sub_season,
+#      }
 
-    print(season)
-    print(sub_season)
-    return render(request, "subscriptions/subscription_detail.html", context) 
+
+#    return render(request, "subscriptions/subscription_detail.html", context) 

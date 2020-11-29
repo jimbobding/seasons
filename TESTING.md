@@ -212,11 +212,7 @@ This gave an almost desired result, I will further investigate this issue in my 
 
 - The site has been built using [bootstrap 4](https://getbootstrap.com/ )which is a responsive framework. "Bootstrap is a potent front-end framework used to create modern websites and web apps. It's open-source and free to use, yet features numerous HTML and CSS templates for UI interface elements such as buttons and forms".
 
-
-
-
 ### Site Owner Goals Goals
-
 
 add products
 - **User Story**
@@ -273,22 +269,25 @@ Editing products
 #### Functionality Testing
 
 ### Navbar
-- Click on all of the nave bar links.
-- Click onall of the links of the hamberger menu.
+- Click on all of the navebar links.
+- Click on all of the links of the hamberger menu.
 
 ### Results
 
+- All links go the desired page
+
 
 ### Search engine
-- Search for items taht are n the database.
+#### Test
 - Search for items that are not in the database.
 - Search for key words that are in the items.
 - Search for words that are nothing to do with anything in the database.
 
 ### Results
-
+- Searched for word box all the products that are boxes showed on the page.
+- Searched for the word subscription all the products that are subscriptions showed on the page.
+- 
 #### 
-
 
 
 [Back to README](https://github.com/jimbobding/seasons/blob/master/README.md)

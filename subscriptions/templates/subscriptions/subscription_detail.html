@@ -1,7 +1,7 @@
 {% extends "base.html" %} {% load static %} {% block content %}
 <div class="header-container container-fluid subscrition">
   <div
-    style="background-image:  url({{ subscriptions.image.url }})"
+    style="background-image:  url({{ subscription.image.url }})"
     style="background-size: cover"
     class="sub-detail-hero  text-align: center"
   >
@@ -10,9 +10,9 @@
       <div class="col-12 px-0">
         <div class="title-font shadow text-center mx-auto px-2">
           <h1 class="text-center my-auto hero-title ">
-            {{ subscriptions.name }}
+            {{ subscription.name }}
           </h1>
-          <p class="text-center "><bold>{{ subscriptions.months }}</bold></p>
+          <p class="text-center "><bold>{{ subscription.months }}</bold></p>
         </div>
       </div>
     </div>
@@ -40,16 +40,16 @@
         <h3 class="text-center" >Vegetables:</h3>
         <hr>
     <p>
-        {{ subscriptions.vegetables }}
+        {{ subscription.vegetables }}
         <br />
         <br />
          <h3 class="text-center">Fruit:</h3>
          <hr> 
          <p>
-        {{ subscriptions.fruit }}
+        {{ subscription.fruit }}
         </p>
         <br>
-        <h1>{{ subscriptions.season }}</h1>
+        <h1>{{ subscription.season }}</h1>
          as and when they come into season.
       </p>
     </div>
@@ -88,8 +88,8 @@
     <div class="row">
         <div class="col">
         <h1>Hey</h1>
-            {% for sea in sub_season %}
-             <h3 class="text-center">{{ sea.season }}</h3>
+            {% for pro in product %}
+             <h3 class="text-center">{{ pro.season }}</h3>
              
               <a href="{% url 'products'  %}" class="btn btn-primary"></a>
              {% endfor %}
