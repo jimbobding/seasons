@@ -146,17 +146,18 @@
     />
   </div>
   {% if session.user %}
-  <p>Sign in!</p>
+   <p>Sign up to and create a profile!</p>
   <a
-    href="{% url 'account_login' %}"
+    href="{% url 'account_signup' %}"
     type="button"
     class="btn btn-outline-primary btn-1 text-center"
     >Login</a
   >
   {% else %}
-  <p>Sign up to and create a profile!</p>
+
+   <p>Sign in!</p>
   <a
-    href="{% url 'account_signup' %}"
+   href="{% url 'account_login' %}"
     type="button"
     class="btn btn-outline-primary btn-1 text-center"
     >Register</a
