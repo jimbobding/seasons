@@ -28,7 +28,7 @@
             aria-expanded="true"
             href="#"
           >
-            <i class="fas fa-box-open mr-3 icon-blue"></i> Boxes
+            <i class="fas fa-box-open mr-3 icon-blue"></i> Products
           </a>
           <ul
             class="dropdown-menu dropdown-tea-columns"
@@ -139,10 +139,17 @@
     </div>
   </div>
 </div>
+<div class="btn-1 rounded-0 border border-black">
+        <a class="btt-link d-flex h-100">
+            <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
+        </a>	
+</div>
 {% endblock %}
 
 {% block postloadjs %}
     {{ block.super }}
+
+
    <script type="text/javascript">
 		$('.btt-link').click(function(e) {
 			window.scrollTo(0,0)

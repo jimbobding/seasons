@@ -4,10 +4,9 @@
 html {
   height: 100%;
 }
-
-
+s
 body {
-  font-size: 21px;
+  font-size: 18px;
   font-weight: bold;
   letter-spacing: 0.5px;
   font-family: "Raleway", serif;
@@ -15,7 +14,6 @@ body {
   padding: 0;
   overflow-x: hidden;
 }
-
 
 header.container-fluid {
   padding: 0 !important;
