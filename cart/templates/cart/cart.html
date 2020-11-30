@@ -48,7 +48,6 @@
               <th scope="col">Subtotal</th>
             </tr>
           </thead>
-
           {% for item in cart_items %}
           <tr>
             <td class="p-3 w-25">
@@ -72,7 +71,6 @@
           </tr>
           {% endfor %}
           <tr>
-       
          </tr>
           <tr>
             <td colspan="5" class="text-right">
@@ -97,7 +95,6 @@
 </div>
 
 {% endblock %} {% block postloadjs %} {{ block.super }} {% include 'products/includes/quantity_input_script.html' %}
-
 
 <script type="text/javascript">
   // Update quantity on click

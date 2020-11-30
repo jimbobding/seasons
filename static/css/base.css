@@ -9,7 +9,7 @@ html {
 body {
   font-size: 21px;
   font-weight: bold;
-  letter-spacing: 0.5;
+  letter-spacing: 0.5px;
   font-family: "Raleway", serif;
   margin: 0;
   padding: 0;
@@ -19,8 +19,7 @@ body {
 
 header.container-fluid {
   padding: 0 !important;
-   background-color:     rgba(249, 238, 238, 0.91),
-      rgba(152, 142, 142, 0.04)
+
 }
 
 .container-fluid.col {
@@ -365,7 +364,7 @@ ul {
 }
 
 .navbar.li {
-    font-size: 16;
+    font-size: 16px;
 }
 
 .logo {
@@ -375,7 +374,7 @@ ul {
 
 .nav-icons {
     font-size: 20px;
-    margin-right: 10px;
+     margin-right: 10px;
     
 }
 
@@ -411,7 +410,6 @@ ul {
 
 .sub-card-title {
   text-align: center;
-  text-shadow: whitesmoke;
 }
 
 /* from Bulma */
@@ -580,11 +578,7 @@ ul {
   line-height: 1.5;
   font-family: 'Comfortaa', cursive;
 
-
-
-
 }
-
 
   /* standard bootstrap btn transitions */
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
@@ -648,7 +642,6 @@ ul {
   background-color: black;
   border: 2px hsla(0, 100%, 50%, 0.3) solid;
   display: block;
-  position: bottom;
   padding-top: 10px !important;
 }
 

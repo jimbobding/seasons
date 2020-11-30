@@ -162,6 +162,7 @@ Also, navbar contains a cart icon along with a grand total displayed if there ar
 
 
  ![Design](https://github.com/jimbobding/seasons/blob/master/media/wireframes/Index-hero-img.png)
+ ![Landing Page](media/wireframes/Index-hero-img.png)
  
 -***The landing page*** serves to attract new users to the business, to give a clear understanding of what the company does and to attract users to use the website's functionality (subscribe/buy boxes). 
 - **Hero image** section contains a full-screen image, main heading with a subheading and 2 buttons "Book tea ceremony" and "Buy tea or teaware" that redirect a user to the services and products pages, correspondingly. The purpose of this section is to attract new users, to make the first impression and to call to action.
