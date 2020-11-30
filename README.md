@@ -140,7 +140,7 @@ For my wireframes I first used pen and paper to jot down my original thoughts an
 how I wanted the app to look I used [Balsamiq](https://balsamiq.com/) to mock it up. The design did change from the pen and pad to Balsamiq
 to actual coding as certain things did not look at good as I hoped, but overall it stayed pretty much the same.
 
- [wireframes](https://github.com/jimbobding/seasons/blob/master/media/wireframes/wireframe)
+ [wireframes](https://github.com/jimbobding/seasons/blob/master/media/wireframes/Seaons-wireframes.pdf)
 
 ## Features
 ### Existing features
