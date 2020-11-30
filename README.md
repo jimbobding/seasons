@@ -1,7 +1,10 @@
 
-# Season
 
-<bold>Seasons</bold> is the path into your healthy lifestyle. A site that cares for the well being of the user and the planet. It is no secret a healthy diet leads to a healthy and enjoyable lifestyle. Seasonal eating is not just good for us and the planet but it is also a delicious way of approaching a better life. When produce is in the season it at its natural and its ripest. All of our produce is sourced within the UK and is picked, packed and shipped when it is ripe. None of our produce is frozen to be eaten later all  food delivered to the consumer 
+<p style="text-align: center;"> Seasons</p>
+
+ ![Landing Page](media/wireframes/Index-hero-img.png)
+
+<bold>Seasons</bold> is the path into your healthy lifestyle. A site that cares for the well being of the user and the planet. It is no secret a healthy diet leads to a healthy and enjoyable lifestyle. Seasonal eating is not just good for us and the planet but it is also a delicious way of approaching a better life. When produce is in the season it at its ripest. All of our produce is sourced within the UK and is picked, packed and shipped when it is ripe. None of our produce is frozen to be eaten later all  food delivered to the consumer 
 is picked and packed within the week you order it.
 
 You can order a box for the month you decide to order or you can subscribe to the season which you choose. I f you sign up to the winter months you will receive all the freshest fruit and vegetables
@@ -159,10 +162,6 @@ Also, navbar contains a cart icon along with a grand total displayed if there ar
 
 
 #### Landing (home) page
-
-
- ![Design](https://github.com/jimbobding/seasons/blob/master/media/wireframes/Index-hero-img.png)
- ![Landing Page](media/wireframes/Index-hero-img.png)
  
 -***The landing page*** serves to attract new users to the business, to give a clear understanding of what the company does and to attract users to use the website's functionality (subscribe/buy boxes). 
 - **Hero image** section contains a full-screen image, main heading with a subheading and 2 buttons "Book tea ceremony" and "Buy tea or teaware" that redirect a user to the services and products pages, correspondingly. The purpose of this section is to attract new users, to make the first impression and to call to action.
@@ -172,7 +171,7 @@ Also, navbar contains a cart icon along with a grand total displayed if there ar
 - **Register** section contains a heading informing the user to register to the site above a circular picture of a happy customer in a farm environment using an I-pad the image was used to display the merge of technology and farming to make the connection of ordering fresh produce over the internet. This section also contains a CTA to the register page.
 
 #### About page
-- <img src="/" alt="landing_page" target="_blank" rel="noopener" width="850">
+
 The about page is used to tell the customer about how the company works through its tag line "from farm to box to you"
 - **Hero image** The hero image of the about page is a long shot of a farm and mountains.  
 - **Icons** A selection of 3 icons to about the tagline "from farm to box to you" wit a farm, box and person icon each having a sentence under each icon.
@@ -181,7 +180,7 @@ The about page is used to tell the customer about how the company works through 
 - **You** section contains a summary of how the companies boxes are tailored to the user. This section contains a picture of a man on a farm staring at the camera.
 
 #### Products
-- <img src="/" alt="landing_page" target="_blank" rel="noopener" width="850">
+
 The Product page is used to display all the products that the site has to offer and allows the user to add the product to their shopping cart.
 - **Hero image** The hero image of the products page is a colourful array of fresh fruit and vegetables.
 - **Query filter** Above the displayed products there is a drop-down query filter that will separate the products into 4 categories. Fruit boxes, Veg boxes, fruit and veg boxes and subscriptions.
@@ -192,7 +191,7 @@ the product will be added in increments of one allowing the user to easily add p
 There is also edit delete buttons that are only available for admin.
 
 #### Subscriptions page
-- <img src="/" alt="landing_page" target="_blank" rel="noopener" width="850">
+
 The subscription page is used to show the seasonal subscriptions the site offers
 - **Hero image** The hero image of the subscription page is of berries on a tree.
 - **Seasons** The body of the subscription page is taken up four sections each representing one of the four seasons of the year. Each section has a picture that represents the season and a description of the seasons in terms of the produce it has to offer and a CTA with the name of the season it which takes the user to the season detail page.
@@ -201,7 +200,7 @@ there are details of how the subscription works. Which is fresh produce from the
 will be displayed. At the bottom of the page, there will be three cards showing the prices for the different subscription sizes.
 
 #### Profile page
-- <img src="/" alt="landing_page" target="_blank" rel="noopener" width="850">
+
 The profile page can only be used if the user is logged in.
 - **Delivery Information** The user's default delivery information is displayed here as well as an option to edit the information, by typing the new information into the text fields and clicking the update information button.
 - **Order History** On the profile page there is a link to the order history page which takes the user to a page containing all their past orders. It contains a table with a list of the order number, date, the products purchased and the total amount it cost. There is also a CTA taking the user back to the profile page.
@@ -228,6 +227,9 @@ the amount that will ve charged to the account will be displayed next to the box
 --**Tailored boxes** I would like to add a section where the boxes are tailored specifically yot teh use I could be a build your own box with whatever is in season.
 --**Form** I would like to add a forum that wouold allow users to connect wuth each other and swap recipes news. This would also allow te store owner to connect with users and share usful information as well collectioning information on what users of the store would like to see. 
 
+<div align="right">
+<b><a href="#table-of-contents">↥ Back To Top</a></b>
+</div>
 
 ## Technologies used
 
@@ -239,11 +241,10 @@ the amount that will ve charged to the account will be displayed next to the box
 - [Python](https://www.python.org/) - Python is a general-purpose coding language. th elanguage I used to construct this site.
 - [Jinja](https://jinja.palletsprojects.com/en/2.11.x/) - templating language for Python, to display back-end data in HTML.
 
-Tools
+
 
 ### Libraries and Frameworks
 - [Django](https://www.djangoproject.com/) - Python framework for building the project.
-
 - [pip](https://pip.pypa.io/en/stable/installing/) For installing tools used in the project
 - [HTML5](https://en.wikipedia.org/wiki/HTML5) Used to build my project
 - [Cascading-Style-Sheets](https://www.w3.org/Style/CSS/Overview.en.html) Used to style my project
@@ -252,13 +253,13 @@ Tools
 - [Font-awesome 5](https://fontawesome.com/) Used for icons used on the project 
 - [Jquery](https://jquery.com/download/) Jquery used to simplify some of the code
 - [Bootstrap4](https://getbootstrap.com/) Used for the  framework of my project and also for the navigation bar, the cards (spirit selection, cocktail cards)
-- [Python-3.8.2] (https://www.python.org/) Back end programming language dI used for this project.
+- [Python-3.8.2](https://www.python.org/) Back end programming language dI used for this project.
 - [Gunicorn](https://gunicorn.org/) - a Python WSGI HTTP Server to enable deployment to Heroku.
 - [Stripe](https://stripe.com/) - to handle financial transactions.
 - [Django-Crispy-Forms](https://django-crispy-forms.readthedocs.io/en/latest/) - to style Django forms.
 - [Coverage]() - to see the percentage of automated testing.
 
-# Tools
+### Tools
 
 - [Jinja](https://jinja.palletsprojects.com/en/2.11.x/) - templating language for Python, to display back-end data in HTML.
 - [Heroku](https://dashboard.heroku.com/app) - to host the project.
@@ -271,8 +272,6 @@ Tools
 # Databases
 - [SQlite3](https://www.sqlite.org/index.html) - a development database.
 - [PostgreSQL](https://www.postgresql.org/) - a production database.
-
-
 
 ### Heroku deployment
 
@@ -478,5 +477,7 @@ All websites I used for reference and guidance.
 **This project is for educational use only.**
 
 
-
+<div align="right">
+<b><a href="#table-of-contents">↥ Back To Top</a></b>
+</div>
 

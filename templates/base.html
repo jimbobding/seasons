@@ -44,6 +44,13 @@
     <header class="container-fluid fixed-top sticky-top "> 
             <div id="top-nav" class="row bg-white  pt-lg-2 d-none d-lg-flex m">
                 <div class="col-12 col-lg-4 ml-auto py-1 and py-lg-0  float-right  ml-auto">
+                <div class="col-12 col-lg-4 my-auto py-1 and py-lg-0 text-center text-lg-left">
+                    <a href="{% url 'home' %}">
+                         <img src="{{ MEDIA_URL }}logo.png"
+                                class="logo"
+                         >
+                    </a>
+                </div>
                     <ul class="list-inline list-unstyled text-center text-lg-right p-1 my-0">
                         <li class="list-inline-item dropdown">
                             <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

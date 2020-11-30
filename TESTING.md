@@ -23,11 +23,7 @@
 - All links work there are no broken URLs in the navbar.
 - All information relates to the pages headings and or subheadings.
 
-#### Bugs/Improvements
-- There are no hover elements on the nav-links to signify to the user that they are hovering on a nav-link
 
-#### Fixes
-- 
 
 - **User Story**
 2. As a First Time Visitor, I want to be able to easily find and look through the different products the shop has to offer without the obligation of registering an account.
@@ -196,7 +192,6 @@ This gave an almost desired result, I will further investigate this issue in my 
 - Check the responsiveness on my devices on different web browsers.
 - send t live websites to several friends so they can review the website on various devices.
 
-
 #### Result 
 
 - The site has been built using [bootstrap 4](https://getbootstrap.com/ )which is a responsive framework. "Bootstrap is a potent front-end framework used to create modern websites and web apps. It's open-source and free to use, yet features numerous HTML and CSS templates for UI interface elements such as buttons and forms".
@@ -225,9 +220,7 @@ add products
 - Had a target blank href to a product's image in the no-image jpeg part.
 
 
-
-
-Editing products
+#### Editing products
 
 #### Test
 - edit a product using incorrect information to submitting a price with over 6 digits
@@ -237,9 +230,6 @@ Editing products
 #### Results
 - If using more than 6 digits when editing a product an error message will show 'Failed to update the product. Please ensure the form is valid.' as well as an error toast.
 - When editing a product with the correct information a success toast will show ' Successfully updated product!' and the product will be updated.
-
-
-
 
 
 ### Going live
@@ -348,9 +338,6 @@ Editing products
 - I was not able to remove an email address.
 
 
-
-
-
 ### Responsive Testing 
 
 - For responsive testing, I used chromes web designer tester. I tested for responsiveness and core functionality on an array of devices. 
@@ -362,18 +349,33 @@ Editing products
 - log-out 
 - All cta buttons
 
-Devices tested
+ ### Devices tested
 
+Kindle fire
 Samsung galaxy s6
 Android HCT one x
 - All functionality works
 - Background cover hero headings bleed slightly into the page.
 
-Samsung galaxy s6
 
+Mac book pro
+I phone 7, 8, 9 X
+ipad
+- All functionality worked
+- Back gound hero images not perfect on on the smaller devices.
 
+#### browsers
 
+- Google chrome
+- Firefox
+- Safari
+- Windows 10
 
+- All functionality worked.
+
+- windows 8
+
+- the background image swere not shown properly.
 
 
 [Back to README](https://github.com/jimbobding/seasons/blob/master/README.md)
