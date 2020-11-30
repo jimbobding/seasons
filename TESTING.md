@@ -2,7 +2,6 @@
 
 ## Testing User Stories
 
-
 - **User Story**
 1. As a First Time Visitor, I want to easily navigate the app using the navbar.
 3. As a First Time Visitor, I want to be able to navigate to different parts of the site and view the information that it has to offer.
@@ -47,11 +46,6 @@
 - The query filtering works and displays the correct categories and place the correct products within these categories.
 - If the user types something not applicable to the site they will be taken to the shop/products page where there is another query filter that allows the user to search by the categories the site offers.
 
-#### Bugs/Improvements
-- The horizontal rule on the product cards is not always in the same place due to the amount of text on each card.
-
- #### Fixes
-- This has not been fixed as of yet
 
 - **User Story**
 4. As a First Time Visitor, I want to be able to place products into my cart and browse the other items.
@@ -171,9 +165,8 @@
 - User is unable to place subscription into the cart.
 
 #### Fixes
-- It seems that I was unable to register items in the  subscription model,  separately to the product items. The product Id's were not getting separated and only being read as product ID's, I tried to enter the subscriptions as sub Items so they would have a string relating to the subscription('size') model but this did not work. After spending a few days on this problem and being in constant contact with the course tutors and speaking to my mentor I was still unable to ascertain the problem as they thought the code I had written should have worked.
-s time was a factor and I was unable to fix the problem I decided to take a different approach, I folded the subscription('size') model into the products model and then used the category key to separate the subscription('size') items (within the product model) from the original product models. I then pased through the season key which both subscriptions and products shared int the subscription details page. This meant it would display the only the items relted to the season clicked on, E/g if a user clicked on teh winter subscription it would disply 
-the products that were related to the winter season. I then added a link at the bottom that took the user to the products page but used a filter so it wouldonl show the subscription ite,s in the product models.
+- It seems that I was unable to register items in the subscription model,  separately to the product items. The product Id's were not getting separated and only being read as product ID's, I tried to enter the subscriptions as sub Items so they would have a string relating to the subscription('size') model but this did not work. After spending a few days on this problem and being in constant contact with the course tutors and speaking to my mentor I was still unable to ascertain the problem as they thought the code I had written should have worked.
+s time was a factor and I was unable to fix the problem I decided to take a different approach, I folded the subscription('size') model into the products model and then used the category key to separate the subscription('size') items (within the product model) from the original product models. I then passed through the season key which both subscriptions and products shared int the subscription details page. This meant it would display the only the items related to the season clicked on, E/g if a user clicked on the winter subscription it would display the products that were related to the winter season. I then added a link at the bottom that took the user to the products page but used a filter so it would only show the subscription items with-in the product models.
 This gave an almost desired result, I will further investigate this issue in my own time to resolve it for future purposes.
 
 - **User Story**
@@ -182,26 +175,26 @@ This gave an almost desired result, I will further investigate this issue in my 
 #### Test
 - Sign in on a registered account and place an order.
 - on the same account sign out and sign back in again.
-- Navigate to the profie page and click on the order history tab.
+- Navigate to the profile page and click on the order history tab.
 
 #### Result 
-- On the order hostory page the past order was displayed.
-- Reapeted the process with same profile and also with different test profile and got the same result.
+- On the order history page the past order was displayed.
+- Repeated the process with the same profile and also with different test profile and got the same result.
 
 - **User Story**
 4. As a Frequent User, I want to be able to easily and safely exit the app.
 
 #### Test
-- sign in with an account, sign out of account close down web page and re-open.
+- sign in with an account, sign out of account close down the web page and re-open.
 
 
 - **User Story**
 5. As a Frequent User, I want to be able to view the app easily on different devices.
 
 #### Test
-- Go through each section of the website using the development tools to check the responsiveness on teh devices it has to offer.
-- Check the responsiveness on my personal devices on different web broewsers.
-- send t live websites to several friends so they can reveiw the website on various devices.
+- Go through each section of the website using the development tools to check the responsiveness on the devices it has to offer.
+- Check the responsiveness on my devices on different web browsers.
+- send t live websites to several friends so they can review the website on various devices.
 
 
 #### Result 
@@ -217,7 +210,7 @@ add products
 #### Test
 - Add a product without an image.
 - Add a product without an image.
-- Edit a product in each individual field.
+- Edit a product in each field.
 - Edit a product with incorrect information.
 - create a product and add it to the cart 
 
@@ -245,6 +238,10 @@ Editing products
 - If using more than 6 digits when editing a product an error message will show 'Failed to update the product. Please ensure the form is valid.' as well as an error toast.
 - When editing a product with the correct information a success toast will show ' Successfully updated product!' and the product will be updated.
 
+
+
+
+
 ### Going live
  Problems encountered after making the site live.
 
@@ -267,8 +264,8 @@ Editing products
 #### Functionality Testing
 
 ### Navbar
-- Click on all of the navebar links.
-- Click on all of the links of the hamberger menu.
+- Click on all of the navbar links.
+- Click on all of the links of the hamburger menu.
 
 ### Results
 
@@ -278,26 +275,105 @@ Editing products
 ### Search engine
 #### Test
 - Search for items that are not in the database.
-- Search for key words that are in the items.
+- Search for keywords that are in the items.
 - Search for words that are nothing to do with anything in the database.
 
 ### Results
 - Searched for word box all the products that are boxes showed on the page.
 - Searched for the word subscription all the products that are subscriptions showed on the page.
-- Searched for bacon no results were shown. 'Products Home | 0 Products found for "bcon"'
+- Searched for bacon no results were shown. 'Products Home | 0 Products found for "bacon"'
 
 
 ### Payment forms
  #### Test
- - To test the payment form I used a variety of difeer combinations of leaving certain fields blank.
+ - To test the payment form I used a variety of different combinations of leaving certain fields blank.
  - I also used a variety of different countries. But not all of them,
- - I used the code 4242 4242 4242 4242 and then an expiry date that is valid and any 3 letter ccv.
+ - I used the code 4242 4242 4242 4242 and then a valid expiry date and any 3 letter CCV.
 
  #### Results
- - The only problems I encountered were leaving  name, email street adrres 1 and country fields emepty.
- - The email field had to appear as if a legitame email was being used o @. com is required.
- - There have been problems with some countries and the use of postal address is needed. I have attatched and alternative trial key to in case this problem is encountered. = 4012888888881881.
+ - The only problems I encountered were leaving name, email street address 1 and country fields empty.
+ - The email field had to appear as if a legitimate email was being used o @. com is required.
+ - There have been problems with some countries and the use of a postal address is needed. I have attached an alternative trial key to in case this problem is encountered. = 4012888888881881.
  [Stripe Elements forcing a postal code](https://stackoverflow.com/questions/46737413/stripe-elements-forcing-a-postal-code).
+
+### All-auth Checks
+
+- I tested all of the all-auth systems. I have covered the majority in the user stories. But here is a summary of things I did not cover.
+
+#### Register 
+- Open up the site
+- Navigate to account icon and click register in the drop-down menu.
+- Fill in the fields and click register. 
+
+##### Result 
+- You will be logged into the site.
+- You can find further testing on the register element in the user stories testing.
+
+
+##### Logout
+- When signed in as a user navigate to the account icon and click logout in the drop-down menu.
+- You will be asked if you want to sign out or to cancel this action. 
+
+##### Result
+- If you click sign out you will be signed out of your account and returned to the index page.
+- If you click cancel you will be returned to the index page still signed in.
+
+
+#### Login
+- Open up the site
+- Navigate to account icon and click login in the drop-down menu.
+- Type in username/email address and password.
+- Click Sign In.
+
+#### Result
+- All worked 
+
+#### Password Change
+- Got to sign in form and click forgot password button, you will be asked to verify an email in which the forget password link will be sent to.
+- Open emails and click on form choose a new password and then verify it.
+- Go back to the site and log in with a new password.
+
+#### Result
+- All worked perfectly.
+- However, you can choose your current password rather than changing it. 
+
+#### Managing Emails
+- Log into your account 
+- Go to the profile page and click manage emails button.
+- You will be taken to a page that allows you to Make email primary, Add email, Re-send verification and remove email.
+
+#### Result
+- I was able to add an email, resend verification and make an email address primary.
+- I was not able to add an email that was already logged to that user or any other user.
+- I was not able to remove an email address.
+
+
+
+
+
+### Responsive Testing 
+
+- For responsive testing, I used chromes web designer tester. I tested for responsiveness and core functionality on an array of devices. 
+- Login
+- Register 
+- Product purchase 
+- Placing product 
+- Changing username
+- log-out 
+- All cta buttons
+
+Devices tested
+
+Samsung galaxy s6
+Android HCT one x
+- All functionality works
+- Background cover hero headings bleed slightly into the page.
+
+Samsung galaxy s6
+
+
+
+
 
 
 [Back to README](https://github.com/jimbobding/seasons/blob/master/README.md)
