@@ -1,5 +1,5 @@
-from django.shortcuts import render, get_object_or_404
-from .models import Subscriptions, Size
+from django.shortcuts import render
+from .models import Subscriptions
 from products.models import Product
 
 
@@ -7,9 +7,10 @@ def subscriptions(request):
     """ A view to the subscriptions page  """
 
     subscriptions = Subscriptions.objects.all()
+
     context = {
         'subscriptions': subscriptions,
-   }
+    }
 
     return render(request, "subscriptions/subscriptions.html", context)
 
@@ -27,7 +28,3 @@ def subscription_detail(request, season):
     }
 
     return render(request, "subscriptions/subscription_detail.html", context)
-
-
-
-

@@ -104,7 +104,7 @@ h2 {
     ), url("/media/oranges-onblue.jpg") no-repeat center center fixed;
    background-color: rgba(76, 175, 80, 0.1);
   background-size: cover; 
-  height: calc(100vh - 164px);
+  height: 100vh;
   border: 1px solid black !important;
   min-width: 100vw;
 }

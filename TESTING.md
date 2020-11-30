@@ -172,7 +172,8 @@
 
 #### Fixes
 - It seems that I was unable to register items in the  subscription model,  separately to the product items. The product Id's were not getting separated and only being read as product ID's, I tried to enter the subscriptions as sub Items so they would have a string relating to the subscription('size') model but this did not work. After spending a few days on this problem and being in constant contact with the course tutors and speaking to my mentor I was still unable to ascertain the problem as they thought the code I had written should have worked.
-s time was a factor and I was unable to fix the problem I decided to take a different approach, I folded the subscription('size') model into the products model and then used the category key to separate the subscription('size') items (within the product model) from the original product models.
+s time was a factor and I was unable to fix the problem I decided to take a different approach, I folded the subscription('size') model into the products model and then used the category key to separate the subscription('size') items (within the product model) from the original product models. I then pased through the season key which both subscriptions and products shared int the subscription details page. This meant it would display the only the items relted to the season clicked on, E/g if a user clicked on teh winter subscription it would disply 
+the products that were related to the winter season. I then added a link at the bottom that took the user to the products page but used a filter so it wouldonl show the subscription ite,s in the product models.
 This gave an almost desired result, I will further investigate this issue in my own time to resolve it for future purposes.
 
 - **User Story**

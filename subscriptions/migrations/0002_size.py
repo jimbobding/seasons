@@ -13,10 +13,12 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Size',
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('id', models.AutoField(auto_created=True,
+                primary_key=True, serialize=False, verbose_name='ID')),
                 ('name', models.CharField(max_length=254)),
                 ('price', models.DecimalField(decimal_places=2, max_digits=6)),
-                ('price_per_box', models.DecimalField(decimal_places=2, max_digits=6)),
+                ('price_per_box', models.DecimalField(decimal_places=2,
+                                             max_digits=6)),
             ],
         ),
     ]
