@@ -10,7 +10,9 @@ is picked and packed within the week you order it.
 You can order a box for the month you decide to order or you can subscribe to the season which you choose. I f you sign up to the winter months you will receive all the freshest fruit and vegetables
 for the months in winter.
 
+The deployed site can be visited by clicking [**here**](https://.herokuapp.com/).
 
+The site code can be viewed in this [**GitHub Repository**](https://github.com/jimbobding/seasons).
 
 ## Table of Contents
 1. [**UX**](#ux)
