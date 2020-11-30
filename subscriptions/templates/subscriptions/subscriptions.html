@@ -30,7 +30,7 @@
         <p class="card-text">{{ sub.description }}</p>
         <div class="col-12 col-lg-12 subscription-button">
           <a
-            href="{% url 'subscription_detail' sub.id %}"
+            href="{% url 'subscription_detail' sub.season %}"
             type="button"
             class="btn btn-outline-dark btn-1 btn-lg btn-block text-center"
             >{{ sub.name }}</a
@@ -47,7 +47,7 @@
         <hr />
         <p class="card-text">{{ sub.description }}</p>
         <a
-          href="{% url 'subscription_detail' sub.id %}"
+          href="{% url 'subscription_detail' sub.season %}"
           type="button"
           class="btn btn-outline-dark btn-1 btn-lg btn-block text-center"
           >{{ sub.name }}</a

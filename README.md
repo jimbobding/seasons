@@ -113,19 +113,22 @@ whilst searching through online sites. I wanted to utilize the fantastic colour 
 I tried many colours for the nave bar and footer, but I ended up always going back to black. I found it not only had a stylish clean look to it but it complimented all of the hero images I was using for pages of the site. I used this for my search bar as well to keep it uniformed.
 ##### Mustard
 
-`rgb(253, 89, 86, 0.5);`
+- ![rgb(224, 157, 55)](https://via.placeholder.com/15/f03c15/000000?text=+) `rgb(224, 157, 55)`
 Mustard worked very well at giving an Autumnal feel to the site, it is also not an invasive colour so it allows the pictures and elements around it to catch the eye.
 ##### Green 
+- ![rgb(72, 153, 114, 0.75)](https://via.placeholder.com/15/f03c15/000000?text=+) `rgb(72, 153, 114, 0.75)`
 The darker grass green colour was used for its calming effect and connotations to farming and fresh produce.
-##### Salmon
 
-- ![rgb(253, 89, 86, 0.5)](https://via.placeholder.com/15/f03c15/000000?text=+) `gb(253, 89, 86, 0.5`
+
+##### Salmon
+- ![rgb(253, 89, 86, 0.5)](https://via.placeholder.com/15/f03c15/000000?text=+) `rgb(253, 89, 86, 0.5)`
 I fell upon the salmon colour by chance, I was looking for a red colour to use but fond them to invasive> when I tested a salmon colour it worked well at not being overpowering but still adding a lively spark to the site.
+
 ##### Grey/Denim Blue
+- ![rgba(192, 204, 216, 0.75))](https://via.placeholder.com/15/f03c15/000000?text=+) `rgba(192, 204, 216, 0.75)`
 The grey denim blue was used initially to complement the green. It also has a rustic washed farm look and again gives a nice presence without taking centre stage.
 
 ### Logo
-
 The logo was used in the nav-bar as a route back to the home page. The logo itself is a love heart made out of frut and vegetables with the sites tag line beside it.
 [Canva](https://www.canva.com/) to design the logo.
 
@@ -133,6 +136,7 @@ The logo was used in the nav-bar as a route back to the home page. The logo itse
 #### Frameworks
 - [Bootstrap](https://getbootstrap.com/), front-end framework is chosen for this project for its modern interface, ease of use and ability to be easily customized. It is used for creating features such as navbar, cards, forms, modals, as well as for the layout.
 - [JQuery](https://jquery.com/) is used for initializing some Bootstrap components, as well as for custom functions, DOM manipulation.
+
 #### Wireframes
 For my wireframes I first used pen and paper to jot down my original thoughts and then once I had a clearer picture in my head of
 how I wanted the app to look I used [Balsamiq](https://balsamiq.com/) to mock it up. The design did change from the pen and pad to Balsamiq
@@ -210,10 +214,14 @@ the amount that will ve charged to the account will be displayed next to the box
 --**Buttons**  Has two buttons, one for a secure checkout and one which will take the user back to the cart in case they want to make any last-minute adjustments.
 
 ##### Checkout Success
---**Order Information**-- Once the user has input all their information into the checkout form and proceeded with the payment they will be taken to the check out success page (if payment is verified)> here they will see a pa card with their delivery information including the details and the items purchased as well as an order number.
+--**Order Information** Once the user has input all their information into the checkout form and proceeded with the payment they will be taken to the check out success page (if payment is verified)> here they will see a pa card with their delivery information including the details and the items purchased as well as an order number.
 --**Success Toast** The user will also receive an email with the order information on, and this will be made known to them by a toast that will pop in up I the corner when they have completed the order. As well as in a line of text that will be displayed above te order information.
 
+## Features to Implement
 
+--**Extend the product model**  I would like to extend the offering off the site to gie a lot  more variation in products still focusing around seasonality. I would like to add more thinkgs like health shakes and smothies, were users woul dbe sent hte recipes an d ingriedients to make at hier own leisure.
+--**Tailored boxes** I would like to add a section where the boxes are tailored specifically yot teh use I could be a build your own box with whatever is in season.
+--**Form** I would like to add a forum that wouold allow users to connect wuth each other and swap recipes news. This would also allow te store owner to connect with users and share usful information as well collectioning information on what users of the store would like to see. 
 
 
 ## Technologies used
@@ -427,6 +435,43 @@ Name | Name| CharField | max_length=254
 Price | price | DecimalField | max_digits=6, decimal_places=2, null=True 
 Price per box | price per box | DecimalField | max_digits=6, decimal_places=2, null=True
 Description | description | TextField  
+
+
+## Credits 
+
+### Code
+
+- The functionality of the cart and uuser profule and format for the checkout pages ad product admin were all take n and modified for the code institute course,  Full stack webdevolpment in partiular the boutique ado ecomerce shop project.
+- The code for the button underneath the hero title on the hero page was taken form.
+
+- The navigation bar, cards, modal and mobile-first framework all from [Bootstrap]()
+https://ibb.co/3k51S5K
+
+
+### websites
+
+All websites I used for reference and guidance.
+
+- [stackoverflow](https://stackoverflow.com/)
+- [w3schools](https://www.w3schools.com/)
+- [csstricks](https://css-tricks.com/)
+
+### Images
+- [unsplash](unsplash.com/) - Used fo general images for the site.
+- [Foodies Feed](https://www.foodiesfeed.com/) - Used for food images for the site.
+- [abel and cole](https://www.abelandcole.co.uk/startmyshop) - Used for image and copy for the food boxes.
+
+
+
+### Informtion
+- [penny golightly](https://www.pennygolightly.com/british-seasonal-food-may/) -  used to find informaton on priduce seasonality.
+
+### Special Thanks
+
+- I would like to give a special mention to all the people on slack and all the people Code Institute, in particular, the Tutor support team and my Mentor Aaron Sinnot
+
+**This project is for educational use only.**
+
 
 
 

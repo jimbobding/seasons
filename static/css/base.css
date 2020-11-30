@@ -169,14 +169,19 @@ h2 {
 .order-history-container {
   margin-top: 10px;
   margin-bottom: 10px;
-  box-shadow: 0 0 5px 2px rgba(71, 126, 232, 0.5);;
+  box-shadow: 0 0 5px 2px rgba(71, 126, 232, 0.5);
   z-index: 15;
 
 }
 
 .info-card {
     justify-content: center;
-    margin-left: 40px;
+    margin-left: 40px; 
+}
+
+.info-card-style {
+    border: 1px solid black;
+    box-shadow: 0 0 5px 2px rgba(71, 126, 232, 0.5);
 }
 
 .our-products-container {
@@ -342,14 +347,12 @@ ul {
   width: 100%;
   padding: 0;
   margin: 0;
-
 }
 
 #top-nav{
     padding: 0 0;
     margin: 0 0;
     height: 80px;
-
 }
 
 .navbar-wrapper {
@@ -359,8 +362,6 @@ ul {
   width: 100% !important;
   left: 0;
   z-index: 20;
-
-
 }
 
 .navbar.li {
@@ -390,9 +391,6 @@ ul {
   font-size: 40px;
   color: whitesmoke;
   letter-spacing: 6px;
-  
-    
-  
 }
 
 .shadow {
@@ -567,18 +565,25 @@ ul {
   /* btn */
   display: inline-block;
   font-weight: 400;
-  color: #fff;
+  background-color: transparent;
+  color: black;
   text-align: center;
   vertical-align: middle;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #000;
+  box-shadow: 0 0 5px 2px rgba(71, 126, 232, 0.5);
   border: 1px solid #000;
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   line-height: 1.5;
+  font-family: 'Comfortaa', cursive;
+
+
+
+
+}
 
 
   /* standard bootstrap btn transitions */
@@ -676,29 +681,6 @@ ul {
   height: 20px;
   display: block;
   align-items: center;
-}
-.animated-word {
-   
-  font-family: Helvetica;
-  letter-spacing: 0.4em;
-  font-weight: 600;
-  font-size: 20px;
-  text-align: center;
-  color: #202125;
-  cursor: pointer;
-  max-width: 100px;
-  width: 100%;
-  outline: 3px solid;
-  outline-color: rgba(71, 126, 232, 0.5);
-  outline-offset: 10px;
-  transition: all 600ms cubic-bezier(0.2, 0, 0, 0.8);
-}
-
-.animated-word:hover {
-  color: rgba(71, 126, 232, 0.7);
-  outline-color: rgba(71, 126, 232, 0);
-  outline-offset: 100px;
-   
 }
 
 .hero-btn {
@@ -815,6 +797,7 @@ background-color: transparent;
 color: black;
 border: 1px solid black;
 font-family: 'Comfortaa', cursive;
+box-shadow: 0 0 5px 2px rgba(71, 126, 232, 0.5);
 }
 
 .btn-1:hover{
@@ -822,18 +805,10 @@ background: black;
 color: white;
 }
 
-
-
 .btn-shoppping {
 background-color: transparent;
 color: black;
 border: 2px solid black;
 font-family: 'Comfortaa', cursive;
 }
-
- .btn-shoppping:hover {
-background:#EAEBED;
-color: black;
-}
-
 

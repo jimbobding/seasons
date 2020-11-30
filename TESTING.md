@@ -3,8 +3,6 @@
 ## Testing User Stories
 
 
-### Navbar
-
 - **User Story**
 1. As a First Time Visitor, I want to easily navigate the app using the navbar.
 3. As a First Time Visitor, I want to be able to navigate to different parts of the site and view the information that it has to offer.
@@ -32,7 +30,6 @@
 #### Fixes
 - 
 
-
 - **User Story**
 2. As a First Time Visitor, I want to be able to easily find and look through the different products the shop has to offer without the obligation of registering an account.
 8. As a First Time Visitor, I want to be able to use the search engine to find different products I might want to buy.
@@ -54,7 +51,7 @@
 - The horizontal rule on the product cards is not always in the same place due to the amount of text on each card.
 
  #### Fixes
-- 
+- This has not been fixed as of yet
 
 - **User Story**
 4. As a First Time Visitor, I want to be able to place products into my cart and browse the other items.
@@ -81,9 +78,7 @@
 - Trying to place anything over -1 items in the cart results in an error message stating 'value must be less or equal to 99' and nothing is placed in the cart.
 
 #### Bugs/Improvements
-- The number of each item the user has in their account is not displayed. The total cost of each item is and its total value.
 - Unable to adjust the number of items using decrement/increment buttons, when pressed the number is not incremented but just added straight to cart.
-
 
 #### Fixes
 - The post load javascript script for the increment and decrement items was not being loaded as the script had been cut in half from auto-formatting, I manually reformated the script and it now works.
@@ -236,6 +231,8 @@ add products
 - Had a target blank href to a product's image in the no-image jpeg part.
 
 
+
+
 Editing products
 
 #### Test
@@ -286,8 +283,20 @@ Editing products
 ### Results
 - Searched for word box all the products that are boxes showed on the page.
 - Searched for the word subscription all the products that are subscriptions showed on the page.
-- 
-#### 
+- Searched for bacon no results were shown. 'Products Home | 0 Products found for "bcon"'
+
+
+### Payment forms
+ #### Test
+ - To test the payment form I used a variety of difeer combinations of leaving certain fields blank.
+ - I also used a variety of different countries. But not all of them,
+ - I used the code 4242 4242 4242 4242 and then an expiry date that is valid and any 3 letter ccv.
+
+ #### Results
+ - The only problems I encountered were leaving  name, email street adrres 1 and country fields emepty.
+ - The email field had to appear as if a legitame email was being used o @. com is required.
+ - There have been problems with some countries and the use of postal address is needed. I have attatched and alternative trial key to in case this problem is encountered. = 4012888888881881.
+ [Stripe Elements forcing a postal code](https://stackoverflow.com/questions/46737413/stripe-elements-forcing-a-postal-code).
 
 
 [Back to README](https://github.com/jimbobding/seasons/blob/master/README.md)
