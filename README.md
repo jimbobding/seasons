@@ -113,7 +113,7 @@ whilst searching through online sites. I wanted to utilize the fantastic colour 
 I tried many colours for the nave bar and footer, but I ended up always going back to black. I found it not only had a stylish clean look to it but it complimented all of the hero images I was using for pages of the site. I used this for my search bar as well to keep it uniformed.
 ##### Mustard
 
-- ![rgb(224, 157, 55)](https://via.placeholder.com/15/f03c15/000000?text=+) `rgb(224, 157, 55)`
+- ![#E09D37](https://via.placeholder.com/15/f03c15/000000?text=+) `#E09D37`
 Mustard worked very well at giving an Autumnal feel to the site, it is also not an invasive colour so it allows the pictures and elements around it to catch the eye.
 ##### Green 
 - ![rgb(72, 153, 114, 0.75)](https://via.placeholder.com/15/f03c15/000000?text=+) `rgb(72, 153, 114, 0.75)`
