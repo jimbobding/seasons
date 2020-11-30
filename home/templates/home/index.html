@@ -145,26 +145,17 @@
       alt="A person ON A farm"
     />
   </div>
-  {% if session.user %}
-   <p>Sign up to and create a profile!</p>
+
+  <p>Sign up to and create a profile!</p>
   <a
     href="{% url 'account_signup' %}"
-    type="button"
-    class="btn btn-outline-primary btn-1 text-center"
-    >Login</a
-  >
-  {% else %}
-
-   <p>Sign in!</p>
-  <a
-   href="{% url 'account_login' %}"
     type="button"
     class="btn btn-outline-primary btn-1 text-center"
     >Register</a
   >
   </div>
 <!--Sign up/register End-->
-  {% endif %} {% endblock %} {% block postloadjs %}
+ {% endblock %} {% block postloadjs %}
 
 
 <!--AOS sccript-->
