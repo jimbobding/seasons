@@ -349,7 +349,7 @@ ul {
 #top-nav{
     padding: 0 0;
     margin: 0 0;
-    height: 80px;
+
 }
 
 .navbar-wrapper {
@@ -461,6 +461,14 @@ ul {
 .update-link,
 .remove-item {
   cursor: pointer;
+}
+
+.btt-button {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
 }
 
 /* ------------------------------- bootstrap toasts */
@@ -576,7 +584,6 @@ ul {
   line-height: 1.5;
   font-family: 'Comfortaa', cursive;
 
-}
 
   /* standard bootstrap btn transitions */
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
@@ -691,16 +698,6 @@ ul {
   transition: all 600ms cubic-bezier(0.2, 0, 0, 0.8);
 }
 
-nav li a {
-    font-size: 18px; 
-    transition-timing-function: ease-in-out;
-    margin-right: 20px;
-}
-
-nav li a:hover {
-    color: #3498db;
-	transition: 500ms;
-}
 
 
 
