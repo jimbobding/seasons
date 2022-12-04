@@ -31,11 +31,11 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['seasons-farm-box-you.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['seasons-farm-box-you.herokuapp.com', 'localhost', 'render.com']
 
  # Add Render.com URL to allowed hosts
  RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
- if RENDER_EXTERNAL_HOSTNAME:
+if RENDER_EXTERNAL_HOSTNAME:
    ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
 
 
